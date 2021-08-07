@@ -15,6 +15,14 @@ https://data.hawaii.gov/Community/Expenditures-Made-By-Hawaii-State-and-County-C
 
 ![Socrata Filter Settings](_jekyll/images/socrata_filter_settings.png "Socrata Filter Settings")
 
+Also the Candidate Committee report is used:
+https://hicscdata.hawaii.gov/dataset/Organizational-Reports-For-Hawaii-State-and-County/gkek-wbij
+
+My sorted view of the dataset:
+https://hicscdata.hawaii.gov/dataset/Organizational-Reports-For-Hawaii-State-and-County/8ry8-ip7m/data
+
+![Candidate Committee Socrata Filter Settings](_jekyll/images/socrata_candidate_committee_report_filter_settings.png "Candidate Committee Socrata Filter Settings")
+
 # Development/Contributing
 
 ## Installation/Running
@@ -25,13 +33,27 @@ https://data.hawaii.gov/Community/Expenditures-Made-By-Hawaii-State-and-County-C
 
 Visit http://localhost:4000 in a web browser
 
+## Getting a Socrata API key
+
+After creating a filtered/rolled-up view as above
+
+    curl 'https://hicscdata.hawaii.gov/api/api_keys' -i -X POST -H 'Content-Type: application/json'  -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Pragma: no-cache' -H 'Cache-Control: no-cache' --data '{"keyName": "Example key."}' -u "$USERNAME@$PASSWORD"
+
+Then put your api key username and password key in `.env` (based on `.env.sample`)
+
+NOTE: The username is the `keyId` field and the password is the `keySecret` field
+
 ## Updating Data
 
 In this project the data is updated manually rather than automatically fetched (this may change in the future).
 
-    ./update_data.sh
+    bundle exec dotenv ./update_data.sh
 
 Then commit the changes to the data (if any) and then deploy.
+
+Then run:
+
+    bundle exec ruby parse.rb
 
 ## Deploying
 
