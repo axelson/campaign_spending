@@ -23,6 +23,8 @@ https://hicscdata.hawaii.gov/dataset/Organizational-Reports-For-Hawaii-State-and
 
 ![Candidate Committee Socrata Filter Settings](_jekyll/images/socrata_candidate_committee_report_filter_settings.png "Candidate Committee Socrata Filter Settings")
 
+To better understand the data you should take a look at the [Campaign Finance Data Primer](https://docs.google.com/document/d/1VC0of6-rLtFrLmpBS8xWDLjLvtoPOr9LBfDJLYy_4fw/edit)
+
 # Development/Contributing
 
 ## Installation/Running
