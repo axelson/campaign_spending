@@ -579,7 +579,6 @@ class BubbleChart {
     const {
       reg_no
     } = circle_data;
-    ga('send', 'event', 'modal', 'show', circle_data.name, 1);
     const records = window.records.filter( d => d.reg_no === reg_no);
     const nodes = window.viz.selectAll('circle')
       .filter( d => d.reg_no === reg_no )
@@ -839,7 +838,6 @@ class BubbleChart {
       },
       autoSelectFirst: true,
       onSelect: suggestion => {
-        ga('send', 'event', 'candidate_search', 'select', suggestion.value, 1);
         return this.highlightSingleCandidate(suggestion.value);
       },
       appendTo: $container,
@@ -854,7 +852,6 @@ class BubbleChart {
         return formatted;
       },
       onSearchComplete: (query, suggestions) => {
-        ga('send', 'event', 'candidate_search', 'search', query, 1);
         const candidates_to_show = suggestions.map(d => d.data);
         if (suggestions.length <= 0) {
           return reset_candidate_search();
@@ -1149,7 +1146,6 @@ $(function() {
     const $viz_nav = $(e.target).closest('.viz_nav');
     const func = $viz_nav.data('name');
     const currentFunc = $('.viz_nav.btn.selected').data('name');
-    ga('send', 'event', 'click', 'navigation', func, 1);
 
     $viz_nav.animate({backgroundColor: '#73884f'});
     $viz_nav.animate({backgroundColor: '#FFFFFF'});
@@ -1167,14 +1163,12 @@ $(function() {
 
   $('.viz_nav .right-arrow').on('click', function(e) {
     e.stopPropagation();
-    ga('send', 'event', 'click', 'navigation', 'next_year', 1);
     if ($(this).hasClass('clickable')) {
       return window.update_year(true);
     }
   });
   $('.viz_nav .left-arrow').on('click', function(e) {
     e.stopPropagation();
-    ga('send', 'event', 'click', 'navigation', 'previous_year', 1);
     if ($(this).hasClass('clickable')) {
       return window.update_year(false);
     }
@@ -1182,7 +1176,6 @@ $(function() {
 
   $('#nav #mini-legend').on('click', function(e) {
     e.preventDefault();
-    ga('send', 'event', 'click', 'navigation', 'toggle_mini_legend', 1);
     // Position the hidden legend
     const pos = $(this).offset();
     pos.top = 50;
