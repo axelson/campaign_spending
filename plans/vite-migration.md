@@ -1,5 +1,7 @@
 # Migrate build from Jekyll to Vite
 
+`durable_assets.html` and `starter.html` aren't linked from the site, but they're kept and copied over unchanged.
+
 Replace the Ruby toolchain (Jekyll, jekyll-assets/Sprockets, CoffeeScript, Ruby Sass, `parse.rb`) with Vite and Node. The built site keeps deploying from `docs/` with the same URLs.
 
 ## Target layout
@@ -24,7 +26,7 @@ package.json
 
 ## Steps
 
-1. **Scaffold.** Rewrite `package.json` (drop the Grunt/Bower dependencies), add `vite` and `sass` as dev dependencies, delete `bower.json`. Add a `.node-version` file. Scripts:
+1. **Scaffold.** Rewrite `package.json` (drop the Grunt/Bower dependencies), add `vite` and `sass` as dev dependencies, delete `bower.json`. Add a `.node-version` file pinned to `26.7.0`, the next LTS line. Scripts:
    `dev` → `vite`, `build` → `vite build`, `preview` → `vite preview`, `update-data` → `node --env-file=.env scripts/update-data.mjs`.
 2. **vite.config.js.** `root: 'src'`, `build.outDir: '../docs'`, `emptyOutDir: true`. Every HTML page is listed in `build.rollupOptions.input`.
 3. **Move static files.** Move `_jekyll/{data,images,css,js,CNAME}` into `src/public/`. Paths such as `data/...` and `js/...` stay the same.
@@ -36,7 +38,7 @@ package.json
 7. **Remove Liquid.**
    - `{% if site.internet %}` is always true in both configs, so keep the contents and delete the tags.
    - Paste the contents of `nav.html` into `durable_assets.html` (it's the only page that uses it). Paste `starter.js` and `bar-chart.js` into `starter.html`.
-8. **Remove the duplicate page.** `candidate_spending.html` is byte-identical to `index.html`. Keep it as a one-line redirect to `/` so old links keep working, or delete it.
+8. **Remove the duplicate page.** `candidate_spending.html` is byte-identical to `index.html`. Replace it with a one-line meta-refresh redirect to `/` so old links keep working.
 9. **Data script.** Write `scripts/update-data.mjs`:
    - Download both Socrata CSVs with `fetch`, using basic auth from `API_KEY_ID`/`API_KEY_SECRET`, into `raw_data/`.
    - Port the `parse.rb` transforms: trim fields, add the sequential `id`, skip `CC11033`, skip rows with no party.
