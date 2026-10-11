@@ -698,8 +698,7 @@ class BubbleChart {
     const cur_year = candidate_utils.get_vis_year();
     modal.find('.current_year').text(cur_year);
     modal.find('.candidate_office').text(candidate_office);
-    modal.find('.expenditure_category_title').text(category);
-    return show_powerballot_link(modal.find('a.powerballot').hide(), reg_no);
+    return modal.find('.expenditure_category_title').text(category);
   }
 
   // Update the center node of the modal
@@ -953,25 +952,6 @@ class CandidateUtil {
 CandidateUtil.initClass();
 
 root.candidate_utils = new CandidateUtil;
-
-var show_powerballot_link = function($el, candidate_reg_no) {
-  const powerballot_url = "http://codeforhawaii.github.io/hawaii-power-ballot/allgeneral.htm";
-  const url = "http://services2.arcgis.com/tuFQUQg1xd48W6M5/arcgis/rest/services/HI_2014_primary_candidates/FeatureServer/1/query";
-  const params = {
-    where: `CC_Reg_No='${candidate_reg_no}'`,
-    f: 'pjson',
-    outFields: 'Candidate_ID'
-  };
-  return $.get(url, params, function(data) {
-    const features = JSON.parse(data).features[0];
-    if (features != null) {
-      const candidate_id = features.attributes.Candidate_ID;
-      return $el.show().attr('href', powerballot_url + '#' + candidate_id);
-    } else {
-      return console.warn(`Unable to find candidate id for reg no ${candidate_reg_no}`);
-    }
-  });
-};
 
 const campaignInit = function() {
   $('.legend tr').on('mouseenter', function() {
