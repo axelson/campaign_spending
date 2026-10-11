@@ -2,10 +2,5 @@
 *.swp
 .env
 
-_site
-bower_components
 node_modules
-_jekyll/.jekyll-assets-cache/
-.sass-cache/
-.jekyll-cache/
 parity-output/

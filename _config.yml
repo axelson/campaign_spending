@@ -1,9 +1,0 @@
-source:      _jekyll
-destination: _site
-internet: true
-
-# Asset pipeline
-assets:
-  cache: true
-  cachebust: none
-  gzip: false

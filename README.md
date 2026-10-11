@@ -1,5 +1,5 @@
-[![Vizualization Screenshot](_jekyll/images/viz-screenshot.png "Vizualization Screenshot")](http://viz.hawaiicampaignspending.com)
-[![Vizualization Gif](_jekyll/images/screenshot.gif "Vizualization Gif")](http://viz.hawaiicampaignspending.com)
+[![Vizualization Screenshot](src/public/images/viz-screenshot.png "Vizualization Screenshot")](http://viz.hawaiicampaignspending.com)
+[![Vizualization Gif](src/public/images/screenshot.gif "Vizualization Gif")](http://viz.hawaiicampaignspending.com)
 
 # Intro
 This project is a vizualization of Hawaii Campaign Spending data for Candidates. It was initially created for [Civic*Celerator 2013](http://civic.celerator.org/).
@@ -13,7 +13,7 @@ https://data.hawaii.gov/Community/Expenditures-Made-By-Hawaii-State-and-County-C
 But the data is actually pulled from a filtered/rolled-up view:
 https://data.hawaii.gov/Community/Expenditures-Made-By-Hawaii-State-and-County-Candi/gvuk-nbsz/data
 
-![Socrata Filter Settings](_jekyll/images/socrata_filter_settings.png "Socrata Filter Settings")
+![Socrata Filter Settings](src/public/images/socrata_filter_settings.png "Socrata Filter Settings")
 
 Also the Candidate Committee report is used:
 https://hicscdata.hawaii.gov/dataset/Organizational-Reports-For-Hawaii-State-and-County/gkek-wbij
@@ -21,7 +21,7 @@ https://hicscdata.hawaii.gov/dataset/Organizational-Reports-For-Hawaii-State-and
 My sorted view of the dataset:
 https://hicscdata.hawaii.gov/dataset/Organizational-Reports-For-Hawaii-State-and-County/8ry8-ip7m/data
 
-![Candidate Committee Socrata Filter Settings](_jekyll/images/socrata_candidate_committee_report_filter_settings.png "Candidate Committee Socrata Filter Settings")
+![Candidate Committee Socrata Filter Settings](src/public/images/socrata_candidate_committee_report_filter_settings.png "Candidate Committee Socrata Filter Settings")
 
 To better understand the data you should take a look at the [Campaign Finance Data Primer](https://docs.google.com/document/d/1VC0of6-rLtFrLmpBS8xWDLjLvtoPOr9LBfDJLYy_4fw/edit)
 
@@ -29,11 +29,14 @@ To better understand the data you should take a look at the [Campaign Finance Da
 
 ## Installation/Running
 
-    bundle install
-    ./run-jekyll.sh
-    ./jekyll-watch.sh
+Requires Node (version in `.node-version`).
 
-Visit http://localhost:4000 in a web browser
+    npm install
+    npm run dev
+
+Visit the URL Vite prints (http://localhost:5173 by default). The source lives
+in `src/`: pages at the top level, the visualization and styles in `src/app/`,
+and files copied verbatim (data, images, vendored libraries) in `src/public/`.
 
 ## Getting a Socrata API key
 
@@ -49,21 +52,34 @@ NOTE: The username is the `keyId` field and the password is the `keySecret` fiel
 
 In this project the data is updated manually rather than automatically fetched (this may change in the future).
 
-    bundle exec dotenv ./update_data.sh
+    npm run update-data
 
-Then commit the changes to the data (if any) and then deploy.
-
-Then run:
-
-    bundle exec ruby parse.rb
+This downloads the Socrata exports into `raw_data/` and writes the reshaped
+CSVs to `src/public/data/`. Pass `-- --skip-download` to only reshape the files
+already in `raw_data/`. Then commit the changes to the data (if any) and deploy.
 
 ## Deploying
 
-Run deploys script
+Run the deploy script, which builds the site into `docs/` and stages it:
 
     ./deploy.sh
 
-Then commit the changes. The site is served from the master branch of the common cause repo: https://github.com/CommonCauseHawaii/campaign_spending
+Then commit the changes. The site is served from the `docs/` folder of the master branch of the common cause repo: https://github.com/CommonCauseHawaii/campaign_spending
+
+## Checking a change against the deployed build
+
+`scripts/parity.mjs` drives two builds through the same interactions with a
+seeded `Math.random` and compares bubble layout, visible text, Socrata requests,
+console errors and screenshots. Serve the reference build (e.g. a checkout of
+`docs/` from before the change) and the new one, then:
+
+    mkdir -p /tmp/reference && git archive <old-commit> docs | tar -x -C /tmp/reference
+    (cd /tmp/reference/docs && python3 -m http.server 8001) &
+    npm run build && npx vite preview --port 4173 &
+    npm run parity -- http://localhost:8001 http://localhost:4173
+
+It uses Playwright's Chromium (`npx playwright install chromium`), or set
+`CHROMIUM_PATH` to another Chromium binary.
 
 ## Contributing
 

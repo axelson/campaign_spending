@@ -1,11 +1,11 @@
 #!/bin/sh
-git diff --exit-code >/dev/null
-if [ $? -ne 0 ]; then
+# Builds the site into docs/ (served by GitHub Pages) and stages the result.
+set -e
+
+if ! git diff --quiet; then
     echo "Requires a clean git directory"
     exit 1
 fi
 
-rm -rf _site/ doc/
-bundle exec jekyll build --config _deploy_config.yml
-cp -r _site/ doc/
-git add --all doc/
+npm run build
+git add --all docs/
