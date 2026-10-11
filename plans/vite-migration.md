@@ -1,8 +1,8 @@
 # Migrate build from Jekyll to Vite
 
-`durable_assets.html` and `starter.html` aren't linked from the site, but they're kept and copied over unchanged.
-
 Replace the Ruby toolchain (Jekyll, jekyll-assets/Sprockets, CoffeeScript, Ruby Sass, `parse.rb`) with Vite and Node. The built site keeps deploying from `docs/` with the same URLs.
+
+`durable_assets.html` and `starter.html` aren't linked from the site, but they're kept and copied over unchanged.
 
 ## Target layout
 
