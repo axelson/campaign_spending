@@ -104,3 +104,27 @@ If the circle positions differ even though they're seeded, the order of `Math.ra
 - `durable_assets.html` uses a second, older set of libraries from `js/`. It gets copied as-is and isn't modernized in this migration, so check it by hand: it loads and shows no console errors.
 - The candidate modal fetches expenditure records live from `https://hicscdata.hawaii.gov/resource/3maa-4fgr.json`. That's intentional and stays: the request works without an API key and sends `Access-Control-Allow-Origin: *`. I tested it on 2026-10-11 and it returned records for `CC10135` / 2022. It's the only external request left once steps 13 and 14 are done.
 - Later: move vendor libraries to npm imports and drop Foundation and jQuery where they're barely used.
+
+## Implementation notes (2026-10-11)
+
+All steps are done; these are the places the implementation diverged from the plan.
+
+- **`index.html` was a symlink** to `candidate_spending.html`, which is why they were byte-identical. `src/index.html` is now the real page, and `candidate_spending.html` is the redirect.
+- **App sources live in `src/app/`** (`vis.js`, `app.scss`, `fonts.css`), not `src/js/` and `src/css/`, so they don't share URL paths with `src/public/js` and `src/public/css`.
+- **`application.js` also bundled the site's own scripts** `util.js`, `common.js` and `script.js`. They're classic scripts in `src/public/js/`, loaded after the vendor files in the original order. As a side effect, `durable_assets.html`'s references to `js/util.js` and `js/common.js`, which were 404s in the old build, now resolve.
+- **Unused `vendor/foundation/*` modules deleted.** These 16 files were never referenced: the page loads `foundation.min.js`.
+- **The decaffeinate tidy-up was minimal:** only the `root = window` fix and dropping the suggestions header. The `DS1xx`/`DS2xx` cleanups, such as `initClass` and redundant `return`s, are left for a later change that can be checked with `npm run parity` against the current build.
+- **`update-data` has a `--skip-download` flag** for reshaping `raw_data/` without credentials. It uses `--env-file-if-exists`, so a missing `.env` isn't an error. With the existing `raw_data/` it reproduces both CSVs byte for byte.
+- **Parity harness:**
+  - The first `<circle>` on the page is a size-legend circle, so the interaction steps target `circle[id^=bubble_]`.
+  - Blocked requests abort with `ERR_BLOCKED_BY_CLIENT`, and those console errors are ignored.
+  - `CHROMIUM_PATH` overrides the browser binary. Playwright 1.64 wants Chromium revision 1248, and only 1243 was cached.
+  - A control build with one constant changed (`2.21` → `2.2`) failed all 22 steps, so the harness catches small differences.
+  - Results: the port and the GA and power-ballot removals matched the old build on all 22 steps. After the fonts change, only screenshot sizes differ (1px, from font metrics), because the reference has Google Fonts blocked.
+- **`document.fonts.check()` isn't usable** as the fonts check: it returned `true` on the old `durable_assets.html`, which loads no web font. The verification lists `document.fonts` entries with `status === 'loaded'` instead.
+- **`starter.html` has a right-hand ribbon** (`forkme_right_darkblue_121621.png`). It's also served locally now.
+- **`_site/` was committed** despite being in `.gitignore`. It's deleted.
+- **Pre-existing problems, unchanged:**
+  - `durable_assets.html` still 404s on `js/foundation.min.js` and `js/d3.tip.v0.6.3.js`, so it throws on load.
+  - `starter.html` loads jQuery and D3 from `http://` CDNs.
+  - `index.html` has a malformed `</div</td>`, which Vite warns about.
