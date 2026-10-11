@@ -55,7 +55,10 @@ In this project the data is updated manually rather than automatically fetched (
     npm run update-data
 
 This downloads the Socrata exports into `raw_data/` and writes the reshaped
-CSVs to `src/public/data/`. Pass `-- --skip-download` to only reshape the files
+data to `src/public/data/`. The durable assets page combines the live dataset
+(reports from 2015 on) with `raw_data/durable_assets_2006-2013.json`, a
+snapshot taken in 2014 that can't be re-downloaded. Reports filed during 2014
+are in neither. Pass `-- --skip-download` to only reshape the files
 already in `raw_data/`. Then commit the changes to the data (if any) and deploy.
 
 ## Deploying

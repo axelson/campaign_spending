@@ -92,7 +92,14 @@ function draw(data) {
       console.log('Unknown y filter ' + y_filter);
     }
   }
-  var getY = getYBuilder(y_filter);
+  var rawGetY = getYBuilder(y_filter);
+  // Assets that never depreciate to $0 (infinite days_till_zero_value) are
+  // plotted at the top of the axis.
+  var max_finite_y = d3.max(data, function(d) { return isFinite(rawGetY(d)) ? rawGetY(d) : undefined; });
+  var getY = function(d) {
+    var value = rawGetY(d);
+    return isFinite(value) ? value : max_finite_y;
+  };
   var getR = get_attr('acquisition_amount');
   var getColor = function(d) {
     if(d.party === 'Republican') {
@@ -104,6 +111,7 @@ function draw(data) {
     }
   };
   var splitLongLines = function(text) {
+    if (text === undefined) { return ''; }
     var length_limit = 30;
     var lines = []
     for( var i=0; i<text.length; i+=length_limit ) {
@@ -127,7 +135,9 @@ function draw(data) {
   };
 
   var max_x_val = d3.max(data, getX);
-  var max_y_val = d3.max(data, function(d) { return getY(d) == Infinity ? 1000 : getY(d); });
+  var max_y_val = d3.max(data, getY);
+  // Assets sold for more than they cost have negative depreciation
+  var min_y_val = Math.min(0, d3.min(data, getY));
   console.log('max y val ' + max_y_val);
   var max_r_val = d3.max(data, getR);
 
@@ -139,7 +149,7 @@ function draw(data) {
     attr("fill", 'green');
 
   var x = d3.scale.linear().domain([0, max_x_val]).range([left_boundary(), right_boundary() ]);
-  var y = d3.scale.linear().domain([0, max_y_val]).range([bottom_boundary(), top_boundary() ]);
+  var y = d3.scale.linear().domain([min_y_val, max_y_val]).range([bottom_boundary(), top_boundary() ]);
   var r = d3.scale.linear().domain([0, Math.sqrt(max_r_val)]).range([0, params.max_bubble_rad]);
   //var color = d3.scale.linear().domain([0,50,100]).range(["#C4592D","#919496", "#0F5577"]);
   //var color = d3.scale.linear().domain([0,50,100]).range(["#EA7F2F","#919496", "#41BADC"]);
@@ -319,9 +329,12 @@ var clean_candidate_list = function(data) {
 
 
   // Combine rows with matching 'durable_asset_id' (throw out records without matching buy and sell)
-  var buy_records = data.filter(function(d) { return d.amount !== undefined });
+  // Disposal rows carry the disposition method (Sold, Donated, ...). Purchase
+  // rows can also carry a placeholder diposition_amount of "0", so that field
+  // doesn't identify disposals.
+  var buy_records = data.filter(function(d) { return d.method === undefined && d.amount !== undefined });
   // Note: disposition spelled as diposition
-  var sell_records = data.filter(function(d) { return d.diposition_amount !== undefined });
+  var sell_records = data.filter(function(d) { return d.method !== undefined });
   window.buy_records = buy_records;
   window.sell_records = sell_records;
   var full_records_with_empty = buy_records.map(function(buy_record) {
@@ -345,18 +358,20 @@ var clean_candidate_list = function(data) {
       disposition_amount: sell_record.diposition_amount,
       durable_asset_description: buy_record.durable_asset_description,
       // TODO: Learn how to link to html view on socrata
-      link: "https://data.hawaii.gov/resource/fmfj-bac2.json?$where=durable_asset_id='" + buy_record.durable_asset_id + "'",
+      link: "https://hicscdata.hawaii.gov/resource/fmfj-bac2.json?$where=durable_asset_id='" + buy_record.durable_asset_id + "'",
       sold_to: sell_record.to_whom,
       amount_difference: buy_record.amount - sell_record.diposition_amount,
       percentage_lost: (buy_record.amount - sell_record.diposition_amount)/buy_record.amount,
       depreciation_per_day: depreciation_per_day,
       depreciation_rate_per_day: depreciation_rate_per_day,
       rate: depreciation_rate_per_day * 1000,
-      days_till_zero_value: 1 / depreciation_rate_per_day,
+      // Sold for its full price or more: it never depreciates to $0
+      days_till_zero_value: depreciation_per_day > 0 ? 1 / depreciation_rate_per_day : Infinity,
       days_held: days_held
     };
   });
-  var full_records = full_records_with_empty.filter(function(d) { return d !== undefined });
+  // A disposal dated on or before its purchase has no holding period to plot
+  var full_records = full_records_with_empty.filter(function(d) { return d !== undefined && d.days_held > 0 });
 
   // Store full_records so it can be used in the console
   window.full_records = full_records;

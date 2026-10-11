@@ -1,5 +1,5 @@
-// Downloads the Socrata exports into raw_data/ and reshapes them into the CSVs
-// the visualization loads from src/public/data/.
+// Downloads the Socrata exports into raw_data/ and reshapes them into the data
+// files the pages load from src/public/data/.
 //
 // Usage: npm run update-data [-- --skip-download]
 //   --skip-download  reuse the files already in raw_data/
@@ -20,7 +20,17 @@ const SOURCES = {
     'https://hicscdata.hawaii.gov/resource/9g8z-ggqz.csv?$limit=100000',
   'raw_data/organizational_reports.csv':
     'https://hicscdata.hawaii.gov/resource/8ry8-ip7m.csv?$limit=50000',
+  // Durable assets reported from 2015 on
+  // https://hicscdata.hawaii.gov/dataset/Durable-Assets-For-Hawaii-State-and-County-Candida/fmfj-bac2
+  'raw_data/durable_assets.json':
+    'https://hicscdata.hawaii.gov/resource/fmfj-bac2.json?$limit=50000',
 }
+
+// Snapshot of the durable assets dataset taken in February 2014 (records dated
+// 2006-11 to 2013-12). The live dataset only covers reports from 2015 on, so this
+// supplies the purchases of assets that were disposed of later, and the assets
+// bought and disposed of before 2014. It can't be re-downloaded.
+const DURABLE_ASSETS_ARCHIVE = 'raw_data/durable_assets_2006-2013.json'
 
 // Ronald, Strode's data is bad
 const SKIPPED_REG_NOS = new Set(['CC11033'])
@@ -125,6 +135,48 @@ async function writeOrganizationalReports() {
   )
 }
 
+// Test filings in the live data ("Test", "Test, Hannah", "Test, Sept. 15")
+const isTestCandidate = (row) => /^Test(,|$)/.test(row.candidate_name)
+
+// A durable asset is reported as a purchase row and, once it's gone, a
+// disposal row with the same durable_asset_id. Disposal rows carry the
+// disposition `method` (Sold, Donated, ...); since 2015 purchase rows can also
+// carry a placeholder diposition_amount of "0", so that field isn't a reliable
+// marker.
+const durableAssetKind = (row) => (row.method === undefined ? 'purchase' : 'disposal')
+
+async function writeDurableAssets() {
+  const downloaded = JSON.parse(await readFile(join(ROOT, 'raw_data/durable_assets.json'), 'utf8'))
+  const current = downloaded.filter((row) => !isTestCandidate(row))
+  for (const name of new Set(downloaded.filter(isTestCandidate).map((row) => row.candidate_name))) {
+    console.log(`Skipping durable assets of test candidate ${name}`)
+  }
+  const archive = JSON.parse(await readFile(join(ROOT, DURABLE_ASSETS_ARCHIVE), 'utf8'))
+
+  // Current rows win: an archived row is kept only if the current data has no
+  // row of the same kind for that asset.
+  const key = (row) => `${row.durable_asset_id}/${durableAssetKind(row)}`
+  const currentKeys = new Set(current.map(key))
+  const rows = [...current, ...archive.filter((row) => !currentKeys.has(key(row)))]
+
+  // Name formats changed between the two (e.g. "Anderson, J. Ikaika" vs
+  // "Anderson, Ikaika"); use the current name for each registration number so
+  // one candidate isn't split in two.
+  const currentNames = new Map(current.map((row) => [row.reg_no, row.candidate_name]))
+  for (const row of rows) row.candidate_name = currentNames.get(row.reg_no) ?? row.candidate_name
+
+  // Socrata returns rows in no particular order; sort for stable diffs.
+  rows.sort(
+    (a, b) => a.durable_asset_id - b.durable_asset_id || a.date.localeCompare(b.date),
+  )
+  await writeFile(join(ROOT, 'src/public/data/durable_assets.json'), JSON.stringify(rows) + '\n')
+  console.log(
+    `Wrote ${rows.length} rows to src/public/data/durable_assets.json ` +
+      `(${current.length} current, ${rows.length - current.length} from ${DURABLE_ASSETS_ARCHIVE})`,
+  )
+}
+
 if (!process.argv.includes('--skip-download')) await download()
 await writeExpenditures()
 await writeOrganizationalReports()
+await writeDurableAssets()
