@@ -8,3 +8,4 @@ node_modules
 _jekyll/.jekyll-assets-cache/
 .sass-cache/
 .jekyll-cache/
+parity-output/

@@ -7,11 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "update-data": "node --env-file-if-exists=.env scripts/update-data.mjs"
+    "update-data": "node --env-file-if-exists=.env scripts/update-data.mjs",
+    "parity": "node scripts/parity.mjs"
   },
   "devDependencies": {
     "csv-parse": "^7.0.3",
     "csv-stringify": "^6.9.0",
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.64.0",
+    "pngjs": "^7.0.0",
     "sass": "^1.105.1",
     "vite": "^8.3.4"
   }
