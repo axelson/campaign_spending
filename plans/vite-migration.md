@@ -52,7 +52,16 @@ package.json
 12. **Remove the power ballot link** (separate commit).
     - Delete `show_powerballot_link` and its call in the candidate modal (lines 610 and 822–833 of the original file).
     - Delete the `.powerballot_link_container` markup from `index.html` and any CSS that targets it.
-13. **Delete Ruby.** Remove `Gemfile`, `Gemfile.lock`, `.ruby-version`, `_config.yml`, `_deploy_config.yml`, `_plugins/`, `parse.rb`, `update_data.sh`, the `*-jekyll*.sh` scripts and `_site/`. Replace `deploy.sh` with `npm run build && git add docs/`, which also fixes the old `doc/` typo. Update README and `.gitignore`.
+13. **Serve the fonts locally** (separate commit, after the parity check).
+    - `index.html` loads Open Sans from Google Fonts in weights 300, 400, 600 and 700, plus 300, 400 and 600 italic.
+    - Install `@fontsource-variable/open-sans` and import it, plus its italic file, from `app.scss` or `vis.js`. One variable font covers every weight in use. Vite copies the `.woff2` files into `docs/assets/` with hashed names.
+    - Delete the `fonts.googleapis.com` `<link>` and the commented-out WebFont loader block.
+    - In CSS, change `'Open Sans'` to `'Open Sans Variable', 'Open Sans', sans-serif`. That's `app.scss`, and `durable_assets.css` lines 17 and 79.
+    - `durable_assets.html` uses Open Sans but never loads it, so add the import there too.
+    - To verify:
+      - Run Playwright with every request outside localhost aborted. Check that `document.fonts.check('600 16px "Open Sans Variable"')` is true and that nothing was blocked.
+      - Compare screenshots by eye against the old site loaded with Google Fonts allowed. Expect small differences, because Google may serve a different build of the font.
+14. **Delete Ruby.** Remove `Gemfile`, `Gemfile.lock`, `.ruby-version`, `_config.yml`, `_deploy_config.yml`, `_plugins/`, `parse.rb`, `update_data.sh`, the `*-jekyll*.sh` scripts and `_site/`. Replace `deploy.sh` with `npm run build && git add docs/`, which also fixes the old `doc/` typo. Update README and `.gitignore`.
 
 ## Verifying the JS rewrite
 
@@ -90,4 +99,5 @@ If the circle positions differ even though they're seeded, the order of `Math.ra
 ## Known risks / follow-ups
 
 - `durable_assets.html` uses a second, older set of libraries from `js/`. It gets copied as-is and isn't modernized in this migration, so check it by hand: it loads and shows no console errors.
+- The "Fork me on GitHub" ribbon image is loaded from `s3.amazonaws.com`. Once fonts are local, it's the only external request left on page load (apart from the candidate modal's Socrata call). It could be copied into `public/images/` or dropped.
 - Later: move vendor libraries to npm imports and drop Foundation and jQuery where they're barely used.
