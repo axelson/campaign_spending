@@ -11,6 +11,7 @@
     "parity": "node scripts/parity.mjs"
   },
   "devDependencies": {
+    "@fontsource-variable/open-sans": "^5.3.0",
     "csv-parse": "^7.0.3",
     "csv-stringify": "^6.9.0",
     "pixelmatch": "^8.0.0",

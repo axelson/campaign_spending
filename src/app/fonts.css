@@ -1,0 +1,4 @@
+/* Open Sans, served from this site instead of Google Fonts. One variable font
+   covers the 300-700 weights the pages use. */
+@import '@fontsource-variable/open-sans/wght.css';
+@import '@fontsource-variable/open-sans/wght-italic.css';

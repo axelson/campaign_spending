@@ -14,7 +14,7 @@ Button Light Gray Text
 */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Variable', 'Open Sans', sans-serif;
   color: #454542;
   /* For svg text */
   fill: #454542;
@@ -76,7 +76,7 @@ nav.top-bar .name {
 }
 /* TODO: line up with left-most button */
 nav.top-bar .name a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Variable', 'Open Sans', sans-serif;
   font-size: 10pt;
   font-weight: 400;
   letter-spacing: 2px;
