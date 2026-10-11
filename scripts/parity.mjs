@@ -7,7 +7,7 @@
 //
 // Set CHROMIUM_PATH to use a specific Chromium build instead of Playwright's.
 
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { chromium } from 'playwright'
 import pixelmatch from 'pixelmatch'
@@ -113,7 +113,10 @@ async function settle(page) {
 const BUBBLE = 'circle[id^=bubble_] >> nth=0'
 
 const STEPS = [
-  ['load', async () => {}],
+  ['load', async (page, baseUrl) => {
+    await page.goto(baseUrl)
+    await page.waitForSelector('circle', { timeout: 30_000 })
+  }],
   ...['office', 'expenditure', 'candidate', 'party', 'island'].map((name) => [
     `group-${name}`,
     (page) => page.click(`.viz_nav[data-name=${name}]`),
@@ -176,16 +179,13 @@ async function run(browser, baseUrl, label) {
   const dir = join(outDir, label)
   await mkdir(dir, { recursive: true })
 
-  await page.goto(baseUrl)
-  await page.waitForSelector('circle', { timeout: 30_000 })
-
   const results = []
   for (const [index, [name, action]] of STEPS.entries()) {
     const stepErrors = errors.length
     const stepRequests = socrataRequests.length
     let failure = null
     try {
-      await action(page)
+      await action(page, baseUrl)
       await settle(page)
     } catch (err) {
       failure = err.message.split('\n')[0]
@@ -230,7 +230,6 @@ function firstDifference(a, b, path = '') {
   return `${path}: differs`
 }
 
-const { readFile } = await import('node:fs/promises')
 const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {})
 const reference = await run(browser, referenceUrl, 'reference')
 const candidate = await run(browser, candidateUrl, 'candidate')
@@ -272,6 +271,7 @@ for (const [i, ref] of reference.results.entries()) {
 }
 
 console.log(`\nblocked hosts (reference): ${reference.blocked.join(', ') || 'none'}`)
-console.log(`blocked hosts (candidate): ${candidate.blocked.join(', ') || 'none'}`)
+// The candidate build should be self-contained apart from the Socrata lookup.
+report(candidate.blocked.length === 0, `blocked hosts (candidate): ${candidate.blocked.join(', ') || 'none'}`)
 console.log(failed ? '\nPARITY FAILED' : '\nPARITY OK')
 process.exit(failed ? 1 : 0)
