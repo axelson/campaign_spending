@@ -61,7 +61,8 @@ package.json
     - To verify:
       - Run Playwright with every request outside localhost aborted. Check that `document.fonts.check('600 16px "Open Sans Variable"')` is true and that nothing was blocked.
       - Compare screenshots by eye against the old site loaded with Google Fonts allowed. Expect small differences, because Google may serve a different build of the font.
-14. **Delete Ruby.** Remove `Gemfile`, `Gemfile.lock`, `.ruby-version`, `_config.yml`, `_deploy_config.yml`, `_plugins/`, `parse.rb`, `update_data.sh`, the `*-jekyll*.sh` scripts and `_site/`. Replace `deploy.sh` with `npm run build && git add docs/`, which also fixes the old `doc/` typo. Update README and `.gitignore`.
+14. **Serve the GitHub ribbon locally** (separate commit). `index.html` and `durable_assets.html` load `https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png`, which now returns **403**, so the ribbon is already broken in production. Download the same image from `https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png` (returns 200) into `public/images/`, and point both `<img>` tags at `images/forkme_left_darkblue_121621.png`. The Playwright check from step 13, with all external requests blocked, should then show no blocked requests on page load.
+15. **Delete Ruby.** Remove `Gemfile`, `Gemfile.lock`, `.ruby-version`, `_config.yml`, `_deploy_config.yml`, `_plugins/`, `parse.rb`, `update_data.sh`, the `*-jekyll*.sh` scripts and `_site/`. Replace `deploy.sh` with `npm run build && git add docs/`, which also fixes the old `doc/` typo. Update README and `.gitignore`.
 
 ## Verifying the JS rewrite
 
@@ -99,5 +100,5 @@ If the circle positions differ even though they're seeded, the order of `Math.ra
 ## Known risks / follow-ups
 
 - `durable_assets.html` uses a second, older set of libraries from `js/`. It gets copied as-is and isn't modernized in this migration, so check it by hand: it loads and shows no console errors.
-- The "Fork me on GitHub" ribbon image is loaded from `s3.amazonaws.com`. Once fonts are local, it's the only external request left on page load (apart from the candidate modal's Socrata call). It could be copied into `public/images/` or dropped.
+- The candidate modal fetches expenditure records live from `https://hicscdata.hawaii.gov/resource/3maa-4fgr.json`. That's intentional and stays: the request works without an API key and sends `Access-Control-Allow-Origin: *`. I tested it on 2026-10-11 and it returned records for `CC10135` / 2022. It's the only external request left once steps 13 and 14 are done.
 - Later: move vendor libraries to npm imports and drop Foundation and jQuery where they're barely used.
