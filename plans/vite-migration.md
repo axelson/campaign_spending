@@ -42,15 +42,52 @@ package.json
    - Port the `parse.rb` transforms: trim fields, add the sequential `id`, skip `CC11033`, skip rows with no party.
    - Write the results to `src/public/data/`.
    - Use the `csv-parse`/`csv-stringify` packages rather than hand-rolling CSV handling, because the fields include quoted commas.
-10. **Verify.**
-    - Run `npm run build`, then diff `docs/` against the current build: the same pages and data files, with only asset hashes changed.
-    - Run `npm run preview` and click through the year toggles, the candidate autocomplete, a candidate modal (it calls the Socrata API live), `durable_assets.html` and `starter.html`. Check the console for errors.
-    - Run `update-data` against the current `raw_data/` files and confirm its output matches the existing `campaign_spending_summary.csv` and `organizational_report.csv`.
-11. **Delete Ruby.** Remove `Gemfile`, `Gemfile.lock`, `.ruby-version`, `_config.yml`, `_deploy_config.yml`, `_plugins/`, `parse.rb`, `update_data.sh`, the `*-jekyll*.sh` scripts and `_site/`. Replace `deploy.sh` with `npm run build && git add docs/`, which also fixes the old `doc/` typo. Update README and `.gitignore`.
+10. **Verify.** Run the parity check described under "Verifying the JS rewrite" below. Also:
+    - Run `npm run build`, then diff the file list in `docs/` against the current build. Expect the same pages and data files, with only asset hashes changed.
+    - Run `update-data` against the current `raw_data/` files and confirm its output matches the existing `campaign_spending_summary.csv` and `organizational_report.csv` byte for byte.
+11. **Remove Google Analytics** (separate commit, after the parity check passes).
+    - Delete the analytics snippet from `index.html`.
+    - Delete the 7 `ga(...)` calls in `vis.js`: modal show, candidate search select and search, and the navigation, year and legend clicks around lines 994–1021 of the original file.
+    - Check that nothing else references `ga`: `grep -n "ga(" src/js`.
+12. **Remove the power ballot link** (separate commit).
+    - Delete `show_powerballot_link` and its call in the candidate modal (lines 610 and 822–833 of the original file).
+    - Delete the `.powerballot_link_container` markup from `index.html` and any CSS that targets it.
+13. **Delete Ruby.** Remove `Gemfile`, `Gemfile.lock`, `.ruby-version`, `_config.yml`, `_deploy_config.yml`, `_plugins/`, `parse.rb`, `update_data.sh`, the `*-jekyll*.sh` scripts and `_site/`. Replace `deploy.sh` with `npm run build && git add docs/`, which also fixes the old `doc/` typo. Update README and `.gitignore`.
+
+## Verifying the JS rewrite
+
+`decaffeinate` is a mechanical translation, so the main risks are a few edge cases: implicit returns, `this` binding in `=>` methods, existence operators (`?`), and the `root = exports ? this` pattern. The current `docs/` build is the reference, because it contains the JS compiled from `vis.coffee` and it already runs. The check compares the old and new builds in the same browser and expects identical behavior.
+
+**Order matters.** Port first with no behavior changes, run the parity check, and only then remove analytics and the power ballot link (steps 11–12). If they were removed before the check, every comparison would show expected differences mixed in with real ones.
+
+**Parity harness** (`scripts/parity.mjs`, Playwright; the Chromium browsers are already in `~/Library/Caches/ms-playwright`):
+
+1. Serve the old site from `git show master:docs` (or a copy of the current `docs/`), and the new site with `vite preview`.
+2. Make both runs deterministic with an init script injected before any page code:
+   - Replace `Math.random` with a seeded PRNG. The bubble starting positions (`vis.coffee` lines 54–55) and the d3 force layout both use it.
+   - Stub `window.ga = () => {}`. Block `google-analytics.com`, `fonts.googleapis.com` and `arcgis.com`.
+   - Serve fixed JSON fixtures for `hicscdata.hawaii.gov/resource/*`, the live Socrata call made by the candidate modal.
+3. Run the same script of interactions on both sites, and after each one wait until the force layout settles (`force.alpha()` reaches 0, or the circle positions stop changing):
+   - load the page
+   - click through each grouping/navigation button
+   - go to the next year and the previous year
+   - toggle the mini legend
+   - type a candidate name, pick an autocomplete suggestion, open and close the candidate modal
+4. After each step, record:
+   - for every `circle`: its `id`, `r`, `cx`, `cy` and `fill`, rounded to 2 decimal places
+   - the visible text of the legend, tooltip and modal
+   - the URLs of the requests sent to `hicscdata`, which checks the `$where` query string is built the same way
+   - console errors and page errors
+   - a screenshot
+5. Compare the two runs. The records must match exactly, and screenshots must match within a small pixel tolerance to allow for font antialiasing. Both runs must have no console errors.
+
+If the circle positions differ even though they're seeded, the order of `Math.random` calls has changed. That usually means a loop or callback was reordered, so look for it in the diff rather than loosening the tolerance.
+
+**Supplementary checks:**
+- Read the decaffeinated output next to `vis.coffee`, focusing on the spots `decaffeinate` marks with `// TODO` / `DS` comments.
+- After the removals, run the harness again with only the analytics and arcgis rules dropped. The records should still match the old build except for the missing power ballot link.
 
 ## Known risks / follow-ups
 
-- **Google Analytics:** the site uses Universal Analytics (`UA-50186636-1`), which stopped collecting data in 2023. `vis.js` calls `ga(...)` in 7 places, so removing the snippet means stubbing `ga` or deleting those calls. Keep the snippet for this migration and remove it in a follow-up.
-- `show_powerballot_link` calls a 2014 ArcGIS endpoint over `http://`, which is likely dead or blocked as mixed content. That's out of scope here, but test it during verification.
-- `durable_assets.html` uses a second, older set of libraries from `js/`. It gets copied as-is and isn't modernized in this migration.
+- `durable_assets.html` uses a second, older set of libraries from `js/`. It gets copied as-is and isn't modernized in this migration, so check it by hand: it loads and shows no console errors.
 - Later: move vendor libraries to npm imports and drop Foundation and jQuery where they're barely used.
