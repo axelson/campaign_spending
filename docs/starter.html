@@ -1,11 +1,11 @@
-
-  
+<html>
+  <head>
     <title>Campaign Finance</title>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript">
       // campaign.js
-      $(document).ready(function() {
+$(document).ready(function() {
   var urls = {
     senate_campaign_contributions: 'https://data.hawaii.gov/resource/jexd-xbcg.json'
     ,state_county_candidate_spending: 'https://data.hawaii.gov/resource/3maa-4fgr.json'
@@ -63,11 +63,10 @@ function tabulate(data, columns) {
 
   return table;
 }
-
     </script>
     <script type="text/javascript">
       // bar-chart.js
-      function barChart(data) {
+function barChart(data) {
   var margin = {top: 20, right: 20, bottom: 30, left: 40},
       width = 960 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
@@ -130,38 +129,12 @@ function tabulate(data, columns) {
     return d;
   }
 }
-
     </script>
-  
-<style>
-
-.bar {
-  fill: steelblue;
-}
-
-.bar:hover {
-  fill: brown;
-}
-
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
-
-</style>
+  </head>
+<style>.bar{fill:#4682b4}.bar:hover{fill:brown}.axis{font:10px sans-serif}.axis path,.axis line{fill:none;stroke:#000;shape-rendering:crispedges}.x.axis path{display:none}</style>
 
 
-  
+  <body>
   <a href="https://github.com/axelson/campaign_finance_starter_package"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
 
@@ -172,8 +145,7 @@ function tabulate(data, columns) {
     <div id="table-container"></div>
     <div>
       <p>View the raw data at:
-      </p>
-<ul>
+      <ul>
         <li>Senate Campaign Contributions: <a href="https://data.hawaii.gov/Community/Campaign-Contributions-Received-By-Hawaii-State-an/jexd-xbcg">https://data.hawaii.gov/Community/Campaign-Contributions-Received-By-Hawaii-State-an/jexd-xbcg</a>
         </li>
         <li>State and County Campaign Spending: <a href="https://data.hawaii.gov/Community/Expenditures-Made-By-Hawaii-State-and-County-Candi/3maa-4fgr">https://data.hawaii.gov/Community/Expenditures-Made-By-Hawaii-State-and-County-Candi/3maa-4fgr</a>
@@ -189,5 +161,5 @@ function tabulate(data, columns) {
     <h2>What did the candidate spend money on?</h2>
     This should default to a candidate and allow a selector
 
-  
-
+  </body>
+</html>
