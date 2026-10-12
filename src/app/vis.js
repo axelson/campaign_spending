@@ -782,6 +782,30 @@ class CandidateUtil {
   MAUI = 'Maui, Lanai, Molokai';
   KAUAI = 'Kauai, Niihau';
 
+  // The islands each reapportionment plan's House and Senate districts cover,
+  // as [last district number, island] ranges. Every district lies within one
+  // county; the Maui and Kauai County districts that include Molokai, Lanai and
+  // Niihau are grouped with their county. From the 2001, 2011 and 2021
+  // Reapportionment Commission plans (State GIS AdminBnd layers 5/8, 6/9 and
+  // 33/34, cross-checked against the Office of Elections precinct maps).
+  DISTRICT_ISLANDS = {
+    // Elections 2002-2010
+    2001: {
+      house: [[7, 'Hawaii'], [13, this.MAUI], [16, this.KAUAI], [51, 'Oahu']],
+      senate: [[3, 'Hawaii'], [6, this.MAUI], [7, this.KAUAI], [25, 'Oahu']],
+    },
+    // Elections 2012-2020
+    2011: {
+      house: [[7, 'Hawaii'], [13, this.MAUI], [16, this.KAUAI], [51, 'Oahu']],
+      senate: [[4, 'Hawaii'], [7, this.MAUI], [8, this.KAUAI], [25, 'Oahu']],
+    },
+    // Elections from 2022
+    2021: {
+      house: [[8, 'Hawaii'], [14, this.MAUI], [17, this.KAUAI], [51, 'Oahu']],
+      senate: [[4, 'Hawaii'], [7, this.MAUI], [8, this.KAUAI], [25, 'Oahu']],
+    },
+  };
+
   constructor() {
     this.get_vis_year = this.get_vis_year.bind(this);
     this.get_island = this.get_island.bind(this);
@@ -792,15 +816,6 @@ class CandidateUtil {
   }
 
   get_island(record) {
-    //01-01 to 07-07  Hawaii
-    //08-01 to 13-03  Maui
-    //13-04           Lanai
-    //13-05 to 13-09  Molokai
-    //14-01 to 16-05  Kauai
-    //16-06           Niihau
-    //17-01 to 51-06  Oahu
-
-    let matches;
     if (['Governor', 'Mayor', 'Lt. Governor', 'Prosecuting Attorney', 'OHA', 'BOE'].includes(record.office)) {
       return 'All';
     } else if (record.office === 'Honolulu Council') {
@@ -811,36 +826,19 @@ class CandidateUtil {
       return this.KAUAI;
     } else if (record.office === 'Hawaii Council') {
       return 'Hawaii';
-    } else if (record.office === 'Senate') {
-      matches = window.precinct_records.filter(d => d.senate === record.district);
-      // Some filings leave the district blank
-      return matches[0] ? this.get_island_by_precinct(matches[0].precinct) : 'Other';
-    } else if (record.office === 'House') {
-      matches = window.precinct_records.filter(d => d.house === record.district);
-      return matches[0] ? this.get_island_by_precinct(matches[0].precinct) : 'Other';
+    } else if (record.office === 'Senate' || record.office === 'House') {
+      return this.get_island_by_district(record.office.toLowerCase(), record.district, parseInt(record.election_year));
     } else {
       return 'Other';
     }
   }
 
-  get_island_by_precinct(precinct) {
-    const as_number = parseInt(precinct.substring(0, 2) + precinct.substring(3, 5));
-    return as_number <= 707 ?
-      'Hawaii'
-    : as_number <= 1303 ?
-      this.MAUI
-    : as_number <= 1304 ?
-      this.MAUI // Lanai
-    : as_number <= 1309 ?
-      this.MAUI // Molokai
-    : as_number <= 1605 ?
-      this.KAUAI
-    : as_number <= 1606 ?
-      this.KAUAI // Niihau
-    : as_number <= 5106 ?
-      'Oahu'
-    :
-      'Error';
+  get_island_by_district(chamber, district, election_year) {
+    const plan = election_year <= 2010 ? 2001 : election_year <= 2020 ? 2011 : 2021;
+    const number = parseInt(district);
+    const range = this.DISTRICT_ISLANDS[plan][chamber].find(([last]) => number <= last);
+    // Some filings leave the district blank
+    return number >= 1 && range ? range[1] : 'Other';
   }
 }
 
@@ -945,7 +943,7 @@ $(function() {
     chart.update_data(filtered_records);
   };
 
-  const render_vis = function(error, expenditure_records, organizational_records, precinct_records) {
+  const render_vis = function(error, expenditure_records, organizational_records) {
     const raw_records = join_data(expenditure_records, organizational_records);
     window.raw_records = raw_records;
     // The year arrows step through every election from 2008 to the latest one
@@ -963,8 +961,6 @@ $(function() {
 
     // This is the default data to show
     const filtered_records = filter_data(raw_records, latest_year);
-
-    window.precinct_records = precinct_records;
 
     window.records = filtered_records;
     window.organizational_records = organizational_records;
@@ -1019,6 +1015,5 @@ $(function() {
   queue()
     .defer(d3.csv, "data/campaign_spending_summary.csv")
     .defer(d3.csv, "data/organizational_report.csv")
-    .defer(d3.csv, "data/precinct.csv")
     .await(render_vis);
 });
