@@ -1,1496 +1,1704 @@
-reg_no,candidate_name,office,district,county,party
-CC10132,"Hannemann, Mufi",Mayor,,Honolulu,Non-Partisan
-CC10133,"Aiona, Sam",Honolulu Council,6,Honolulu,Non-Partisan
-CC10134,"Apo, Todd",Honolulu Council,1,Honolulu,Non-Partisan
-CC10135,"Baker, Rosalyn",Senate,6,,Democrat
-CC10136,"Bunda, Robert",Honolulu Council,2,Honolulu,Democrat
-CC10137,"Cachola, Romy",House,30,,Democrat
-CC10138,"Carlisle, Peter",Mayor,,Honolulu,Non-Partisan
-CC10139,"Duncan, Kaipo",House,31,,Republican
-CC10140,"English, Kalani",Senate,7,,Democrat
-CC10141,"Falconer, James ""Kimo""",Maui Council,West Maui,Maui,Non-Partisan
-CC10142,"Garcia, Nestor",Senate,19,,Democrat
-CC10143,"Hanabusa, Colleen",Senate,21,,Democrat
-CC10144,"Hee, Clayton",Senate,23,,Democrat
-CC10145,"Hogue, Bob",Senate,24,,Republican
-CC10146,"Hooser, Gary",Kauai Council,At-Large,Kauai,Democrat
-CC10147,"Ige, David",Governor,,,Democrat
-CC10148,"Inouye, Lorraine",Senate,4,,Democrat
-CC10149,"Kanno, Brian",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10150,"Kobayashi, Ann",Honolulu Council,6,Honolulu,Non-Partisan
-CC10151,"Marshall, Barbara",Honolulu Council,3,Honolulu,Non-Partisan
-CC10152,"Nishioka, Nadine",House,24,,Republican
-CC10153,"Trimble, Gordon",Senate,12,,Republican
-CC10154,"Turner, Jeff",Hawaii Council,7,Hawaii,Non-Partisan
-CC10155,"Whalen, Paul",Senate,3,,Republican
-CC10156,"Bukoski, Kika",House,12,,Non-Partisan
-CC10157,"Kimura, Jay",Prosecuting Attorney,,Hawaii,Democrat
-CC10158,"Menor, Ron",Lt. Governor,,,Democrat
-CC10159,"Nishihara, Clarence",Senate,17,,Democrat
-CC10160,"Ontai, Guy",House,37,,Republican
-CC10161,"Tulang, Michael",Hawaii Council,2,Hawaii,Non-Partisan
-CC10162,"Aiona, James",Governor,,,Republican
-CC10163,"Hemmings, Fred",Senate,25,,Republican
-CC10164,"Leong, Keoki",Senate,24,,Republican
-CC10165,"Naauao, Kaui",OHA,Oahu,,Non-Partisan
-CC10166,"Berg, Lyla",Lt. Governor,,,Democrat
-CC10167,"De Costa, Craig",Prosecuting Attorney,,Kauai,Non-Partisan
-CC10168,"Chang, Jerry",House,2,,Democrat
-CC10169,"Chun Oakland, Suzanne",Senate,13,,Democrat
-CC10170,"Danner, Robin",OHA,At-Large,,Non-Partisan
-CC10171,"Dela Cruz, Donovan",Senate,22,,Democrat
-CC10172,"Ford, Brenda",Hawaii Council,6,Hawaii,Democrat
-CC10174,"Green, Josh",Governor,,,Democrat
-CC10175,"Henkin, David",Lt. Governor,,,Democrat
-CC10176,"Hiraki, Ken",House,28,,Democrat
-CC10178,"Ihara, Les",Senate,10,,Democrat
-CC10179,"Ikeda, Donald",Hawaii Council,2,Hawaii,Democrat
-CC10180,"Ito, Ken",Senate,24,,Democrat
-CC10181,"Jacobson, Robert",Hawaii Council,6,Hawaii,Non-Partisan
-CC10182,"Johnson, JoAnne",Maui Council,10,Maui,Non-Partisan
-CC10183,"Kalua, Bernard",OHA,At-Large,,Non-Partisan
-CC10184,"Lee, Marilyn",House,36,,Democrat
-CC10186,"Luke, Sylvia",House,25,,Democrat
-CC10187,"Kokubun, Russell",Senate,2,,Democrat
-CC10188,"Magaoay, Michael",House,45,,Democrat
-CC10189,"Mateo, Danny",Maui Council,Molokai,Maui,Democrat
-CC10190,"Nishimoto, Scott",House,21,,Democrat
-CC10191,"Oshiro, Marcus",House,46,,Democrat
-CC10192,"Pontanilla, Joseph",Maui Council,Kahului,Maui,Democrat
-CC10193,"Rapozo, Melvin",Kauai Council,At-Large,Kauai,Non-Partisan
-CC10194,"Rezentes, Cynthia",Senate,21,,Democrat
-CC10195,"Rhoads, Karl",Senate,13,,Democrat
-CC10196,"Richman, Monroe",Kauai Council,Kauai,Kauai,Republican
-CC10197,"Saiki, Scott",House,26,,Democrat
-CC10198,"Sakamoto, Norman",Lt. Governor,,,Democrat
-CC10199,"Sanborn, J. William",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10200,"Saunders, Rex",House,23,,Democrat
-CC10201,"Shimabukuro, Maile",Senate,21,,Democrat
-CC10202,"Smith, Paul",Senate,13,,Republican
-CC10203,"Takamine, Dwight",Senate,1,,Democrat
-CC10204,"Taniguchi, Brian",Senate,11,,Democrat
-CC10205,"Thielen, Cynthia",House,50,,Republican
-CC10206,"Tom, Robert",House,26,,Republican
-CC10207,"Meyer, Colleen",Senate,23,,Republican
-CC10208,"Wakai, Glenn",Senate,15,,Democrat
-CC10209,"Ward, Gene",House,17,,Republican
-CC10210,"Smith, Andy",House,6,,Republican
-CC10211,"Abinsay, Felipe (Jun)",House,29,,Democrat
-CC10213,"Hamakawa, Eric",House,3,,Democrat
-CC10214,"Waihee, John",OHA,At-Large,,Democrat
-CC10215,"Aila, William",OHA,At-Large,,Democrat
-CC10216,"Kawamoto, Cal",Senate,18,,Democrat
-CC10217,"Tsuji, Clifton",House,2,,Democrat
-CC10218,"Akana, Rowena",OHA,At-Large,,Non-Partisan
-CC10219,"Moses, Mark",House,40,,Republican
-CC10221,"Finnegan, Lynn",Lt. Governor,,,Republican
-CC10222,"Cachola, Earl",House,29,,Democrat
-CC10223,"Lingle, Linda",Governor,,,Republican
-CC10224,"Caldwell, Kirk",Governor,,,Democrat
-CC10225,"Hew Len, Kehaulani",OHA,Oahu,,Democrat
-CC10226,"Kouchi, Ron",Senate,8,,Democrat
-CC10227,"Wilcox, Mike",Honolulu Council,6,Honolulu,Non-Partisan
-CC10228,"Alameida, Jeffrey",House,46,,Republican
-CC10229,"Espero, William",Honolulu Council,9,Honolulu,Democrat
-CC10230,"Say, Calvin",Honolulu Council,5,Honolulu,Non-Partisan
-CC10231,"Sonson, Alex",Senate,18,,Democrat
-CC10232,"Yamashita, Kyle",House,12,,Democrat
-CC10233,"Morita, Hermina",House,14,,Democrat
-CC10234,"Herkes, Robert",Senate,2,,Democrat
-CC10235,"Yamane, Ryan",House,37,,Democrat
-CC10236,"Evans, Cindy",House,7,,Democrat
-CC10237,"Kagawa, Fran",Senate,8,,Democrat
-CC10238,"Tsutsui, Shan",Lt. Governor,,,Democrat
-CC10239,"Sugimura, Jane",House,32,,Democrat
-CC10240,"Marumoto, Barbara",House,19,,Republican
-CC10241,"Mizuno, John",House,28,,Democrat
-CC10242,"Ching, Corinne",House,27,,Republican
-CC10243,"Har, Sharon",House,42,,Democrat
-CC10244,"Stevens, Anne",House,22,,Republican
-CC10245,"Heen, Walter",OHA,Oahu,,Non-Partisan
-CC10246,"Takumi, Roy",House,35,,Democrat
-CC10247,"Takeuchi, Nathan",House,36,,Democrat
-CC10248,"Victorino, Michael",Mayor,,Maui,Non-Partisan
-CC10249,"Takai, K. Mark",House,33,,Democrat
-CC10250,"Pilago, K. Angel",Hawaii Council,8,Hawaii,Non-Partisan
-CC10251,"Manahan, Joey",Lt. Governor,,,Democrat
-CC10252,"Hokama, Riki",Maui Council,Lanai,Maui,Non-Partisan
-CC10253,"Kahoohalahala, Sol",Mayor,,Maui,Democrat
-CC10254,"Kim, Donna",Senate,14,,Democrat
-CC10255,"Oshiro, Blake",House,33,,Democrat
-CC10256,"Karamatsu, Jon",Lt. Governor,,,Democrat
-CC10258,"Manayan, Rick",House,30,,Republican
-CC10259,"Souki, Joseph",House,8,,Democrat
-CC10260,"Higa, Stacy-Stan",Mayor,,Hawaii,Democrat
-CC10261,"Nakasone, Robert",House,9,,Democrat
-CC10262,"Yukimura, JoAnn",Kauai Council,Kauai,Kauai,Democrat
-CC10264,"McKelvey, Angus",House,10,,Democrat
-CC10265,"Sagum, Roland",House,16,,Democrat
-CC10266,"Apana, James (Kimo)",Mayor,,Maui,Democrat
-CC10267,"Ghean, Kay",House,10,,Republican
-CC10268,"Djou, Charles",Lt. Governor,,,Republican
-CC10269,"Belatti, Della",House,24,,Democrat
-CC10270,"Iseri, Shaylene",Kauai Council,At-Large,Kauai,Non-Partisan
-CC10271,"Kaneshiro, Daryl",Kauai Council,At-Large,Kauai,Non-Partisan
-CC10272,"Salcedo, Janice",Senate,19,,Democrat
-CC10273,"Carroll, Mele",House,13,,Democrat
-CC10274,"Fisher, Tony",House,11,,Republican
-CC10275,"Iwase, Randall",Governor,,,Democrat
-CC10276,"Waters, Thomas",House,51,,Democrat
-CC10277,"West, Stephen",House,11,,Democrat
-CC10278,"Tokioka, James",House,15,,Democrat
-CC10279,"Gabbard, Mike",Senate,20,,Democrat
-CC10280,"Moepono, Sesnita",Honolulu Council,6,Honolulu,Non-Partisan
-CC10281,"Yoshimoto, J",Hawaii Council,2,Hawaii,Non-Partisan
-CC10282,"Tokuda, Jill",Lt. Governor,,,Democrat
-CC10283,"Arakawa, Alan",Maui Council,Kahului,Maui,Non-Partisan
-CC10284,"Fukunaga, Carol",Senate,11,,Democrat
-CC10286,"Tam, Rod",Senate,13,,Democrat
-CC10287,"Slom, Sam",Senate,9,,Republican
-CC10288,"Harding, Kenneth",House,29,,Republican
-CC10289,"Chong, Dwight",House,48,,Democrat
-CC10290,"Brower, Tom",House,22,,Democrat
-CC10291,"Yee, Randall",BOE (Not an elected office),9,,Democrat
-CC10292,"Valenciano, Randal",Kauai Council,At-Large,Kauai,Non-Partisan
-CC10293,"Hanohano, Faye",House,4,,Democrat
-CC10294,"Wong, Collin",House,28,,Republican
-CC10295,"Pine, Kymberly",House,41,,Democrat
-CC10296,"Cabanilla, Rida",Senate,19,,Democrat
-CC10297,"Furfaro, Jay",Kauai Council,At-Large,Kauai,Non-Partisan
-CC10298,"Middleton, Carlton",Senate,12,,Democrat
-CC10299,"Visperas, Terry",House,30,,Democrat
-CC10300,"Tavares, Charmaine",Mayor,,Maui,Non-Partisan
-CC10301,"Baptiste, Bryan",Mayor,,Kauai,Non-Partisan
-CC10302,"DeNaie, Lucienne",Maui Council,East Maui,Maui,Democrat
-CC10303,"Bynum, Tim",Kauai Council,Kauai,Kauai,Democrat
-CC10304,"Hoffmann, Peter",Hawaii Council,9,Hawaii,Non-Partisan
-CC10305,"Okino, Gary",House,33,,Democrat
-CC10306,"Yamane, Brian",BOE (Not an elected office),9,,Democrat
-CC10308,"Asing, William",Kauai Council,At-Large,Kauai,Democrat
-CC10309,"Molina, Michael",Maui Council,Makawao,Maui,Democrat
-CC10312,"Halford, Chris",House,11,,Republican
-CC10313,"Yagong, Dominic",Hawaii Council,1,Hawaii,Non-Partisan
-CC10314,"Agor, Ron",Kauai Council,15,,Republican
-CC10315,"Naeole, Emily",Hawaii Council,5,Hawaii,Non-Partisan
-CC10316,"Balcher, Charles",House,21,,Republican
-CC10317,"Machado, Colette",OHA,Molokai,,Democrat
-CC10318,"Anderson, Michelle",Maui Council,South Maui,Maui,Non-Partisan
-CC10319,"Dudley, Kioni",Honolulu Council,1,Honolulu,Non-Partisan
-CC10320,"Philips, Carol",House,46,,Republican
-CC10321,"Galuteria, Brickwood",OHA,At-Large,,Democrat
-CC10322,"Allen, Julia",House,20,,Republican
-CC10323,"Ikeda, Donna",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10324,"Cummings, Mamo",House,14,,Republican
-CC10325,"Tanonaka, Dalton",Lt. Governor,,,Republican
-CC10326,"Kane, Dain",Mayor,,Maui,Democrat
-CC10329,"De Giacomo, Frank",House,30,,Green
-CC10330,"Baisa, Gladys",Maui Council,Upcountry,Maui,Non-Partisan
-CC10332,"Belford, Richard",House,43,,Democrat
-CC10334,"Kincaid, Kaipo",House,49,,Democrat
-CC10335,"Kenoi, William",Mayor,,Hawaii,Democrat
-CC10336,"Fevella, Kurt",House,43,,Democrat
-CC10338,"Hong, Ted",Senate,1,,Republican
-CC10339,"Tom, Terrance",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10340,"Enriques, Guy",Hawaii Council,6,Hawaii,Non-Partisan
-CC10341,"Bainum, Duke",Mayor,,Honolulu,Non-Partisan
-CC10342,"Tamayo, Tulsi Gabbard",Honolulu Council,6,Honolulu,Independent
-CC10343,"Aipoalani, Hanalei",House,44,,Democrat
-CC10345,"Case, Edward",Governor,,,Democrat
-CC10346,"Awana, Karen",House,43,,Democrat
-CC10347,"Kam, Thomas",BOE (Not an elected office),No Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10348,"Kim, Jo",Hawaii Council,1,Hawaii,Democrat
-CC10349,"Starr, Summer",House,12,,Democrat
-CC10350,"Kama, Natalie",House,8,,Democrat
-CC10351,"Saylors, Denise",House,45,,Democrat
-CC10352,"Nakashima, Mark",House,1,,Democrat
-CC10353,"Kualii, KipuKai",Kauai Council,At-Large,Kauai,Democrat
-CC10354,"MacGregor, Maegan",House,7,,Democrat
-CC10355,"Kambel, Donavon",Mayor,,Honolulu,Democrat
-CC10356,"Baclig, Andy",Hawaii Council,4,Hawaii,Non-Partisan
-CC10357,"Parayno, Ilalo",House,35,,Democrat
-CC10358,"Wooley, Jessica",House,48,,Democrat
-CC10359,"Coffman, George",House,5,,Democrat
-CC10360,"Bimbo, Genaro",House,42,,Non-Partisan
-CC10361,"Rahman, Inam",Honolulu Council,6,Honolulu,Democrat
-CC10362,"Apana, Melvin",House,38,,Republican
-CC10363,"Blas, Fred",Hawaii Council,4,Hawaii,Non-Partisan
-CC10365,"Moore, Michael",Mayor,,Hawaii,Non-Partisan
-CC10366,"Mano, Matthew",Maui Council,Lanai,Maui,Non-Partisan
-CC10367,"Halperin, Susan",House,13,,Democrat
-CC10368,"Couch, Don",House,11,,Democrat
-CC10369,"Watanabe, Herbert",BOE (Not an elected office),2,,Non-Partisan
-CC10370,"Shields, Janice",Senate,5,,Republican
-CC10371,"Naeole-Beason, Emily",Hawaii Council,5,Hawaii,Non-Partisan
-CC10372,"Joseph, Wayne",Hawaii Council,5,Hawaii,Non-Partisan
-CC10373,"Onishi, Dennis",Senate,1,,Democrat
-CC10374,"Cariffe, Bob",Kauai Council,At-Large,Kauai,Non-Partisan
-CC10375,"Aquino, Henry",House,38,,Democrat
-CC10376,"Muraki, Noel",Senate,23,,Democrat
-CC10377,"Kawakami, Derek",Mayor,,Kauai,Democrat
-CC10378,"Delo Santos, Catherine",Hawaii Council,7,Hawaii,Non-Partisan
-CC10379,"Ornellas, John",Maui Council,Lanai,Maui,Non-Partisan
-CC10380,"Offenbaker, Steven",House,1,,Republican
-CC10381,"Reed, Robert",Hawaii Council,3,Hawaii,Non-Partisan
-CC10382,"Torres, Raynard",Hawaii Council,9,Hawaii,Democrat
-CC10383,"Greenwell, Robert",Hawaii Council,8,Hawaii,Non-Partisan
-CC10384,"Legal, Jack",House,40,,Republican
-CC10385,"Kealoha, Christobel",Kauai Council,14,Kauai,Democrat
-CC10386,"Riviere, Gil",Senate,23,,Democrat
-CC10387,"Verdadero, Dante",House,35,,Democrat
-CC10388,"Toguchi, Garrett",BOE (Not an elected office),No Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10389,"Cochran, Mary",Maui Council,Makawao,Maui,Non-Partisan
-CC10390,"Gapol, Derek",House,45,,Republican
-CC10391,"Meyers, William",OHA,Hawaii,,Non-Partisan
-CC10392,"Cataluna, Donald",OHA,Kauai,,Non-Partisan
-CC10393,"Fogel, Frederick",House,5,,Libertarian
-CC10394,"Fale, Richard",House,47,,Republican
-CC10395,"Lee, Christopher",Senate,25,,Democrat
-CC10396,"Sparks, Steven",House,4,,Democrat
-CC10397,"Cox, Margaret",BOE (Not an elected office),2,,Democrat
-CC10398,"Cunningham, Daniel",Mayor,,Honolulu,Non-Partisan
-CC10401,"Purdy, Robert",OHA,Molokai,,Democrat
-CC10402,"Prentiss, Merrily",Honolulu Council,3,Honolulu,Democrat
-CC10403,"Hong, Lillian",Honolulu Council,7,Honolulu,Non-Partisan
-CC10404,"Kawananakoa, Quentin",House,51,,Republican
-CC10405,"Reynolds, Joseph",Hawaii Council,8,Hawaii,Non-Partisan
-CC10406,"Lindsey, Robert",OHA,Hawaii,,Non-Partisan
-CC10407,"Stocksdale, Kaniu",Hawaii Council,5,Hawaii,Non-Partisan
-CC10408,"Hecht, Debbie",Hawaii Council,8,Hawaii,Democrat
-CC10409,"Brewer, James",Mayor,,Honolulu,Non-Partisan
-CC10410,"Gingerich, Michael",House,11,,Democrat
-CC10412,"Marzi, Anthony",House,4,,Democrat
-CC10413,"Datanagan, Cameron",Mayor,,Honolulu,Non-Partisan
-CC10415,"Fontaine, George",House,11,,Republican
-CC10416,"Antonio, Steven",House,35,,Republican
-CC10417,"Schultz, Michael",House,42,,Democrat
-CC10418,"Heng, Jet",Hawaii Council,4,Hawaii,Non-Partisan
-CC10419,"Prevedouros, Panos",Mayor,,Honolulu,Non-Partisan
-CC10421,"Vasquez-Dela Cerna, Lynn",House,27,,Democrat
-CC10422,"Apoliona, Suzanne Haunani",OHA,At-Large,,Non-Partisan
-CC10423,"Smith, Garry",Honolulu Council,1,Honolulu,Non-Partisan
-CC10424,"Safarik, Gary",Hawaii Council,5,Hawaii,Non-Partisan
-CC10425,"Walsh, Patrick",BOE (Not an elected office),1st Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10426,"Hoff, John",Kauai Council,At-Large,Kauai,Non-Partisan
-CC10427,"Saniatan, Rito",House,41,,Republican
-CC10428,"Nishiki, Kahekai",Maui Council,Makawao,Maui,Democrat
-CC10429,"Carvalho, Bernard",Kauai Council,At-Large,Kauai,Democrat
-CC10430,"Masilamoney, Sam",Mayor,,Hawaii,Non-Partisan
-CC10431,"Peters, Robert",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10432,"Ahu-Isa, Lei",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10433,"Domingo, Constante",House,35,,Democrat
-CC10434,"Aiona, Darrow",BOE (Not an elected office),Oahu,,Non-Partisan
-CC10435,"Bertram, Joe",House,11,,Democrat
-CC10436,"Johnson, Richard",Senate,21,,Republican
-CC10437,"Lunasco, Oliver",House,46,,Democrat
-CC10438,"Pleas, Bruce",Kauai Council,Kauai,Kauai,Non-Partisan
-CC10439,"Isbell, Evelyn",Senate,3,,Democrat
-CC10440,"Gumapac, Kale",Hawaii Council,5,Hawaii,Non-Partisan
-CC10441,"Nitta, George",Mayor,,Honolulu,Democrat
-CC10442,"Wasson, Dawn",House,46,,Democrat
-CC10443,"Svrcina, Emil",Honolulu Council,9,Honolulu,Non-Partisan
-CC10444,"Maly, Jacqueline R.S.R.T.",Mayor,,Honolulu,Non-Partisan
-CC10445,"Tsuneyoshi, Resa",Senate,17,,Democrat
-CC10446,"Bryant, Paul",BOE (Not an elected office),1st Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10447,"Basques, Winifred",Maui Council,Lanai,Maui,Non-Partisan
-CC10449,"Harimoto, Breene",BOE (Not an elected office),5th Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10450,"Namuo, Pauline",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10451,"Medeiros, William",Maui Council,East Maui,Maui,Non-Partisan
-CC10452,"Pacheco, Maria",House,47,,Democrat
-CC10453,"Ho, Wilson",Honolulu Council,3,Honolulu,Non-Partisan
-CC10454,"Naluai, Solomon",OHA,At-Large,,Non-Partisan
-CC10455,"Monk, Amy",House,17,,Democrat
-CC10456,"Linville, Marcia",BOE (Not an elected office),26,,Non-Partisan
-CC10457,"Akuna, Janis",BOE (Not an elected office),3,,Non-Partisan
-CC10458,"Lee, Carol Mon",BOE (Not an elected office),1,,Non-Partisan
-CC10459,"Kaehuaea, Wendell",Hawaii Council,4,Hawaii,Non-Partisan
-CC10460,"Bartolo, Robert",Kauai Council,14,Kauai,Non-Partisan
-CC10461,"Georgi, JoAnne",Senate,7,,Republican
-CC10462,"Min, Robert",House,Wailuku,,Republican
-CC10463,"Matsumoto, Denise",BOE (Not an elected office),3rd Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10464,"Honda, Helene",OHA,At-Large,,Democrat
-CC10465,"Lum Lee, Christopher-Travis",Senate,16,,Non-Partisan
-CC10466,"Cullen, Ty",House,39,,Democrat
-CC10467,"Kawahara, Lani",Kauai Council,Kauai,Kauai,Democrat
-CC10468,"Fillhart, Lawrence",BOE (Not an elected office),7,,Non-Partisan
-CC10469,"Chang, Dickie",Kauai Council,At-Large,Kauai,Democrat
-CC10470,"Berg, Thomas",Honolulu Council,1,Honolulu,Non-Partisan
-CC10471,"Young, Tsing",Hawaii Council,8,Hawaii,Democrat
-CC10472,"Anderson, Ikaika",Lt. Governor,,,Democrat
-CC10473,"Kirkpatrick, Malcolm",BOE (Not an elected office),2,,Non-Partisan
-CC10474,"Kahula, Henry Jr.",House,9,,Republican
-CC10475,"Gannon, Joseph",Maui Council,South Maui,Maui,Non-Partisan
-CC10476,"Marten, Chayne",Maui Council,10,Maui,Non-Partisan
-CC10477,"Okutsu, Marie",Hawaii Council,4,Hawaii,Non-Partisan
-CC10478,"Howden, Michael",Maui Council,Upcountry,Maui,Non-Partisan
-CC10479,"Fujiyama, Kenneth",House,1,,Democrat
-CC10480,"Dela Cruz, Ronald",House,7,,Republican
-CC10481,"Weinert, Eric",House,1,,Republican
-CC10482,"Riley, Randell",Mayor,,Hawaii,Non-Partisan
-CC10483,"Brookman, Thomas",Hawaii Council,1,Hawaii,Democrat
-CC10484,"Tavares, Deirdre Moana",House,3,,Republican
-CC10485,"Nakkim, Lynn",House,1,,Democrat
-CC10486,"Kailimai, Billy Jo",House,7,,Republican
-CC10487,"Madden, Ramon",House,10,,Republican
-CC10488,"Kaneshiro, Daryl",Kauai Council,1,Kauai,Democrat
-CC10489,"Thronas, George",Kauai Council,Kauai,Kauai,Democrat
-CC10490,"Mijares, Scott",Kauai Council,Kauai,Kauai,Non-Partisan
-CC10491,"Taylor, Kenneth",Kauai Council,Kauai,Kauai,Democrat
-CC10492,"Fukuyama, Alan",Maui Council,Kahului,Maui,Non-Partisan
-CC10493,"Texeira, Steven",Hawaii Council,7,Hawaii,Non-Partisan
-CC10494,"Kidani, Michelle",Senate,18,,Democrat
-CC10495,"Ferreira, Albert",Hawaii Council,2,Hawaii,Democrat
-CC10496,"Abe, Michael",House,19,,Democrat
-CC10497,"Jeffryes, Jerilyn",House,24,,Republican
-CC10498,"Kippen, Colin",OHA,At-Large,,Non-Partisan
-CC10499,"Agor, Ron",Kauai Council,Kauai,Kauai,Non-Partisan
-CC10500,"Mulvihill, Bart",Senate,5,,Democrat
-CC10501,"Bieber, Rolf II",Mayor,,Kauai,Non-Partisan
-CC10502,"Pasadava, Linda",Kauai Council,Kauai,Kauai,Democrat
-CC10503,"Ku, Tercia",Senate,21,,Republican
-CC10504,"Choy, Isaac",House,23,,Democrat
-CC10505,"de Jetley, Alberta",Maui Council,Lanai,Maui,Democrat
-CC10506,"Kaneakua, Harry",Kauai Council,At-Large,Kauai,Democrat
-CC10507,"McMahon, Nancy",Kauai Council,Kauai,Kauai,Non-Partisan
-CC10508,"Bainum, Duke",Honolulu Council,5,Honolulu,Non-Partisan
-CC10509,"Libre, Rhoda",House,15,,Democrat
-CC10510,"Yaw, Shane",House,29,,Republican
-CC10511,"Waihee, Jennifer",House,27,,Democrat
-CC10512,"Rodriguez, Reynaldo",House,42,,Democrat
-CC10513,"Christensen, Shawn",House,51,,Democrat
-CC10514,"Ige, Marshall",Senate,24,,Democrat
-CC10515,"Barrozo, Joseph",Mayor,,Hawaii,Non-Partisan
-CC10516,"Vierra, Mickey",House,12,,Republican
-CC10517,"Nishiki, Wayne",Maui Council,South Maui,Maui,Non-Partisan
-CC10518,"Manner, Paul",Mayor,,Honolulu,Non-Partisan
-CC10519,"Vares, Norman",Maui Council,South Maui,Maui,Non-Partisan
-CC10520,"Blumer-Buell, John",Senate,6,,Independent
-CC10521,"Widner, Lance",Honolulu Council,9,Honolulu,Non-Partisan
-CC10522,"Schatz, Brian",Lt. Governor,,,Democrat
-CC10523,"Hoeft, Henry",BOE (Not an elected office),41,,Non-Partisan
-CC10524,"Hamamoto, Shawn",Honolulu Council,6,Hawaii,Democrat
-CC10525,"Chang, Stanley",Senate,9,,Democrat
-CC10526,"Holmes, Stephen",Honolulu Council,3,Honolulu,Non-Partisan
-CC10527,"Leong, Keoki",Honolulu Council,3,Honolulu,Non-Partisan
-CC10528,"Felix, John",Honolulu Council,3,Honolulu,Republican
-CC10529,"Abercrombie, Neil",Governor,,,Democrat
-CC10530,"Ho, Wilson",Honolulu Council,3,Honolulu,Non-Partisan
-CC10531,"Akau, Paul",Honolulu Council,3,Honolulu,Non-Partisan
-CC10532,"Pico, Thomas, Jr.",Honolulu Council,3,Honolulu,Non-Partisan
-CC10533,"Kalima, Leona",Honolulu Council,3,Honolulu,Democrat
-CC10534,"Bean, Tracy",Honolulu Council,3,Honolulu,Non-Partisan
-CC10535,"Naluai, Solomon",Honolulu Council,3,Honolulu,Non-Partisan
-CC10536,"Ryan, Ellen Pohai",Honolulu Council,3,Honolulu,Non-Partisan
-CC10537,"Keith-Agaran, Gilbert",Senate,5,,Democrat
-CC10538,"Carroll, John",Governor,,,Republican
-CC10539,"King, Adrienne",Lt. Governor,,,Republican
-CC10540,"Cochran, Elle",Mayor,,Maui,Non-Partisan
-CC10541,"Lee, Philmund",Honolulu Council,5,Honolulu,Non-Partisan
-CC10542,"Ching, Wendell",Honolulu Council,5,Honolulu,Non-Partisan
-CC10543,"Cain, S. Michael",Honolulu Council,5,Honolulu,Independent
-CC10544,"Hayes, Gladys",Honolulu Council,5,Honolulu,Non-Partisan
-CC10545,"Rockwell, Phillip",House,31,,Democrat
-CC10546,"Winfree, Earl",Honolulu Council,5,Honolulu,Democrat
-CC10547,"Sims, Jacques ""Butch""",Honolulu Council,5,Hawaii,Independent
-CC10548,"Waialeale, George",Honolulu Council,5,Honolulu,Democrat
-CC10549,"Quimby, James",Honolulu Council,5,Honolulu,Independent
-CC10550,"Turbin, Richard",Honolulu Council,4,Honolulu,Non-Partisan
-CC10551,"Kinney, Nathaniel",House,23,,Democrat
-CC10552,"Peralto, Keolu",Honolulu Council,5,Honolulu,Non-Partisan
-CC10553,"Pacarro, Franklin Jr.",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC10554,"Bornhorst, Heidi",Honolulu Council,5,Honolulu,Democrat
-CC10555,"Matsunaga, Matthew",Honolulu Council,5,Honolulu,Democrat
-CC10556,"White, John",Honolulu Council,2,Honolulu,Non-Partisan
-CC10557,"Bean, Tracy",Senate,24,,Republican
-CC10558,"McIntosh, Harry",Senate,2,,Republican
-CC10559,"Miranda, Marc",House,1,,Republican
-CC10560,"Lively, Barbara",Hawaii Council,5,Hawaii,Non-Partisan
-CC10561,"Ichiyama, Linda",House,32,,Democrat
-CC10562,"Chang, David",House,28,,Republican
-CC10563,"Shiraki, Reed",House,36,,Republican
-CC10564,"Yaqoob, Anosh",House,31,,Democrat
-CC10565,"Kawakami, Shaun",House,45,,Democrat
-CC10566,"Montes, Anel",Senate,20,,Republican
-CC10567,"Lyons, Michael",Senate,22,,Democrat
-CC10568,"Martin, Ernest",Senate,22,,Democrat
-CC10569,"Hart, Christopher",Mayor,,Maui,Democrat
-CC10570,"Weatherford, James",Hawaii Council,5,Hawaii,Non-Partisan
-CC10571,"Low, Jeremy",Lt. Governor,,,Republican
-CC10572,"Smart, Brittany",House,3,,Democrat
-CC10573,"Mee-Lee, Matthew",House,24,,Democrat
-CC10576,"DeJean, Khistina",Governor,,,Independent
-CC10577,"Hairgrove, Todd",BOE (Not an elected office),1,,Non-Partisan
-CC10582,"Pandolfe, Joseph Jr.",Senate,25,,Republican
-CC10583,"Clute, Eve",Maui Council,10,Maui,Non-Partisan
-CC10585,"Puletasi, Palasi Sam",Senate,20,,Democrat
-CC10586,"Wong, Christopher",Honolulu Council,6,Honolulu,Non-Partisan
-CC10587,"Winfree, Earl",Senate,11,,Democrat
-CC10588,"Toyomura, Ryan",Mayor,,Honolulu,Non-Partisan
-CC10589,"Carroll, Robert",Maui Council,East Maui,Maui,Non-Partisan
-CC10590,"Nakamura, Nadine",House,14,,Democrat
-CC10591,"Baker, Loren",Hawaii Council,5,Hawaii,Non-Partisan
-CC10592,"Hamman, David",Senate,7,,Republican
-CC10593,"Ching, Darwin",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC10594,"Nomura, Leona",Maui Council,Makawao,Maui,Non-Partisan
-CC10595,"Bradshaw, Jason",House,43,,Democrat
-CC10597,"Laub, Paul",Maui Council,West Maui,Maui,Independent
-CC10598,"Kalua, Ezekiela",Maui Council,1,Maui,Non-Partisan
-CC10599,"Pollard, Thomas",Governor,,,Independent
-CC10601,"Lane, T.J.",House,18,,Democrat
-CC10602,"Hart, Ronald",BOE (Not an elected office),2,,Non-Partisan
-CC10603,"Meyers, William",OHA,2,,Independent
-CC10604,"Price, Larry",Senate,8,,Democrat
-CC10606,"Synan, Dwight",House,20,,Democrat
-CC10607,"Kama, Natalie",House,8,,Democrat
-CC10608,"Baron, Christopher",House,18,,Republican
-CC10609,"Cuadra, Gregory",House,22,,Republican
-CC10610,"Lavoie, Frank",Honolulu Council,6,Honolulu,Non-Partisan
-CC10611,"Kopelman, Ori",Mayor,,Maui,Independent
-CC10612,"Johanson, Aaron",House,31,,Democrat
-CC10613,"Doyle, Michael",House,40,,Democrat
-CC10614,"Freire, Enock",Hawaii Council,7,Hawaii,Non-Partisan
-CC10615,"Steele, Christopher",Governor,,,Republican
-CC10617,"Hopkins, Jeremy",OHA,At-Large,,Non-Partisan
-CC10618,"Kapu, Jonah",Maui Council,West Maui,Maui,Non-Partisan
-CC10619,"Mano, Matthew",Maui Council,Lanai,Maui,Non-Partisan
-CC10620,"Singer, Solomon",House,4,,Non-Partisan
-CC10621,"Chun, Cory",House,41,,Democrat
-CC10622,"Henderson, Scott",House,7,,Republican
-CC10623,"Hoylman, Jeffrey",House,9,,Republican
-CC10624,"Prentiss, Charles",Senate,25,,Democrat
-CC10625,"Daligdig III, Theodore",Kauai Council,15,Kauai,Non-Partisan
-CC10626,"Hashem, Mark",House,18,,Democrat
-CC10627,"Tanabe, Van",Governor,,,Democrat
-CC10628,"Shiratori, Miles",Governor,,,Democrat
-CC10629,"Capelouto, Marissa",House,42,,Republican
-CC10630,"Amorin, Johanna",House,11,,Democrat
-CC10631,"Morikawa, Daynette",House,16,,Democrat
-CC10632,"Mohr, John",House,25,,Republican
-CC10635,"Cunningham, Daniel",Governor,,,Independent
-CC10636,"Justus, Edgar",Kauai Council,Kauai,Kauai,Democrat
-CC10637,"Hughey, Justin",House,8,,Democrat
-CC10638,"Clapes, Anthony",Governor,,,Non-Partisan
-CC10639,"Manner, Paul",Governor,,,Non-Partisan
-CC10640,"De Giacomo, Frank",Honolulu Council,4,Honolulu,Green
-CC10641,"Payne, Gary",House,26,,Democrat
-CC10642,"Franklin, Judy",Senate,13,,Republican
-CC10643,"Wilson, Leona Rocha",BOE (Not an elected office),Maui,,Non-Partisan
-CC10644,"Golojuch, Michael",Senate,19,,Democrat
-CC10645,"Fukumoto, Beth",Honolulu Council,9,Honolulu,Democrat
-CC10646,"Reyes, Arturo (Art) Pacheco",Governor,,,Democrat
-CC10647,"Milbourn, Peter",Mayor,,Maui,Non-Partisan
-CC10648,"Escorzon, Tammy Ann",House,46,,Democrat
-CC10649,"Kong, Samuel",House,33,,Republican
-CC10650,"Kama, Leonard",Lt. Governor,,,Non-Partisan
-CC10651,"Piltz, Ransom",Mayor,,Maui,Democrat
-CC10653,"Linville, Marcia",BOE (Not an elected office),At-Large,,Democrat
-CC10654,"Lewis, Joseph",OHA,At-Large,,Non-Partisan
-CC10655,"Toelupe, Sesa Pepe",Governor,,,Democrat
-CC10656,"Kaapu, Carole",House,28,,Republican
-CC10657,"Hodges, Marc",Mayor,,Maui,Non-Partisan
-CC10658,"Lum Ho, Sharon",House,31,,Democrat
-CC10659,"Waugh, Timothy",Senate,2,,Democrat
-CC10660,"Penebacker, John",BOE (Not an elected office),6th Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10661,"Fenton, Larry",Honolulu Council,6,Honolulu,Democrat
-CC10663,"Sagaysay, Lawrence",House,46,,Democrat
-CC10664,"Gapero, Elisabeth",Maui Council,Wailuku,Maui,Independent
-CC10665,"Siangco, Daniel",House,49,,Republican
-CC10666,"Sabey, Isaiah",House,24,,Republican
-CC10667,"Fillhart, Lawrence",House,15,,Republican
-CC10668,"Mossman, Boyd",OHA,Maui,,Non-Partisan
-CC10669,"White, Michael",Maui Council,Makawao,Maui,Non-Partisan
-CC10670,"Hale, Michael",Senate,2,,Republican
-CC10671,"Kirkpatrick, Malcolm",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10672,"Corless, William",House,45,,Republican
-CC10673,"Pascua, Benizon",Senate,15,,Republican
-CC10674,"Case, Kimberly",Honolulu Council,5,Honolulu,Non-Partisan
-CC10675,"Hapai, Marlene",Mayor,,Hawaii,Republican
-CC10676,"Shorba, Lisa A.L.",Senate,9,,Republican
-CC10677,"Villaruz, Danny",House,31,,Democrat
-CC10678,"Bonar, Aaron",Senate,19,,Republican
-CC10679,"Apana, Melvin",House,38,,Republican
-CC10680,"Radke, Maurice",House,48,,Republican
-CC10681,"Wurst, Barry",BOE (Not an elected office),2,,Non-Partisan
-CC10683,"DeSilva Carveiro, Mizdebz",Kauai Council,16,Kauai,Non-Partisan
-CC10684,"Burns, Marie",Hawaii Council,6,Hawaii,Non-Partisan
-CC10685,"Young, Sammye Ann",Hawaii Council,2,Hawaii,Non-Partisan
-CC10687,"Freitas, Valzey",BOE (Not an elected office),6,,Non-Partisan
-CC10688,"Lacuesta, Celeste",Honolulu Council,1,Honolulu,Non-Partisan
-CC10689,"Katz, Norman",House,26,,Republican
-CC10690,"Grantham, Leatrice",House,41,,Democrat
-CC10691,"Potter-Campos, Susan",Maui Council,10,Maui,Non-Partisan
-CC10692,"Bashkingy, Raymond",House,12,,Republican
-CC10693,"Andres-Nance, Noela",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10694,"Ebel, Lawrence",House,45,,Republican
-CC10695,"Jamila, Andrew",Senate,25,,Democrat
-CC10696,"Chinen, Jon",House,49,,Democrat
-CC10697,"Farias, Kaleo",House,44,,Democrat
-CC10698,"Pacheco, Maria",House,46,,Democrat
-CC10699,"Perry, Johnnie-Mae",House,45,,Democrat
-CC10700,"Harimoto, Breene",Senate,16,,Democrat
-CC10701,"Higashi, Carl",Honolulu Council,4,Honolulu,Republican
-CC10702,"Shimizu, Garner",House,32,,Republican
-CC10703,"Young, Pamela",BOE (Not an elected office),No Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10704,"Koh, Patrick",House,29,,Democrat
-CC10705,"Makekau, Kealii",OHA,At-Large,,Independent
-CC10706,"LaBedz, Diana",Mayor,,Kauai,Democrat
-CC10707,"Swindell, Lyle",House,32,,Democrat
-CC10708,"Schmucker, S. Dean",House,8,,Republican
-CC10709,"Olson, Jonathon",Mayor,,Maui,Non-Partisan
-CC10711,"Kalima, Leona",OHA,At-Large,,Non-Partisan
-CC10712,"Iwamoto, Kim Coco",BOE (Not an elected office),Oahu,,Non-Partisan
-CC10713,"Sharsh, Eleanor",House,31,,Democrat
-CC10714,"Meyers, Jadeen",House,45,,Republican
-CC10715,"Clarke, Eileen",BOE (Not an elected office),4th Dept. (For BOE-No longer applicable),,Democrat
-CC10716,"Wasson, Dawn",House,46,,Democrat
-CC10717,"Wolfgramm, Makahaa",House,51,,Republican
-CC10718,"Rinaldi, Laurie",House,12,,Republican
-CC10719,"Nishiki, Wayne",Maui Council,11,Maui,Non-Partisan
-CC10720,"Miller, Harold",Mayor,,Maui,Independent
-CC10721,"Lee, Albert",House,18,,Democrat
-CC10722,"Enos, Virginia",Senate,25,,Republican
-CC10723,"Cortez-Camero, Tania",House,3,,Republican
-CC10724,"Vannatta, Sharon",House,2,,Republican
-CC10725,"Spence, Deborah",Lt. Governor,,,Independent
-CC10726,"Hirakami, Steven",Lt. Governor,,,Democrat
-CC10727,"Sanborn, J William",Hawaii Council,9,Hawaii,Non-Partisan
-CC10728,"DAlmeida, Eric",House,1,,Republican
-CC10729,"Sterker, Phillip",House,16,,Republican
-CC10730,"Fowler, Dennis",Kauai Council,Kauai,Kauai,Non-Partisan
-CC10731,"Seibert, Richard Eric",Senate,4,,Republican
-CC10732,"Kaopua, John",House,44,,Democrat
-CC10733,"Pascua, Jason",House,48,,Democrat
-CC10734,"Park, Timothy",House,25,,Republican
-CC10735,"Davidson, Daniel",Senate,9,,Democrat
-CC10736,"Takabayashi, Roger",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10737,"Apo, Peter",OHA,Oahu,,Democrat
-CC10738,"Williams, Harry",House,14,,Republican
-CC10739,"Mayor, Roberta",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10740,"Wilson, Herman",Senate,7,,Independent
-CC10741,"McLeod, John",Mayor,,Honolulu,Libertarian
-CC10742,"Chow Hammond, Sally",Mayor,,Maui,Non-Partisan
-CC10743,"Marshall, Eric",House,26,,Republican
-CC10744,"Garry, Timothy",Honolulu Council,6,Honolulu,Non-Partisan
-CC10746,"Kaneshiro, Keith",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC10747,"Wong, William",House,34,,Republican
-CC10748,"Aki, Charles",Senate,22,,Republican
-CC10749,"White, Thomas",House,23,,Republican
-CC10750,"Burke, Jackie",OHA,Kauai,,Democrat
-CC10751,"Lembeck, E.J.",House,21,,Republican
-CC10752,"David, Maile",Hawaii Council,6,Hawaii,Non-Partisan
-CC10753,"Nakasato, Dennis",Honolulu Council,6,Honolulu,Democrat
-CC10754,"Bieber, Rolf",Kauai Council,Kauai,Kauai,Non-Partisan
-CC10755,"Hagino, Gerald",Senate,22,,Democrat
-CC10756,"Akuna, Meiling",House,13,,Republican
-CC10757,"Able, Johnathan",House,5,,Non-Partisan
-CC10758,"Lee, Philmund",Mayor,,Honolulu,Non-Partisan
-CC10759,"Leau, Rebecca",House,6,,Republican
-CC10760,"Ryan, Pohai",OHA,At-Large,,Democrat
-CC10761,"Shafer, Benjamin",Honolulu Council,2,Honolulu,Non-Partisan
-CC10762,"Yamane, John",Senate,7,,Democrat
-CC10763,"Aiona, Joseph",House,48,,Republican
-CC10764,"Nicolas, Fernie",House,41,,Democrat
-CC10765,"Larkey, Jerald",House,38,,Republican
-CC10766,"Wong, Carl",House,39,,Republican
-CC10767,"Rath, Jim",Hawaii Council,8,Hawaii,Non-Partisan
-CC10768,"Yago, Reginald",House,35,,Republican
-CC10769,"Vieira, Robert",Honolulu Council,6,Honolulu,Non-Partisan
-CC10770,"Marten, Chayne",House,10,,Republican
-CC10771,"Curtis, Samuel",House,39,,Republican
-CC10772,"Christensen, Makani",Honolulu Council,4,Honolulu,Non-Partisan
-CC10773,"Dudek, Peter",Senate,14,,Republican
-CC10774,"Thomson, Zach",House,24,,Republican
-CC10775,"Georgi, JoAnne",Senate,7,,Republican
-CC10776,"Bailey, Melanie",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10777,"Bryant-Hunter, Kathy",BOE (Not an elected office),At-Large,,Non-Partisan
-CC10778,"Odegaard, Michael",OHA,At-Large,,Non-Partisan
-CC10779,"Berinobis, Shari Floyd",Honolulu Council,4,Honolulu,Republican
-CC10780,"Greenwell, Robert",Hawaii Council,8,Hawaii,Non-Partisan
-CC10781,"Stender, Oswald",OHA,At-Large,,Non-Partisan
-CC10782,"Cerizo, Thomas",House,8,,Democrat
-CC10783,"ONeal, David",BOE (Not an elected office),1,,Non-Partisan
-CC10784,"McDermott, Bob",Honolulu Council,1,Honolulu,Non-Partisan
-CC10785,"Griffin, Calvin",Mayor,,Honolulu,Non-Partisan
-CC10786,"Kurshals, Maralyn",BOE (Not an elected office),1,,Non-Partisan
-CC10787,"Vares, Norman",Maui Council,South Maui,Maui,Non-Partisan
-CC10788,"Martinez, Rosebella",House,40,,Democrat
-CC10789,"Lewis, Chris",Honolulu Council,1,Honolulu,Democrat
-CC10790,"Arola, James",BOE (Not an elected office),5th Dept. (For BOE-No longer applicable),,Non-Partisan
-CC10791,"Darling, Alfred",Senate,7,,Non-Partisan
-CC10792,"Cordero, Angel",House,41,,Republican
-CC10793,"Kahele, Melvin",Honolulu Council,1,Honolulu,Non-Partisan
-CC10794,"LoPresti, Matthew",House,41,,Democrat
-CC10795,"Roco, John",Honolulu Council,1,Honolulu,Republican
-CC10796,"Velleses, Gary",Honolulu Council,1,Honolulu,Non-Partisan
-CC10797,"Espero, Jason",Honolulu Council,1,Honolulu,Democrat
-CC10798,"Yuen, Victoria (Cissy)",Honolulu Council,1,Honolulu,Democrat
-CC10799,"Teruya, Patricia",Honolulu Council,1,Honolulu,Non-Partisan
-CC10800,"Manaku, James",Honolulu Council,1,Honolulu,Non-Partisan
-CC10801,"Kahele, Gilbert",Senate,1,,Democrat
-CC10802,"Solomon, Malama",Senate,4,,Democrat
-CC10803,"Jordan, Jo",House,44,,Democrat
-CC10804,"Haliniak, Barbara",House,13,,Democrat
-CC10805,"Kollar, Justin",Prosecuting Attorney,,Kauai,Non-Partisan
-CC10806,"Blackburn, Joseph",Maui Council,Wailuku,Maui,Democrat
-CC10807,"Han, Martin",Honolulu Council,7,Honolulu,Non-Partisan
-CC10808,"Ohno, Takashi",House,27,,Democrat
-CC10809,"Ing, Mark",House,11,,Democrat
-CC10810,"Guzman, Don",Mayor,,Maui,Non-Partisan
-CC10811,"DeJean, Khistina Caldwell",Governor,,,Independent
-CC10812,"Ashida, Lincoln",Prosecuting Attorney,,Hawaii,Non-Partisan
-CC10813,"Kern, Zendo",Hawaii Council,5,Hawaii,Non-Partisan
-CC10814,"Santiago, Alexander",Honolulu Council,1,Honolulu,Democrat
-CC10815,"Roth, Mitchell",Mayor,,Hawaii,Non-Partisan
-CC10816,"Bradshaw, Jacob",House,45,,Democrat
-CC10817,"Wille, Margaret",Hawaii Council,9,Hawaii,Non-Partisan
-CC10818,"Shimaoka, Oliver",Hawaii Council,9,Hawaii,Non-Partisan
-CC10819,"Ilagan, Greggor",House,4,,Democrat
-CC10822,"Apoliona, Suzanne Haunani",OHA,At-Large,,Non-Partisan
-CC10823,"Okamura, Thomas",House,33,,Democrat
-CC10824,"Green, Robert",Hawaii Council,9,Hawaii,Non-Partisan
-CC10825,"McIntosh, Harry",Hawaii Council,6,Hawaii,Non-Partisan
-CC10826,"Weatherford, James",Hawaii Council,4,Hawaii,Non-Partisan
-CC10827,"Hanlon, Colin",House,11,,Democrat
-CC10828,"Cayetano, Benjamin",Mayor,,Honolulu,Non-Partisan
-CC10829,"Greco, Michael",Senate,16,,Republican
-CC10830,"Eoff, Karen",Hawaii Council,8,Hawaii,Non-Partisan
-CC10831,"Wilhelm, Steve",Hawaii Council,2,Hawaii,Non-Partisan
-CC10832,"Marsh, Anne",Mayor,,Hawaii,Non-Partisan
-CC10833,"Delacruz, Efrain",Honolulu Council,1,Honolulu,Non-Partisan
-CC10834,"Sua, Vai",Honolulu Council,9,Honolulu,Non-Partisan
-CC10840,"Velasco, Nicole",House,30,,Democrat
-CC10841,"Westervelt, Bradley",Hawaii Council,6,Hawaii,Non-Partisan
-CC10842,"Kanuha, Dru",Senate,3,,Democrat
-CC10843,"Goodenow, Kenneth",Hawaii Council,2,Hawaii,Democrat
-CC10844,"Sonson, Alex",House,38,,Democrat
-CC10845,"Gering, Larry",Hawaii Council,1,Hawaii,Independent
-CC10846,"Giugni, Heather",House,33,,Democrat
-CC10848,"Poindexter, Valerie",Hawaii Council,1,Hawaii,Non-Partisan
-CC10850,"Tungpalan, Eloise Yamashita",House,34,,Democrat
-CC10851,"Hairgrove, Todd",House,22,,Republican
-CC10852,"Takata, Kevin",Prosecuting Attorney,,Honolulu,Independent
-CC10853,"Holt, Daniel",House,29,,Democrat
-CC10854,"Leslie, Bucky",House,6,,Democrat
-CC10855,"Perry, Johnnie-Mae",House,44,,Democrat
-CC10856,"Breslin, John ""Mike""",House,6,,Republican
-CC10857,"McLaughlin, Erin",Maui Council,Kahului,Maui,Non-Partisan
-CC10858,"Hong, Lillian",Honolulu Council,7,Honolulu,Non-Partisan
-CC10859,"Housel, Fred",House,6,,Democrat
-CC10860,"Ruderman, Russell",Senate,2,,Democrat
-CC10861,"Lowen, Nicole",House,6,,Democrat
-CC10862,"Russell, Simon",House,13,,Republican
-CC10863,"Matsumoto, Lauren",House,45,,Republican
-CC10864,"Ahu-Isa, Lei",House,26,,Democrat
-CC10865,"Totten, John",Senate,3,,Republican
-CC10866,"Hemmings, Fred",Senate,25,,Republican
-CC10867,"Thielen, Laura",Senate,25,,Democrat
-CC10868,"Crivello, Stacy",Maui Council,Molokai,Maui,Non-Partisan
-CC10869,"Lipton, Levani",Senate,25,,Democrat
-CC10870,"Lajala, Kurt",Senate,9,,Democrat
-CC10871,"Safarik, Gary",Senate,2,,Democrat
-CC10872,"Lyons, Jeffrey",House,45,,Republican
-CC10873,"Ikeda, Donald",Senate,1,,Democrat
-CC10874,"Ceredon, Liscencio",Hawaii Council,5,Hawaii,Non-Partisan
-CC10875,"Duey, Rose Marie",OHA,Maui,,Non-Partisan
-CC10876,"Bertram, Joe",House,11,,Democrat
-CC10877,"Sanborn, J. William",Hawaii Council,9,Hawaii,Non-Partisan
-CC10878,"Araujo, Steven",Hawaii Council,5,Hawaii,Non-Partisan
-CC10879,"Higa, Creighton",House,44,,Republican
-CC10880,"Pajimola, Noralyn",House,1,,Democrat
-CC10881,"Kobayashi, Bertrand",House,19,,Democrat
-CC10882,"Fenton, Larry",Senate,11,,Republican
-CC10883,"Kaukani, Chad",House,49,,Democrat
-CC10884,"Santos, Donna",OHA,Kauai,,Non-Partisan
-CC10885,"Manabat, Christopher",House,40,,Democrat
-CC10886,"Young, Darrell",House,19,,Republican
-CC10888,"McKeague-Gomes, Leslie",House,43,,Democrat
-CC10889,"Kaehuaea, Wendell",Senate,2,,Democrat
-CC10890,"Hester, Marcus",House,22,,Republican
-CC10891,"Dolan, Paul",Prosecuting Attorney,,Hawaii,Non-Partisan
-CC10892,"Helm, Kanohowailuku",Senate,7,,Non-Partisan
-CC10893,"Au, Tiffany",House,26,,Republican
-CC10894,"Thompson, Rachel",Hawaii Council,2,Hawaii,Non-Partisan
-CC10895,"Puletasi, Palasi",House,40,,Democrat
-CC10896,"Larson, Elisabeth",Senate,12,,Republican
-CC10897,"Cermelj, Hope",House,4,,Non-Partisan
-CC10898,"Yamane, Brian",House,19,,Democrat
-CC10899,"Mindo, Romeo",House,40,,Democrat
-CC10900,"Johnson, Richard",Senate,21,,Republican
-CC10901,"Gutierrez, Lynne",House,31,,Democrat
-CC10902,"Aipoalani, Hanalei",House,43,,Democrat
-CC10903,"Lunasco, Oliver",House,45,,Democrat
-CC10904,"Oyama, Leolani",House,5,,Democrat
-CC10906,"Ritte, Walter",OHA,At-Large,,Democrat
-CC10907,"Kagawa Fu, Kanani",OHA,Kauai,,Democrat
-CC10908,"Fogel, Frederick",House,3,,Libertarian
-CC10909,"Smith, Daryl",Senate,2,,Republican
-CC10910,"Bateman, David",House,5,,Republican
-CC10911,"Cullen, Sy",Honolulu Council,9,Honolulu,Non-Partisan
-CC10912,"Lacuesta, Roger",Senate,19,,Democrat
-CC10913,"Butler, Glenn",House,43,,Republican
-CC10914,"Takayama, Gregg",House,34,,Democrat
-CC10915,"Heaukulani, Joseph",House,20,,Non-Partisan
-CC10917,"Pomroy, Sharon",OHA,Kauai,,Non-Partisan
-CC10918,"Kaahui, Edward",House,10,,Democrat
-CC10919,"Fevella, Kurt",House,40,,Democrat
-CC10920,"Vincent, Henry",House,51,,Republican
-CC10921,"Greenwell, Robert",Senate,4,,Green
-CC10922,"Last, Michael",Senate,3,,Non-Partisan
-CC10923,"McDermott, Bob",House,40,,Republican
-CC10924,"Kim, Harry",Mayor,,Hawaii,Non-Partisan
-CC10925,"Stephens, Aaron",House,4,,Non-Partisan
-CC10926,"Peters, Wilson",Maui Council,Molokai,Maui,Non-Partisan
-CC10927,"Ebert, Roy",House,6,,Republican
-CC10928,"Georgi, William",Senate,8,,Republican
-CC10929,"Albao, Liberta",OHA,Kauai,,Non-Partisan
-CC10930,"Bonk, Keiko",House,20,,Green
-CC10931,"Herrera, Rojelio",Senate,18,,Republican
-CC10932,"Yadao, Leland",OHA,Kauai,,Non-Partisan
-CC10933,"Beirne, D. Ululani",House,47,,Democrat
-CC10934,"Synan, Dwight",House,20,,Democrat
-CC10935,"Kagawa, Ross",House,16,,Democrat
-CC10936,"LaFrance, Jeff",Senate,3,,Republican
-CC10937,"Murphy, Christopher",House,46,,Republican
-CC10938,"Meyers, William",OHA,Hawaii,,Democrat
-CC10939,"Rattner, Joseph",House,40,,Democrat
-CC10940,"Lee, Calvin",OHA,At-Large,,Democrat
-CC10941,"Lincoln, Lancelot",OHA,At-Large,,Democrat
-CC10942,"Capelouto, Dean",Senate,20,,Republican
-CC10943,"Pacheco, Jade",OHA,Kauai,,Non-Partisan
-CC10944,"DAlmeida, Eric",Hawaii Council,1,Hawaii,Non-Partisan
-CC10945,"Akina, William",OHA,At-Large,,Non-Partisan
-CC10946,"Bossley, Deborah",Honolulu Council,3,Honolulu,Independent
-CC10947,"Apana, Melvin",House,36,,Republican
-CC10948,"Reeder, Adam",House,41,,Republican
-CC10949,"Kapuniai, Ryan",OHA,At-Large,,Non-Partisan
-CC10950,"Aki, Charles",Senate,22,,Republican
-CC10951,"Christie, Sherryanne",Mayor,,Hawaii,Non-Partisan
-CC10952,"Kay, Alana",Mayor,,Maui,Non-Partisan
-CC10953,"Takamura, Clifton",House,21,,Democrat
-CC10954,"Ford, Lori",House,18,,Republican
-CC10955,"Kim, Brian",House,27,,Republican
-CC10956,"Yagong, Chelsea",Hawaii Council,1,Hawaii,Democrat
-CC10957,"Trujillo, Troy",House,16,,Republican
-CC10958,"Pohle, Richard",Maui Council,Upcountry,Maui,Non-Partisan
-CC10959,"Marten, Chayne",House,10,,Republican
-CC10960,"Guccione, Charles",Hawaii Council,8,Hawaii,Non-Partisan
-CC10961,"Swain, William",OHA,Kauai,,Non-Partisan
-CC10962,"Cunningham, Daniel",Mayor,,Hawaii,Non-Partisan
-CC10963,"Svrcina, Emil",House,37,,Republican
-CC10964,"Kalama, Ekolu",House,12,,Republican
-CC10965,"Onishi, Richard",House,3,,Democrat
-CC10966,"Akaka, Kaleihikina",House,6,,Democrat
-CC10967,"Ahuna, Daniel",OHA,Kauai,,Non-Partisan
-CC10968,"Hayes, James",Honolulu Council,5,Honolulu,Non-Partisan
-CC10969,"Sahut, Ronson",OHA,Kauai,,Democrat
-CC10970,"Thomson, Zachary",House,23,,Republican
-CC10971,"Mulvihill, Bart",Senate,6,,Republican
-CC10972,"Alalem, Allen-Dean",OHA,Kauai,,Democrat
-CC10973,"Walls, Rand",Mayor,,Hawaii,Non-Partisan
-CC10974,"Miranda, Edwin",OHA,2,,Non-Partisan
-CC10975,"Amorin, Johanna",OHA,Maui,,Independent
-CC10976,"Kane, Dain",OHA,Maui,,Non-Partisan
-CC10977,"Gomes, Doreen",OHA,Maui,,Non-Partisan
-CC10978,"Yoshimura, Jon",Honolulu Council,6,Honolulu,Non-Partisan
-CC10979,"Miller, Steven",Honolulu Council,6,Honolulu,Non-Partisan
-CC10980,"Brewer, James",Honolulu Council,6,Honolulu,Non-Partisan
-CC10981,"Lindsey, Carmen",OHA,Maui,,Independent
-CC10982,"Shubert-Kwock, Chu Lan",Honolulu Council,6,Honolulu,Independent
-CC10983,"Mizuno, Joje May",Honolulu Council,6,Honolulu,Non-Partisan
-CC10984,"Nakasato, Kevin",Honolulu Council,6,Honolulu,Non-Partisan
-CC10985,"Youngquist, Arvid",Honolulu Council,6,Honolulu,Democrat
-CC10986,"Smith, Christopher",Honolulu Council,6,Honolulu,Democrat
-CC10987,"Kapu, Jonah",OHA,Maui,,Non-Partisan
-CC10988,"Rutledge, Aaron",Honolulu Council,6,Honolulu,Non-Partisan
-CC10989,"Suapaia, Jason",Honolulu Council,6,Honolulu,Non-Partisan
-CC10990,"Vieira, Robert",Honolulu Council,6,Honolulu,Democrat
-CC10991,"Amsterdam, C. Kaui Jochanan",Honolulu Council,6,Honolulu,Republican
-CC10992,"Lum Lee, Christopher-Travis",Senate,11,,Democrat
-CC10993,"Woodson, Justin",House,9,,Democrat
-CC10994,"Fung, Lester",House,20,,Democrat
-CC10995,"Tupola, Andria",Honolulu Council,1,Honolulu,Non-Partisan
-CC10996,"Elefante, Brandon",Honolulu Council,8,Honolulu,Non-Partisan
-CC10997,"Wong, Arnold",House,33,,Democrat
-CC10998,"Iwasa, Natalie",Honolulu Council,4,Honolulu,Non-Partisan
-CC10999,"Eli, Stacelynn",House,43,,Democrat
-CC11000,"Awana, Karen",House,43,,Democrat
-CC11002,"Costales, Luella",House,36,,Democrat
-CC11003,"Zibakalam, Emmanuel",House,21,,Democrat
-CC11004,"Lee, Marilyn",House,36,,Democrat
-CC11005,"Amato, Terez",Senate,6,,Democrat
-CC11006,"Ozawa, Trevor",Honolulu Council,4,Honolulu,Non-Partisan
-CC11007,"McInerny, Harvey",OHA,At-Large,,Non-Partisan
-CC11008,"Davis, Jeffrey",Governor,,,Libertarian
-CC11009,"Higa, Anthony",House,19,,Libertarian
-CC11010,"Paltin, Tamara",Maui Council,West Maui,Maui,Democrat
-CC11011,"Fowler, Max",House,27,,Republican
-CC11012,"Peleiholani, Julia",House,4,,Democrat
-CC11013,"Pouha, Feki",House,47,,Republican
-CC11014,"San Buenaventura, Joy",Senate,2,,Democrat
-CC11015,"Grace, Janet",House,22,,Republican
-CC11016,"Hikida, Wayne",House,51,,Republican
-CC11017,"Hood, Joan",House,50,,Republican
-CC11018,"Poti, LuAnn",House,35,,Republican
-CC11019,"Buenconsejo, Kaala",Maui Council,West Maui,Maui,Democrat
-CC11020,"Bukoski, Keith",House,48,,Democrat
-CC11021,"Kamaka, Joseph",Senate,5,,Republican
-CC11022,"Wong-Kalu, Hinaleimoana",OHA,At-Large,,Non-Partisan
-CC11023,"Arianoff, Gregory",Senate,1,,Libertarian
-CC11024,"Waters, Tommy",Honolulu Council,4,Honolulu,Democrat
-CC11025,"Helsham, Robert",House,33,,Republican
-CC11026,"Arakaki, Tracy",House,33,,Democrat
-CC11027,"Creagan, Richard",Hawaii Council,6,Hawaii,Democrat
-CC11028,"Abbett, Richard",Hawaii Council,6,Hawaii,Non-Partisan
-CC11030,"Kalima, Leona",OHA,At-Large,,Democrat
-CC11031,"Stump, Christopher",House,17,,Democrat
-CC11032,"Brun, Arthur",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11034,"Fonoimoana, Kent",House,47,,Democrat
-CC11035,"Ahu, Elwin",Lt. Governor,,,Republican
-CC11036,"Yoder, Steven",House,15,,Republican
-CC11037,"Banda, Raymond",Senate,18,,Libertarian
-CC11038,"Trask, Mililani",OHA,At-Large,,Democrat
-CC11039,"Greene, Madeline",Hawaii Council,4,Hawaii,Non-Partisan
-CC11040,"Horoshko, Ronald",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11041,"Hunt, Tiffany",Hawaii Council,5,Hawaii,Non-Partisan
-CC11042,"Hopkins, Margarita",Hawaii Council,2,Hawaii,Non-Partisan
-CC11043,"DeSilva Carveiro, Debralynn",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11044,"Apana, James",House,9,,Democrat
-CC11045,"Wendt, Mahealani",OHA,Maui,,Non-Partisan
-CC11046,"Nava, Frederick",Maui Council,West Maui,Maui,Non-Partisan
-CC11047,"Danner, Michael",Senate,24,,Republican
-CC11048,"Jordan, Brian",House,4,,Democrat
-CC11049,"Kukahiko, Eldean",House,48,,Republican
-CC11050,"Harris, Robert",House,48,,Democrat
-CC11051,"DeSoto-McCollough, Laura",OHA,Hawaii,,Non-Partisan
-CC11052,"Kanekoa, Ernest",Kauai Council,At-Large,Kauai,Democrat
-CC11053,"Cunningham, Daniel",Hawaii Council,5,Hawaii,Non-Partisan
-CC11054,"Hooser, Dylan",House,16,,Democrat
-CC11055,"Law, Timothy",Hawaii Council,5,Hawaii,Democrat
-CC11056,"Keohokalole, Jarrett",Senate,24,,Democrat
-CC11057,"Lozano, Roy",Hawaii Council,4,Hawaii,Non-Partisan
-CC11058,"Kapoi, Cranston",House,8,,Republican
-CC11059,"Kaahui, Bronson",Senate,6,,Libertarian
-CC11060,"Barca, Dustin",Mayor,,Kauai,Non-Partisan
-CC11061,"Hoomanawanui, Jonathan",House,14,,Republican
-CC11062,"Agustin, Jaci",House,34,,Republican
-CC11063,"Hunter, Michael",Hawaii Council,8,Hawaii,Non-Partisan
-CC11064,"Hara, Dan",Honolulu Council,2,Hawaii,Non-Partisan
-CC11065,"Gonzales, Ronald",Hawaii Council,9,Hawaii,Non-Partisan
-CC11066,"Shin, Lorraine",OHA,At-Large,,Non-Partisan
-CC11067,"Valenzuela, Kelly Ann",House,6,,Republican
-CC11068,"Naipo, Blayne",House,48,,Non-Partisan
-CC11069,"Burke, Jackie Kahookele",OHA,At-Large,,Non-Partisan
-CC11070,"Hampton, Roxanne",Hawaii Council,5,Hawaii,Non-Partisan
-CC11071,"Pueo, Frances",Hawaii Council,5,Hawaii,Democrat
-CC11072,"Kopelman, Orion",Mayor,,Maui,Independent
-CC11073,"Chung, Aaron",Hawaii Council,2,Hawaii,Non-Partisan
-CC11074,"Naeole, Emily",Hawaii Council,4,Hawaii,Democrat
-CC11075,"Wilson, Jim",Hawaii Council,6,Hawaii,Non-Partisan
-CC11076,"Spatola, Joseph",Governor,,,Non-Partisan
-CC11077,"Yoon, Wesley",OHA,At-Large,,Non-Partisan
-CC11078,"Shigemasa, Chace",Honolulu Council,7,Honolulu,Non-Partisan
-CC11079,"Kaneshiro, Arryl",Kauai Council,At-Large,Kauai,Democrat
-CC11080,"Kahawai, Thomas",House,16,,Democrat
-CC11081,"Bronson-Crelly, Leilani",House,4,,Democrat
-CC11082,"Brown, Norman Jr.",Senate,23,,Republican
-CC11083,"Davis, Misty",Governor,,,Non-Partisan
-CC11084,"Grunch, Russell",Honolulu Council,8,Honolulu,Non-Partisan
-CC11085,"Lake, Curtis",Mayor,,Kauai,Non-Partisan
-CC11086,"Puletasi, S. Palasi",Lt. Governor,,,Democrat
-CC11087,"Leslie, Gene",House,5,,Democrat
-CC11088,"Sutton, Warner Kimo",Lt. Governor,,,Republican
-CC11089,"Svrcina, Emil",House,37,,Republican
-CC11090,"Kaehuaea, Wendell",Senate,1,,Democrat
-CC11091,"Gusman, Christy",Senate,5,,Republican
-CC11092,"Jeremiah, Bryan",House,41,,Republican
-CC11093,"Amsterdam, C. Kaui Jochanan",House,24,,Republican
-CC11094,"Fogel, Frederick",House,3,,Libertarian
-CC11095,"Laranio, Tiana",Kauai Council,Kauai,Kauai,Non-Partisan
-CC11096,"Perry, Darryl",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11097,"Tagavilla, Marcia",House,32,,Republican
-CC11098,"Zanakis, Mary",Lt. Governor,,,Democrat
-CC11099,"Ahu-Isa, Lei",OHA,At-Large,,Non-Partisan
-CC11100,"Golojuch, Michael",House,42,,Democrat
-CC11101,"Cowden, Felicia",Kauai Council,At-Large,Kauai,Democrat
-CC11102,"Kong, Samuel",House,33,,Democrat
-CC11104,"Hufana-Ablan, Baybee",Honolulu Council,8,Honolulu,Democrat
-CC11105,"Ferguson, Nicole",House,42,,Democrat
-CC11106,"Halvorsen, Susan",House,18,,Republican
-CC11107,"Tanabe, Van",Governor,,,Democrat
-CC11108,"Paikai, Landen",OHA,At-Large,,Non-Partisan
-CC11109,"Morse,  Richard",Governor,,,Non-Partisan
-CC11110,"Leong, Arnold",Kauai Council,Kauai,Kauai,Non-Partisan
-CC11111,"Last, Michael",Senate,3,,Libertarian
-CC11112,"Georgi, JoAnne",Kauai Council,16,Kauai,Non-Partisan
-CC11113,"Broman, Holly",House,50,,Democrat
-CC11114,"Chock, Sr., Mason",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11115,"Perry, Johnnie-Mae",Senate,21,,Republican
-CC11116,"Kaauwai, Joseph",Kauai Council,Kauai,Kauai,Non-Partisan
-CC11118,"Frenzel, Allen",House,44,,Libertarian
-CC11119,"Takayama, Kaimanu",House,48,,Libertarian
-CC11120,"Manutai, Larie",House,21,,Republican
-CC11121,"Roman, Randolph Jr.",Senate,21,,Republican
-CC11122,"Flores, Vince",House,16,,Republican
-CC11125,"Chang, Lester",Lt. Governor,,,Independent
-CC11126,"Paleka, Daniel",Hawaii Council,5,Hawaii,Democrat
-CC11127,"Mamuad, Neldon",Mayor,,Maui,Non-Partisan
-CC11128,"Burlew, Lloyd",Honolulu Council,2,Honolulu,Non-Partisan
-CC11129,"Lam, Ronald",House,25,,Republican
-CC11130,"Schiller, Alain",Senate,4,,Libertarian
-CC11131,"Marks, Kerri",Hawaii Council,2,Hawaii,Non-Partisan
-CC11132,"Shiratori, Miles",Lt. Governor,,,Democrat
-CC11133,"Marlin, Cynthia",Lt. Governor,,,Libertarian
-CC11134,"Collins, Charles",Governor,,,Republican
-CC11135,"Pohle, Richard",House,12,,Republican
-CC11136,"DeCosta, Bill",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11137,"Poulton, Brysen",Honolulu Council,8,Honolulu,Non-Partisan
-CC11138,"Franks, Victoria",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11139,"Wiggins, Stephen",House,41,,Republican
-CC11140,"Kim, Dennis",Senate,18,,Republican
-CC11141,"Fitzpatrick, John",Maui Council,5,Maui,Democrat
-CC11142,"Nikhilananda, Nick",House,13,,Green
-CC11143,"Thomas, Gary",House,4,,Republican
-CC11144,"Ruis, Randy",House,5,,Non-Partisan
-CC11145,"Gali, Shane",Hawaii Council,2,Hawaii,Non-Partisan
-CC11146,"Gates, Cedric",House,44,,Democrat
-CC11147,"Tokusato, Joli",Honolulu Council,6,Honolulu,Democrat
-CC11148,"Blumer-Buell, John",Maui Council,East Maui,Maui,Non-Partisan
-CC11149,"Bruch, Courtney",Maui Council,Maui,Maui,Non-Partisan
-CC11150,"Clemente, Roger",Senate,17,,Democrat
-CC11151,"DuBois, Jared",Senate,6,,Republican
-CC11152,"Moses, Kyong",House,42,,Republican
-CC11153,"Bateman, David",House,5,,Republican
-CC11154,"Kahula, Henry",Maui Council,Upcountry,Maui,Non-Partisan
-CC11155,"Almeida, Cherish",Hawaii Council,5,Hawaii,Non-Partisan
-CC11156,"Brown, Ruth",Senate,21,,Non-Partisan
-CC11157,"Gering, Larry",Hawaii Council,1,Hawaii,Non-Partisan
-CC11158,"Klutke, Sandra",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11159,"Kahikina, Michael",House,21,,Democrat
-CC11160,"Gregory, Stuart",Governor,,,Republican
-CC11161,"Hawkes, Beau",Mayor,,Maui,Non-Partisan
-CC11162,"Marten, Chayne",House,10,,Republican
-CC11163,"Brock, Patric",House,11,,Libertarian
-CC11164,"Miranda, Edwin",House,2,,Democrat
-CC11165,"Lethem, Chris",Senate,12,,Republican
-CC11166,"Mathieu, Victoria",House,19,,Republican
-CC11167,"Chong, Isaiah",House,40,,Democrat
-CC11168,"Dickson, Bill",House,3,,Republican
-CC11169,"Knox, Robin",Maui Council,6,Maui,Non-Partisan
-CC11170,"Weinert, Eric",Mayor,,Hawaii,Non-Partisan
-CC11171,"Metcalfe, Jerry",Maui Council,11,Maui,Non-Partisan
-CC11172,"Haller, Alexander",Maui Council,Makawao,Maui,Non-Partisan
-CC11173,"Strouble, Carl",Honolulu Council,4,Honolulu,Non-Partisan
-CC11174,"Kekipi, Thornton",OHA,4,,Democrat
-CC11175,"LaLanne, Jon",House,5,,Libertarian
-CC11176,"Quartero, Alona",OHA,At-Large,,Non-Partisan
-CC11177,"Minichino, Marie",House,11,,Democrat
-CC11178,"Perez-Garreaud, Nicola",House,19,,Democrat
-CC11179,"DeCoite, Lynn",Senate,7,,Democrat
-CC11180,"Ching, Eric",House,31,,Republican
-CC11181,"Regan, Keith",Maui Council,Wailuku,Maui,Non-Partisan
-CC11182,"Moniz, Stacey",Maui Council,Upcountry,Maui,Democrat
-CC11183,"Kaaihue, Angela",Mayor,,Honolulu,Non-Partisan
-CC11184,"Eli, Stacelynn",House,43,,Democrat
-CC11185,"Sugimura, Yuki",Maui Council,Upcountry,Maui,Democrat
-CC11186,"Campagna, Carl",Senate,14,,Democrat
-CC11187,"Paaluhi, Marcus",OHA,At-Large,,Republican
-CC11188,"Tarnas, David",House,7,,Democrat
-CC11189,"Arin, Lisa",Prosecuting Attorney,,Kauai,Non-Partisan
-CC11190,"Greig-Nakasone, Napua",Maui Council,Upcountry,Maui,Democrat
-CC11191,"Alameda, Micah",Hawaii Council,3,Hawaii,Democrat
-CC11192,"Tegarden, Deidre",House,11,,Democrat
-CC11193,"Lee Loy, Susan",Hawaii Council,3,Hawaii,Non-Partisan
-CC11194,"Hoffmann, Pete",Mayor,,Hawaii,Non-Partisan
-CC11195,"Tsuneyoshi, Heidi",Honolulu Council,2,Honolulu,Non-Partisan
-CC11196,"Haller, Alexander",House,13,,Democrat
-CC11197,"Kane, Dain",House,8,,Democrat
-CC11198,"Ohara, Eileen",Hawaii Council,4,Hawaii,Non-Partisan
-CC11199,"Lau, Wally",Mayor,,Hawaii,Democrat
-CC11201,"Halversen, William",Hawaii Council,2,Hawaii,Independent
-CC11202,"Shea, Patrick",House,49,,Democrat
-CC11203,"Wong, Jonathan",House,2,,Democrat
-CC11204,"McCandless, Shannon",Mayor,,Hawaii,Democrat
-CC11206,"Ruggles, Jennifer",Hawaii Council,5,Hawaii,Non-Partisan
-CC11207,"Garry, Timothy",Mayor,,Honolulu,Non-Partisan
-CC11208,"Castillo, Grace",Hawaii Council,3,Hawaii,Democrat
-CC11209,"Kahele, Kaialii",Senate,1,,Democrat
-CC11210,"Sequin, Tamiko",House,44,,Republican
-CC11211,"Domingo, Nestorio",Hawaii Council,7,Hawaii,Non-Partisan
-CC11212,"Ozols, Harry",Senate,13,,Libertarian
-CC11213,"Phillips, Arnold",Senate,10,,Libertarian
-CC11214,"Tippens, Michelle",House,24,,Libertarian
-CC11215,"Kalinowski, Daniel",Senate,15,,Libertarian
-CC11217,"Kossow, Bronsten-Glenn",Hawaii Council,7,Hawaii,Non-Partisan
-CC11218,"DeLeon, Richard",Maui Council,South Maui,Maui,Non-Partisan
-CC11219,"Hokoana-Kelii, Moana",Hawaii Council,3,Hawaii,Non-Partisan
-CC11221,"Cowser, Janis",House,2,,Democrat
-CC11222,"Flowers, Jerry",OHA,Molokai,,Non-Partisan
-CC11223,"Coakley, Jeffrey",House,7,,Republican
-CC11224,"Doctor Sparks, Norma",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11225,"Waugh, Timothy",Mayor,,Hawaii,Democrat
-CC11226,"Lawrence, Tiare",House,12,,Democrat
-CC11228,"Bernabe, Matthew",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11229,"Nakoa, Keone",Senate,13,,Democrat
-CC11230,"Aki, Zurishaddai",House,36,,Democrat
-CC11231,"Kobayashi, Dale",House,23,,Democrat
-CC11232,"Henski, Kathryn",House,22,,Republican
-CC11233,"Robinson, Kaloa",Senate,1,,Democrat
-CC11234,"Kim, Harry",Mayor,,Hawaii,Democrat
-CC11235,"Furtado, Trinette",Maui Council,Makawao,Maui,Democrat
-CC11237,"Bryant, Paul",Mayor,,Hawaii,Non-Partisan
-CC11238,"Lee, Marilyn",House,36,,Democrat
-CC11239,"Naniole, Alexander",House,3,,Democrat
-CC11240,"Fevella, Kurt",Senate,19,,Republican
-CC11241,"Akina, Alvin",Mayor,,Hawaii,Democrat
-CC11242,"Apalla, Juno",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11243,"Rosenstiel, Fern",House,14,,Democrat
-CC11244,"King, Kelly",Maui Council,South Maui,Maui,Democrat
-CC11245,"Combs, Sandra",House,14,,Republican
-CC11246,"Baker, Kurtleigh",Mayor,,Honolulu,Non-Partisan
-CC11247,"Gonce, Randy",House,48,,Democrat
-CC11248,"Kaehuaea, Wendell",Mayor,,Hawaii,Non-Partisan
-CC11249,"Atay, Alika",Maui Council,Wailuku,Maui,Non-Partisan
-CC11250,"Quinlan, Sean",House,47,,Democrat
-CC11251,"Luta, Helen",Mayor,,Hawaii,Non-Partisan
-CC11252,"Fenton, Larry",House,24,,Republican
-CC11253,"Wargo, Joseph",Mayor,,Honolulu,Non-Partisan
-CC11254,"Richards, Herbert",Hawaii Council,9,Hawaii,Non-Partisan
-CC11255,"Kimball, Heather",Hawaii Council,1,Hawaii,Democrat
-CC11256,"Fukushima, Richard",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11257,"Whiting, Raina",House,3,,Democrat
-CC11258,"Steel, Hana",Maui Council,Wailuku,Maui,Non-Partisan
-CC11259,"Last, Michael",House,5,,Libertarian
-CC11260,"Pisciotta, Kealoha",House,3,,Green
-CC11261,"Mann, Thomas",House,6,,Democrat
-CC11262,"Logue, James",House,29,,Democrat
-CC11263,"Hong, Lillian",Mayor,,Honolulu,Non-Partisan
-CC11264,"Bennett, Michael",Senate,9,,Democrat
-CC11265,"Iwamoto, Kim Coco",House,26,,Democrat
-CC11266,"Carlisle, Peter",Mayor,,Honolulu,Non-Partisan
-CC11267,"Friedman, Lawrence",Mayor,,Honolulu,Republican
-CC11268,"Holt, Daniel",House,29,,Democrat
-CC11269,"Sinenci, Shane",Maui Council,East Maui,Maui,Democrat
-CC11270,"Burd, Zachary",Mayor,,Honolulu,Green
-CC11271,"Arianoff, Kimberly",Senate,1,,Libertarian
-CC11272,"Machado, Colette",OHA,Molokai,,Non-Partisan
-CC11273,"Pekus, Daniel",House,11,,Republican
-CC11274,"Arianoff, Gregory",House,3,,Libertarian
-CC11275,"Mataafa, Toagaifasa",House,47,,Republican
-CC11276,"Fogel, Frederick",Senate,2,,Libertarian
-CC11277,"Bernard, Michael",Hawaii Council,4,Hawaii,Non-Partisan
-CC11278,"Kaapu, Carole",House,28,,Republican
-CC11279,"Linden-Dozier, Heather",Senate,25,,Republican
-CC11280,"Kent, Joe",Senate,11,,Libertarian
-CC11281,"Bischoff, Stephen",House,19,,Republican
-CC11282,"Apoliona, Haunani",OHA,At-Large,,Non-Partisan
-CC11283,"Miller, Dennis",House,22,,Democrat
-CC11284,"Anthony, Marc",Honolulu Council,1,Honolulu,Non-Partisan
-CC11285,"Citron, Jeffrey",Hawaii Council,8,Hawaii,Non-Partisan
-CC11286,"Amsterdam, Kaui",Senate,11,,Republican
-CC11287,"Au, Alvin",House,29,,Democrat
-CC11288,"Crum, Douglas",OHA,At-Large,,Independent
-CC11289,"Kim, Richard",Governor,,,Democrat
-CC11290,"Pratt, Bruce",House,6,,Republican
-CC11291,"Ross, Karlen",House,17,,Democrat
-CC11292,"Hochuli, Ronald",Mayor,,Honolulu,Non-Partisan
-CC11293,"Kalima, Leona",OHA,At-Large,,Democrat
-CC11294,"Powers, Michael",Mayor,,Honolulu,Non-Partisan
-CC11295,"Caravalho, Ernest",Mayor,,Honolulu,Democrat
-CC11296,"Stephens, Moke",House,4,,Constitution
-CC11297,"Nagamine, Robert",Senate,25,,Republican
-CC11298,"Kagami, Michael",Prosecuting Attorney,,Hawaii,Non-Partisan
-CC11299,"Tam, Rodney",Senate,13,,Republican
-CC11300,"Kupukaa, Katherine",House,37,,Republican
-CC11301,"Noltie, Scott",House,46,,Republican
-CC11302,"Rawlins-Fernandez, Keani",Maui Council,Molokai,Maui,Non-Partisan
-CC11303,"Dayao, Firmo",House,29,,Democrat
-CC11304,"Rebolledo, Gilbert",House,8,,Republican
-CC11305,"Ahuna, Kanoe",Senate,8,,Democrat
-CC11306,"Johnson, Gabriel",Maui Council,Lanai,Maui,Democrat
-CC11307,"Fidelibus, Christopher",Senate,19,,Republican
-CC11308,"Medeiros, Vanessa",Maui Council,Kahului,Maui,Non-Partisan
-CC11309,"Young, Byron",House,1,,Republican
-CC11310,"Svrcina, Emil",Honolulu Council,9,Honolulu,Non-Partisan
-CC11311,"Hussey, Ikaika",Honolulu Council,6,Honolulu,Democrat
-CC11312,"Djou, Charles",Mayor,,Honolulu,Non-Partisan
-CC11313,"Farrell, David",Senate,10,,Democrat
-CC11314,"Abbett, Richard",Hawaii Council,6,Hawaii,Democrat
-CC11315,"Yaqoob, Anosh",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC11316,"Dionne, Valerie",House,29,,Democrat
-CC11317,"Coakley, Kaiwiola",House,29,,Republican
-CC11318,"Kaufman, Alan",Maui Council,Makawao,Maui,Non-Partisan
-CC11319,"Jones, Luana",House,4,,Non-Partisan
-CC11320,"Rodriguez, Cody",House,24,,Democrat
-CC11321,"Balinbin, Ernest",House,10,,Republican
-CC11322,"Trask, Mililani",OHA,Hawaii,,Non-Partisan
-CC11323,"Anthony, Daniel",OHA,At-Large,,Non-Partisan
-CC11324,"Molina, Eric",Maui Council,Upcountry,Maui,Non-Partisan
-CC11325,"Kahui, Bo",OHA,Hawaii,,Non-Partisan
-CC11326,"Hanapi, Alapai",OHA,Molokai,,Non-Partisan
-CC11327,"Metcalfe, Jerome",Maui Council,11,Maui,Non-Partisan
-CC11328,"Manipol-Larson, Grace",House,2,,Non-Partisan
-CC11329,"Tamashiro, Gene",Mayor,,Hawaii,Non-Partisan
-CC11330,"Mossman, Paul",OHA,At-Large,,Non-Partisan
-CC11331,"Velasco, Marcelino",House,30,,Republican
-CC11332,"Oi, Thomas",House,15,,Democrat
-CC11333,"Cunningham, Daniel",Mayor,,Hawaii,Non-Partisan
-CC11336,"Todd, Christopher",House,2,,Democrat
-CC11337,"Matsushita, David",House,33,,Democrat
-CC11338,"Spindt, Milo",Kauai Council,At-Large,Kauai,Democrat
-CC11339,"Matayoshi, Scot",House,49,,Democrat
-CC11340,"Hanabusa, Colleen",Mayor,,Honolulu,Democrat
-CC11341,"Kitagawa, Lisa",House,48,,Democrat
-CC11342,"Kitashima, Kelly",Honolulu Council,8,Honolulu,Non-Partisan
-CC11343,"Ford, Brenda",Senate,3,,Democrat
-CC11344,"Radke, Maurice",House,49,,Non-Partisan
-CC11345,"Perruso, Amy",House,46,,Democrat
-CC11346,"Evslin, Luke",Kauai Council,At-Large,Kauai,Democrat
-CC11347,"Hussey-Burdick, Natalia",House,49,,Democrat
-CC11348,"Osorio, Duncan",House,46,,Democrat
-CC11349,"English, John-Bull",House,13,,Democrat
-CC11350,"Garrett, Andrew",House,23,,Democrat
-CC11351,"Kamihara, Myron",House,40,,Democrat
-CC11352,"Rodden, Benton",House,23,,Democrat
-CC11353,"Kapela, Jeanne",House,5,,Democrat
-CC11354,"Rozembersky, Stefan",Senate,12,,Republican
-CC11355,"Luuwai, Maile",Lt. Governor,,,Democrat
-CC11356,"Wildberger, Tina",House,11,,Democrat
-CC11357,"Carroll, John",Mayor,,Honolulu,Non-Partisan
-CC11358,"Timoteo, Sailau",House,43,,Republican
-CC11359,"Fevella, Kurt",Senate,19,,Republican
-CC11360,"Learmont, Lei",House,46,,Democrat
-CC11361,"Rapozo, Leonard",Mayor,,Kauai,Democrat
-CC11362,"Eno, Jason",Senate,7,,Democrat
-CC11363,"Kiaaina, Esther",OHA,Oahu,,Democrat
-CC11364,"Armstrong, Dylan",House,23,,Democrat
-CC11365,"Tengan, Michael",Senate,7,,Democrat
-CC11366,"Carroll, Claire",Maui Council,East Maui,Maui,Non-Partisan
-CC11367,"Mukai, Nelson",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11368,"Dos Santos-Tam, Tyler",Honolulu Council,6,Honolulu,Democrat
-CC11369,"Ganaden, Ernesto",House,30,,Democrat
-CC11370,"Powers, Michael",Governor,,,Republican
-CC11371,"Paikai, Landen",OHA,At-Large,,Non-Partisan
-CC11372,"Detke, Kyle",House,22,,Republican
-CC11373,"Napeahi, Terri",House,2,,Democrat
-CC11374,"Batangan, Kelson",House,9,,Democrat
-CC11375,"Bukoski, Kika",House,48,,Democrat
-CC11376,"Kerns, Marissa",Governor,,,Republican
-CC11377,"Miller, John",House,46,,Republican
-CC11378,"Hand, Brendan",House,20,,Republican
-CC11379,"Starbuck, Hannibal",Maui Council,Upcountry,Maui,Non-Partisan
-CC11380,"Villegas, Rebecca",Hawaii Council,7,Hawaii,Non-Partisan
-CC11381,"Napohaku-Hoffman, Cecelia",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11382,"Lee, Brendon",OHA,At-Large,,Democrat
-CC11383,"Kekaualua, Debra",Mayor,,Kauai,Non-Partisan
-CC11384,"Schafer, Jacob",House,42,,Democrat
-CC11385,"Stoddard, Zack",Honolulu Council,6,Honolulu,Non-Partisan
-CC11386,"Nazara, Cynthia",Hawaii Council,7,Hawaii,Non-Partisan
-CC11387,"Moriwaki, Sharon",Senate,12,,Democrat
-CC11388,"Hawkes, Beau",Mayor,,Maui,Non-Partisan
-CC11389,"Drysdale, Kelly",Hawaii Council,7,Hawaii,Non-Partisan
-CC11390,"Teruya, Terrence",Governor,,,Non-Partisan
-CC11391,"Kierkiewicz, Ashley",Hawaii Council,4,Hawaii,Non-Partisan
-CC11392,"Lee, Alice",Maui Council,Wailuku,Maui,Non-Partisan
-CC11393,"Nishimura, Wally",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11394,"Robinson-Onderko, Lynn",House,41,,Democrat
-CC11395,"Akina, Alvin",OHA,At-Large,,Democrat
-CC11396,"Yago, Clint",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11397,"Robotti, Paul",Lt. Governor,,,Non-Partisan
-CC11398,"Galeai, Noe",House,51,,Republican
-CC11399,"Caparida-Schnackenberg, Cora",Maui Council,Molokai,Maui,Non-Partisan
-CC11400,"Kaehuaea, Wendell",Governor,,,Democrat
-CC11401,"Pregitzer, Micah",House,50,,Democrat
-CC11402,"Magaoay, Ernest",Lt. Governor,,,Non-Partisan
-CC11403,"Yim, Alan",House,17,,Libertarian
-CC11404,"Hashimoto, Troy",House,8,,Democrat
-CC11405,"Lee, Marilyn",House,36,,Democrat
-CC11406,"Fung, Lester",House,46,,Democrat
-CC11407,"Wagner, Mary",House,8,,Democrat
-CC11408,"La Chica, Mae Patricia",House,36,,Democrat
-CC11409,"Souza, Ronette",House,18,,Republican
-CC11410,"Okimoto, Val",House,36,,Republican
-CC11411,"King, Samuel",OHA,Oahu,,Non-Partisan
-CC11412,"Kaiwi, Debra",Maui Council,Kahului,Maui,Democrat
-CC11413,"Halversen, William",Hawaii Council,2,Hawaii,Non-Partisan
-CC11414,"Kama, Natalie",Maui Council,Kahului,Maui,Non-Partisan
-CC11415,"Lipscomb, Steve",Lt. Governor,,,Republican
-CC11416,"Hazama, Dean",House,36,,Democrat
-CC11417,"Paris, Anthony",OHA,At-Large,,Non-Partisan
-CC11418,"Dalire, Kaui",House,49,,Democrat
-CC11419,"Kayes, Andrew",House,9,,Non-Partisan
-CC11420,"Simbre-Medeiros, Shirley",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11421,"Leslie, Gene",House,5,,Democrat
-CC11422,"Fukumoto, Elton",House,23,,Democrat
-CC11423,"Wirick, Frederic",Hawaii Council,5,Hawaii,Non-Partisan
-CC11424,"Mann, Thomas",House,6,,Republican
-CC11425,"LHeureux, Ray",Governor,,,Republican
-CC11426,"Azinga, P.M.",House,30,,Republican
-CC11427,"Last, Michael",Senate,3,,Libertarian
-CC11428,"Kaaihue, Angela",House,43,,Non-Partisan
-CC11429,"Ready, Boyd",House,47,,Republican
-CC11430,"Garcia, Diamond",House,43,,Republican
-CC11431,"Feste, Bryan",House,2,,Republican
-CC11432,"Saito, Roy",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11433,"Shiratori, Miles",House,50,,Democrat
-CC11434,"Bolo, Patrocinio",House,40,,Non-Partisan
-CC11435,"Ahu-Isa, Lei",OHA,At-Large,,Non-Partisan
-CC11436,"Fukushima, Richard",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11437,"Kopelman, Orion",Mayor,,Maui,Non-Partisan
-CC11438,"Amsterdam, Kaui",OHA,At-Large,,Non-Partisan
-CC11439,"Maluafiti, Alicia",Senate,19,,Democrat
-CC11440,"Henski, Kathryn",House,22,,Republican
-CC11441,"Roversi, Adam",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11442,"Mariano, Lynn",Senate,12,,Republican
-CC11443,"Marumoto, Ricky",Honolulu Council,4,Honolulu,Non-Partisan
-CC11444,"Kanealii-Kleinfelder, Matthew",Hawaii Council,5,Hawaii,Non-Partisan
-CC11445,"DeCosta, Bill",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11446,"Kealoha-Lindsey, Mela",House,27,,Republican
-CC11447,"Mossman, Paul",Honolulu Council,3,Honolulu,Non-Partisan
-CC11448,"Sadegh, Abraham",Hawaii Council,1,Hawaii,Green
-CC11449,"Mather, Jennifer",House,10,,Green
-CC11450,"Hanohano, Faye",OHA,At-Large,,Democrat
-CC11451,"Tanabe, Van",Governor,,,Democrat
-CC11452,"Crouse, Zandra",Maui Council,South Maui,Maui,Non-Partisan
-CC11453,"Myrick, Ollie",House,11,,Democrat
-CC11454,"Brewer, James",Governor,,,Green
-CC11455,"Ing, Renee",Lt. Governor,,,Green
-CC11456,"Svrcina, Emil",Senate,18,,Republican
-CC11457,"Paik-Mander, Esther",House,1,,Democrat
-CC11458,"Juarez, Michael",House,43,,Democrat
-CC11459,"Makekau, Kealii",OHA,At-Large,,Non-Partisan
-CC11460,"Smart, Mary",House,37,,Republican
-CC11461,"Parish, Margaret",Hawaii Council,9,Hawaii,Non-Partisan
-CC11462,"Riley, Timothy",Senate,21,,Democrat
-CC11463,"Nikhilananda, Nick",House,13,,Green
-CC11464,"Chock, Coby",House,51,,Non-Partisan
-CC11465,"Duzon, Veronica",Senate,19,,Democrat
-CC11466,"Puuohau, Kali",OHA,At-Large,,Non-Partisan
-CC11467,"Daligdig, Elaine",House,15,,Democrat
-CC11468,"Vidinha, Harold",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11469,"Daligdig, Theodore",Kauai Council,At-Large,Kauai,Democrat
-CC11470,"James, Choon",Honolulu Council,2,Honolulu,Democrat
-CC11471,"Burke, Jackie",OHA,Oahu,,Democrat
-CC11472,"Iona, Stephanie",House,16,,Democrat
-CC11473,"Link, Eric",Governor,,,Non-Partisan
-CC11474,"Hawley, Alec",Mayor,,Maui,Non-Partisan
-CC11475,"Lam, Adriel",House,49,,Non-Partisan
-CC11476,"Kanahele, Daniel",House,11,,Non-Partisan
-CC11477,"DesMarais, Ana-Lucia",House,16,,Republican
-CC11478,"Borowiec, Adam",Maui Council,Makawao,Maui,Democrat
-CC11479,"Zahnd, Laurent",Mayor,,Maui,Non-Partisan
-CC11480,"Blackwell, Selina",Governor,,,Non-Partisan
-CC11481,"Kalima, Leona",OHA,Oahu,,Democrat
-CC11482,"Haliniak-Lloyd, Gayla",Senate,7,,Democrat
-CC11483,"Murray, Francine",OHA,Oahu,,Non-Partisan
-CC11484,"Akaka, Kalei",OHA,Oahu,,Democrat
-CC11485,"Solis, Anthony",Senate,18,,Republican
-CC11486,"Fidelibus, Christopher",House,41,,Republican
-CC11487,"Shishido, Melissah",Senate,6,,Green
-CC11488,"Ahuna, Kanoe",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11489,"Sharsh-Davis, Lei",OHA,At-Large,,Non-Partisan
-CC11490,"Fogel, Frederick",House,3,,Democrat
-CC11491,"Acain, Dominic",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11492,"Burlew, Lloyd",Honolulu Council,2,Honolulu,Non-Partisan
-CC11493,"Kawano, Yumi",Hawaii Council,6,Hawaii,Non-Partisan
-CC11495,"Belekanich, Thomas",House,7,,Republican
-CC11496,"Manipol-Larson, Grace",House,2,,Republican
-CC11497,"Kapu, Keeaumoku",OHA,Maui,,Non-Partisan
-CC11500,"Fung, Lester",Mayor,,Honolulu,Democrat
-CC11501,"Texeira, Alan",Honolulu Council,3,Honolulu,Non-Partisan
-CC11502,"Brown, Robert J.",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC11503,"Aki, Jacob",OHA,At-Large,,Democrat
-CC11504,"Espino, Zachary",House,51,,Democrat
-CC11506,"Maglinti, Austin",House,39,,Republican
-CC11507,"Cordero, Radiant",Honolulu Council,7,Honolulu,Non-Partisan
-CC11508,"Tulba, Augusto",Honolulu Council,9,Honolulu,Non-Partisan
-CC11509,"Amemiya, Keith",Mayor,,Honolulu,Non-Partisan
-CC11510,"Russell, Simon",House,12,,Democrat
-CC11511,"Kau, Megan",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC11512,"Gardner, Becky",House,20,,Democrat
-CC11513,"Kim, Tae",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC11514,"Pratt-Aquino, Sandra",House,48,,Democrat
-CC11515,"Kam, Vickie",House,42,,Democrat
-CC11516,"Esser, Jacquelyn",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC11517,"Urban, Tante",Mayor,,Hawaii,Non-Partisan
-CC11518,"Alm, Steve",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC11519,"Aiwohi, Kaapunialiionalanikiekie",House,8,,Democrat
-CC11520,"Kogachi, Keith",House,17,,Democrat
-CC11521,"Davenport, Kathleen",Honolulu Council,1,Honolulu,Non-Partisan
-CC11522,"Fitzgerald, Bob",Mayor,,Hawaii,Democrat
-CC11523,"McLeod, John",Mayor,,Honolulu,Non-Partisan
-CC11524,"Fanene, Banner",Senate,22,,Non-Partisan
-CC11525,"Ishibashi, Jay",House,20,,Democrat
-CC11526,"Sayama, Jackson",House,20,,Democrat
-CC11527,"Nadamoto, Dwight",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC11528,"Branco, Patrick",House,50,,Democrat
-CC11529,"Kalima, Grant",Honolulu Council,3,Honolulu,Non-Partisan
-CC11530,"Hanakahi, Kaipo",OHA,At-Large,,Non-Partisan
-CC11531,"Mandado, Ryan",Honolulu Council,7,Honolulu,Democrat
-CC11532,"Morrison, Bethany",Hawaii Council,1,Hawaii,Democrat
-CC11533,"Inaba, Holeka",Hawaii Council,8,Hawaii,Non-Partisan
-CC11534,"Turbin, Derek",House,20,,Democrat
-CC11535,"James, Choon",Mayor,,Honolulu,Non-Partisan
-CC11536,"Naauao-Ota, Chance",Senate,14,,Democrat
-CC11537,"Smith, Alexander",House,51,,Democrat
-CC11538,"Arriola, Jesus",Senate,10,,Democrat
-CC11539,"Mangauil, Joshua",OHA,Hawaii,,Non-Partisan
-CC11540,"Kawaauhau, Larry",OHA,At-Large,,Non-Partisan
-CC11541,"Marten, Lisa",House,51,,Democrat
-CC11542,"Uehara, Ryan",House,41,,Non-Partisan
-CC11543,"Chong, Doni",House,51,,Republican
-CC11544,"Dicks, Karl",Mayor,,Honolulu,Non-Partisan
-CC11546,"Akao, Alan",House,51,,Democrat
-CC11547,"Chock, Coby",House,51,,Democrat
-CC11548,"Blangiardi, Rick",Mayor,,Honolulu,Non-Partisan
-CC11549,"Kiaaina, Esther",Honolulu Council,3,Honolulu,Democrat
-CC11550,"Garry, Timothy",Mayor,,Honolulu,Non-Partisan
-CC11551,"Bonoan, Feena",Senate,20,,Libertarian
-CC11552,"Cabebe, Donovan",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11553,"de Jetley, Alberta",Maui Council,Lanai,Maui,Non-Partisan
-CC11554,"Tam, Adrian",House,22,,Democrat
-CC11555,"Yuda, James",Mayor,,Hawaii,Non-Partisan
-CC11556,"Watase, Dave",Honolulu Council,5,Honolulu,Non-Partisan
-CC11557,"Kahue-Cabanting, Ui",OHA,Molokai,,Non-Partisan
-CC11558,"Ho, Erik",House,51,,Aloha Aina
-CC11559,"Tsuneyoshi, Earl",Honolulu Council,9,Honolulu,Non-Partisan
-CC11561,"Mano, Matthew",Maui Council,Lanai,Maui,Non-Partisan
-CC11562,"Ritte, Walter",House,13,,Democrat
-CC11563,"Ruggles, Michael",Mayor,,Hawaii,Democrat
-CC11564,"Last, Michael",House,5,,Libertarian
-CC11565,"Marzo, Shelson",Mayor,,Hawaii,Non-Partisan
-CC11566,"Hai-Kelly, Grayden",Mayor,,Hawaii,Non-Partisan
-CC11567,"Agsalda, Aaron",House,46,,Democrat
-CC11568,"Simon, Keone",House,34,,Republican
-CC11569,"Waltjen, Kelden",Prosecuting Attorney,,Hawaii,Non-Partisan
-CC11570,"Clark, John",Senate,19,,Democrat
-CC11571,"Rodenhurst, Ikaika",Hawaii Council,5,Hawaii,Non-Partisan
-CC11572,"Fogel, Frederick",House,3,,Libertarian
-CC11573,"Cermelj, Hope",House,4,,Republican
-CC11574,"Souza, Kanani",House,50,,Republican
-CC11575,"Nakanelua, Laura",House,50,,Republican
-CC11576,"Matson, Shannon",House,3,,Democrat
-CC11577,"Hanohano, Naomi",Honolulu Council,1,Honolulu,Non-Partisan
-CC11578,"McDonald, Kevin",Senate,13,,Democrat
-CC11579,"Auna, Jared",Prosecuting Attorney,,Hawaii,Non-Partisan
-CC11580,"Palacat-Nelsen, Shane",OHA,At-Large,,Non-Partisan
-CC11581,"Souza, Keoni",OHA,At-Large,,Non-Partisan
-CC11582,"Kahui, Craig",Hawaii Council,8,Hawaii,Non-Partisan
-CC11583,"Greenwell, Robert",Mayor,,Hawaii,Non-Partisan
-CC11584,"Chapman, Michael",House,45,,Democrat
-CC11585,"Grimmer, Scott",House,51,,Democrat
-CC11586,"Higa, Stacy",Mayor,,Hawaii,Non-Partisan
-CC11587,"Ochs, Nicholas",House,22,,Republican
-CC11588,"Kaiwi, Debra",Maui Council,Kahului,Maui,Democrat
-CC11589,"Burrows, Shannon",Senate,2,,Democrat
-CC11590,"Kahau, Keline",House,35,,Aloha Aina
-CC11591,"Haumea, Desmon",House,4,,Aloha Aina
-CC11592,"Juan, Elroy",Hawaii Council,1,Hawaii,Non-Partisan
-CC11593,"Shiraishi, Paul",Senate,10,,Non-Partisan
-CC11594,"Aldeguer, Maysana",House,44,,Republican
-CC11595,"Kihoi, Lei",OHA,Hawaii,,Democrat
-CC11596,"Halversen, William",Hawaii Council,2,Hawaii,Democrat
-CC11597,"Simpliciano, Joseph",House,44,,Aloha Aina
-CC11598,"Azevedo, Neil",Mayor,,Hawaii,Non-Partisan
-CC11599,"Paris, Anthony",Honolulu Council,1,Honolulu,Democrat
-CC11600,"Kama-Toth, Kukana",House,51,,Republican
-CC11601,"Aiona, Philip",Hawaii Council,9,Hawaii,Non-Partisan
-CC11602,"Monas, Steve",House,14,,Republican
-CC11604,"Hoohuli, Shaena",House,43,,Aloha Aina
-CC11605,"Kaehuaea, Wendell",Mayor,,Hawaii,Non-Partisan
-CC11606,"Cook, Thomas",Maui Council,South Maui,Maui,Non-Partisan
-CC11607,"Chrupalyk, Jennifer",House,9,,Aloha Aina
-CC11608,"Marler, Theresa",House,13,,Aloha Aina
-CC11609,"Keen, Ipo",Senate,5,,Aloha Aina
-CC11610,"Danner, Michael",House,49,,Republican
-CC11611,"Decker, Johanna",House,5,,Aloha Aina
-CC11612,"Harrington, Rachel",House,7,,Aloha Aina
-CC11613,"Kawano, Yumi",Mayor,,Hawaii,Non-Partisan
-CC11614,"Kim-Marshall, Kristina",Senate,25,,Republican
-CC11615,"Maldonado, Celestine",House,41,,Democrat
-CC11616,"Perez, Brittny",OHA,Kauai,,Non-Partisan
-CC11617,"Ley, Brian",House,4,,Non-Partisan
-CC11618,"Lindsey, Benjamin",OHA,Hawaii,,Non-Partisan
-CC11619,"Vanderpool, Robin",House,13,,Republican
-CC11620,"Justus, Edgar",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11621,"Gyldstrand, Travis",House,10,,Aloha Aina
-CC11622,"Fukushima, Richard",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11623,"Thielen, Gregory",Honolulu Council,3,Honolulu,Non-Partisan
-CC11625,"Ohara, Eileen",House,4,,Democrat
-CC11626,"Bulosan, Addison",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11627,"Miller, John",Senate,22,,Republican
-CC11628,"Parker, Rory",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11629,"Kahikina, Michael",House,43,,Democrat
-CC11630,"Ishibashi, Herbert",OHA,Hawaii,,Aloha Aina
-CC11631,"McMackin, Devin",House,2,,Aloha Aina
-CC11632,"Nishimura, Wally",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11633,"Dandurand, Michael",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11634,"Driskill, Thomas",House,18,,Democrat
-CC11635,"Greenberg, Howard",House,11,,Aloha Aina
-CC11636,"Clement, Jane",Hawaii Council,7,Hawaii,Non-Partisan
-CC11637,"Eyre, Aja",Maui Council,Makawao,Maui,Non-Partisan
-CC11638,"Kamekona, Carol",Maui Council,Kahului,Maui,Non-Partisan
-CC11639,"Parrish, Michael",House,19,,Non-Partisan
-CC11640,"Keane, Ranae",Hawaii Council,9,Hawaii,Non-Partisan
-CC11641,"Boyette, Jennifer",House,33,,Republican
-CC11642,"Svrcina, Emil",House,37,,Republican
-CC11643,"Alcos, David",House,41,,Republican
-CC11644,"Bondera, Colehour",House,5,,Democrat
-CC11645,"Ready, Boyd",House,47,,Republican
-CC11646,"Chen, Wayne",House,19,,American Shopping
-CC11647,"Waialeale Battad, Jade",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11648,"Perreira, Monique",Hawaii Council,1,Hawaii,Republican
-CC11649,"Stonebraker, William",Mayor,,Honolulu,Non-Partisan
-CC11650,"Wong, Ho Yin",Mayor,,Honolulu,Non-Partisan
-CC11651,"Nakoa, Leonard",House,10,,Aloha Aina
-CC11652,"Hughes, Susan",House,3,,Republican
-CC11653,"Keesing, Audrey",Mayor,,Honolulu,Non-Partisan
-CC11654,"Hao, Louis",OHA,Hawaii,,Non-Partisan
-CC11655,"Franks, Victoria",Kauai Council,At-Large,Kauai,Republican
-CC11656,"Kaaihue, Henry",Hawaii Council,3,Hawaii,Non-Partisan
-CC11657,"Cashman-Aiu, Noelani",OHA,Hawaii,,Non-Partisan
-CC11658,"Bourgoin, Duke",Mayor,,Honolulu,Non-Partisan
-CC11659,"Azinga, P.M.",House,30,,Republican
-CC11660,"Cuaresma, Thora-Jean",Senate,22,,Democrat
-CC11661,"Patel, Sne",Maui Council,West Maui,Maui,Non-Partisan
-CC11662,"Yaqoob, Anosh",Prosecuting Attorney,,Honolulu,Non-Partisan
-CC11663,"Smith, Kamealoha",OHA,Kauai,,Non-Partisan
-CC11664,"Lee, Philmund",Honolulu Council,5,Honolulu,Democrat
-CC11665,"Burke, Jackie",OHA,At-Large,,Non-Partisan
-CC11667,"Alapa, Luana",OHA,Molokai,,Non-Partisan
-CC11668,"Mussell, Micah",Mayor,,Honolulu,Aloha Aina
-CC11669,"Medeiros-Garcia, Jaerick",Hawaii Council,1,Hawaii,Democrat
-CC11670,"Quilingking, Tess",House,30,,Republican
-CC11671,"Kealoha, Warland",Honolulu Council,3,Honolulu,Non-Partisan
-CC11672,"Almeida, Kaiulani",OHA,Hawaii,,Non-Partisan
-CC11673,"Yoder, Steven",House,15,,Republican
-CC11674,"Neves, Paul",Hawaii Council,3,Hawaii,Non-Partisan
-CC11675,"Shaneyfelt, Ted",Mayor,,Hawaii,Non-Partisan
-CC11676,"Verschuur, Cynthia",Mayor,,Hawaii,Libertarian
-CC11677,"Bridges, Christopher",Prosecuting Attorney,,Hawaii,Non-Partisan
-CC11678,"Hill, Robert",House,8,,Democrat
-CC11679,"Wilson, Kalaniakea",OHA,Hawaii,,Non-Partisan
-CC11680,"Glendon, Michael",Mayor,,Hawaii,Non-Partisan
-CC11681,"Kerfoot, Galen",Honolulu Council,1,Honolulu,Non-Partisan
-CC11682,"Higgins, Vicki",Senate,10,,Democrat
-CC11683,"Ka-Ipo, Ron",Senate,2,,Aloha Aina
-CC11684,"Bryant, Paul",Mayor,,Hawaii,Non-Partisan
-CC11685,"Sonoda, Lenson",OHA,At-Large,,Non-Partisan
-CC11686,"Hoffeld, Cyd",OHA,Hawaii,,Non-Partisan
-CC11687,"Sexton, Andrew",House,24,,Aloha Aina
-CC11688,"Nelson, Jacquelyn",Kauai Council,At-Large,Kauai,Non-Partisan
-CC11689,"Moore, Jaclyn",Hawaii Council,1,Hawaii,Non-Partisan
-CC11690,"Shin, Lorraine",House,1,,Republican
-CC11691,"Rathbun, Amanda",House,41,,Democrat
-CC11692,"Hood, Carl",House,35,,Republican
-CC11693,"Pau, Louis",OHA,Hawaii,,Non-Partisan
-CC11694,"Taniguchi, Naomi",Kauai Council,At-Large,Kauai,Democrat
-CC11696,"Misalucha, Bennette",Senate,16,,Democrat
-CC11697,"Kitashima, Kelly",Senate,16,,Republican
-CC11699,"Fujinaka, Janel",Senate,11,,Democrat
-CC11700,"Morgan, Paul",Governor,,,Republican
-CC11701,"Alcubilla, Sergio",Lt. Governor,,,Democrat
-CC11702,"Acasio, Laura",Senate,1,,Democrat
-CC11704,"Kim, Richard",Governor,,,Democrat
-CC11705,"Johnson, Dan",House,12,,Republican
-CC11706,"Fung, Lester",House,46,,Republican
-CC11707,"Nomura, Chase",House,13,,Democrat
-CC11709,"LaVonne, Asia",Senate,13,,Republican
+reg_no,candidate_name
+CC10132,"Hannemann, Mufi"
+CC10133,"Aiona, Sam"
+CC10134,"Apo, Todd"
+CC10135,"Baker, Rosalyn"
+CC10136,"Bunda, Robert"
+CC10137,"Cachola, Romy"
+CC10138,"Carlisle, Peter"
+CC10140,"English, Kalani"
+CC10141,"Falconer, James ""Kimo"""
+CC10142,"Garcia, Nestor"
+CC10143,"Hanabusa, Colleen"
+CC10144,"Hee, Clayton"
+CC10145,"Hogue, Bob"
+CC10146,"Hooser, Gary"
+CC10147,"Ige, David"
+CC10148,"Inouye, Lorraine"
+CC10149,"Kanno, Brian"
+CC10150,"Kobayashi, Ann"
+CC10151,"Marshall, Barbara"
+CC10152,"Nishioka, Nadine"
+CC10153,"Trimble, Gordon"
+CC10155,"Whalen, Paul"
+CC10156,"Bukoski, Kika"
+CC10157,"Kimura, Jay"
+CC10158,"Menor, Ron"
+CC10159,"Nishihara, Clarence"
+CC10161,"Tulang, Michael"
+CC10162,"Aiona, James"
+CC10163,"Hemmings, Fred"
+CC10164,"Leong, Keoki"
+CC10166,"Berg, Lyla"
+CC10167,"De Costa, Craig"
+CC10168,"Chang, Jerry"
+CC10169,"Chun Oakland, Suzanne"
+CC10170,"Danner, Robin"
+CC10171,"Dela Cruz, Donovan"
+CC10172,"Ford, Brenda"
+CC10174,"Green, Josh"
+CC10176,"Hiraki, Ken"
+CC10178,"Ihara, Les"
+CC10179,"Ikeda, Donald"
+CC10180,"Ito, Ken"
+CC10181,"Jacobson, Robert"
+CC10182,"Johnson, JoAnne"
+CC10184,"Lee, Marilyn"
+CC10186,"Luke, Sylvia"
+CC10187,"Kokubun, Russell"
+CC10188,"Magaoay, Michael"
+CC10189,"Mateo, Danny"
+CC10190,"Nishimoto, Scott"
+CC10191,"Oshiro, Marcus"
+CC10192,"Pontanilla, Joseph"
+CC10193,"Rapozo, Melvin"
+CC10194,"Rezentes, Cynthia"
+CC10195,"Rhoads, Karl"
+CC10197,"Saiki, Scott"
+CC10198,"Sakamoto, Norman"
+CC10199,"Sanborn, J. William"
+CC10201,"Shimabukuro, Maile"
+CC10202,"Smith, Paul"
+CC10203,"Takamine, Dwight"
+CC10204,"Taniguchi, Brian"
+CC10205,"Thielen, Cynthia"
+CC10206,"Tom, Robert"
+CC10207,"Meyer, Colleen"
+CC10208,"Wakai, Glenn"
+CC10209,"Ward, Gene"
+CC10210,"Smith, Andy"
+CC10211,"Abinsay, Felipe (Jun)"
+CC10213,"Hamakawa, Eric"
+CC10214,"Waihee, John"
+CC10215,"Aila, William"
+CC10216,"Kawamoto, Cal"
+CC10217,"Tsuji, Clifton"
+CC10218,"Akana, Rowena"
+CC10219,"Moses, Mark"
+CC10221,"Finnegan, Lynn"
+CC10222,"Cachola, Earl"
+CC10223,"Lingle, Linda"
+CC10224,"Caldwell, Kirk"
+CC10226,"Kouchi, Ron"
+CC10227,"Wilcox, Mike"
+CC10229,"Espero, William"
+CC10230,"Say, Calvin"
+CC10231,"Sonson, Alex"
+CC10232,"Yamashita, Kyle"
+CC10233,"Morita, Hermina"
+CC10234,"Herkes, Robert"
+CC10235,"Yamane, Ryan"
+CC10236,"Evans, Cindy"
+CC10238,"Tsutsui, Shan"
+CC10239,"Sugimura, Jane"
+CC10240,"Marumoto, Barbara"
+CC10241,"Mizuno, John"
+CC10242,"Ching, Corinne"
+CC10243,"Har, Sharon"
+CC10244,"Stevens, Anne"
+CC10245,"Heen, Walter"
+CC10246,"Takumi, Roy"
+CC10248,"Victorino, Michael"
+CC10249,"Takai, K. Mark"
+CC10250,"Pilago, K. Angel"
+CC10251,"Manahan, Joey"
+CC10252,"Hokama, Riki"
+CC10253,"Kahoohalahala, Sol"
+CC10254,"Kim, Donna"
+CC10255,"Oshiro, Blake"
+CC10256,"Karamatsu, Jon"
+CC10258,"Manayan, Rick"
+CC10259,"Souki, Joseph"
+CC10260,"Higa, Stacy-Stan"
+CC10261,"Nakasone, Robert"
+CC10262,"Yukimura, JoAnn"
+CC10264,"McKelvey, Angus"
+CC10265,"Sagum, Roland"
+CC10266,"Apana, James (Kimo)"
+CC10267,"Ghean, Kay"
+CC10268,"Djou, Charles"
+CC10269,"Belatti, Della"
+CC10270,"Iseri, Shaylene"
+CC10271,"Kaneshiro, Daryl"
+CC10272,"Salcedo, Janice"
+CC10273,"Carroll, Mele"
+CC10275,"Iwase, Randall"
+CC10276,"Waters, Thomas"
+CC10277,"West, Stephen"
+CC10278,"Tokioka, James"
+CC10279,"Gabbard, Mike"
+CC10280,"Moepono, Sesnita"
+CC10281,"Yoshimoto, J"
+CC10282,"Tokuda, Jill"
+CC10283,"Arakawa, Alan"
+CC10284,"Fukunaga, Carol"
+CC10286,"Tam, Rod"
+CC10287,"Slom, Sam"
+CC10288,"Harding, Kenneth"
+CC10289,"Chong, Dwight"
+CC10290,"Brower, Tom"
+CC10291,"Yee, Randall"
+CC10292,"Valenciano, Randal"
+CC10293,"Hanohano, Faye"
+CC10294,"Wong, Collin"
+CC10295,"Pine, Kymberly"
+CC10296,"Cabanilla, Rida"
+CC10297,"Furfaro, Jay"
+CC10298,"Middleton, Carlton"
+CC10300,"Tavares, Charmaine"
+CC10301,"Baptiste, Bryan"
+CC10302,"DeNaie, Lucienne"
+CC10303,"Bynum, Tim"
+CC10304,"Hoffmann, Peter"
+CC10305,"Okino, Gary"
+CC10308,"Asing, William"
+CC10309,"Molina, Michael"
+CC10312,"Halford, Chris"
+CC10313,"Yagong, Dominic"
+CC10314,"Agor, Ron"
+CC10315,"Naeole, Emily"
+CC10317,"Machado, Colette"
+CC10318,"Anderson, Michelle"
+CC10319,"Dudley, Kioni"
+CC10320,"Philips, Carol"
+CC10321,"Galuteria, Brickwood"
+CC10322,"Allen, Julia"
+CC10323,"Ikeda, Donna"
+CC10324,"Cummings, Mamo"
+CC10326,"Kane, Dain"
+CC10329,"De Giacomo, Frank"
+CC10330,"Baisa, Gladys"
+CC10335,"Kenoi, William"
+CC10336,"Fevella, Kurt"
+CC10338,"Hong, Ted"
+CC10339,"Tom, Terrance"
+CC10340,"Enriques, Guy"
+CC10341,"Bainum, Duke"
+CC10342,"Tamayo, Tulsi Gabbard"
+CC10343,"Aipoalani, Hanalei"
+CC10345,"Case, Edward"
+CC10346,"Awana, Karen"
+CC10347,"Kam, Thomas"
+CC10348,"Kim, Jo"
+CC10349,"Starr, Summer"
+CC10350,"Kama, Natalie"
+CC10351,"Saylors, Denise"
+CC10352,"Nakashima, Mark"
+CC10353,"Kualii, KipuKai"
+CC10354,"MacGregor, Maegan"
+CC10356,"Baclig, Andy"
+CC10357,"Parayno, Ilalo"
+CC10358,"Wooley, Jessica"
+CC10359,"Coffman, George"
+CC10361,"Rahman, Inam"
+CC10363,"Blas, Fred"
+CC10365,"Moore, Michael"
+CC10366,"Mano, Matthew"
+CC10367,"Halperin, Susan"
+CC10368,"Couch, Don"
+CC10369,"Watanabe, Herbert"
+CC10370,"Shields, Janice"
+CC10371,"Naeole-Beason, Emily"
+CC10372,"Joseph, Wayne"
+CC10373,"Onishi, Dennis"
+CC10375,"Aquino, Henry"
+CC10377,"Kawakami, Derek"
+CC10378,"Delo Santos, Catherine"
+CC10379,"Ornellas, John"
+CC10380,"Offenbaker, Steven"
+CC10382,"Torres, Raynard"
+CC10384,"Legal, Jack"
+CC10385,"Kealoha, Christobel"
+CC10386,"Riviere, Gil"
+CC10387,"Verdadero, Dante"
+CC10388,"Toguchi, Garrett"
+CC10389,"Cochran, Mary"
+CC10390,"Gapol, Derek"
+CC10392,"Cataluna, Donald"
+CC10393,"Fogel, Frederick"
+CC10394,"Fale, Richard"
+CC10395,"Lee, Christopher"
+CC10396,"Sparks, Steven"
+CC10401,"Purdy, Robert"
+CC10402,"Prentiss, Merrily"
+CC10404,"Kawananakoa, Quentin"
+CC10405,"Reynolds, Joseph"
+CC10406,"Lindsey, Robert"
+CC10407,"Stocksdale, Kaniu"
+CC10408,"Hecht, Debbie"
+CC10410,"Gingerich, Michael"
+CC10412,"Marzi, Anthony"
+CC10415,"Fontaine, George"
+CC10417,"Schultz, Michael"
+CC10418,"Heng, Jet"
+CC10419,"Prevedouros, Panos"
+CC10421,"Vasquez-Dela Cerna, Lynn"
+CC10422,"Apoliona, Suzanne Haunani"
+CC10424,"Safarik, Gary"
+CC10425,"Walsh, Patrick"
+CC10427,"Saniatan, Rito"
+CC10428,"Nishiki, Kahekai"
+CC10429,"Carvalho, Bernard"
+CC10430,"Masilamoney, Sam"
+CC10433,"Domingo, Constante"
+CC10434,"Aiona, Darrow"
+CC10435,"Bertram, Joe"
+CC10439,"Isbell, Evelyn"
+CC10440,"Gumapac, Kale"
+CC10446,"Bryant, Paul"
+CC10450,"Namuo, Pauline"
+CC10451,"Medeiros, William"
+CC10452,"Pacheco, Maria"
+CC10453,"Ho, Wilson"
+CC10455,"Monk, Amy"
+CC10457,"Akuna, Janis"
+CC10458,"Lee, Carol Mon"
+CC10460,"Bartolo, Robert"
+CC10461,"Georgi, JoAnne"
+CC10464,"Honda, Helene"
+CC10465,"Lum Lee, Christopher-Travis"
+CC10466,"Cullen, Ty"
+CC10467,"Kawahara, Lani"
+CC10469,"Chang, Dickie"
+CC10470,"Berg, Thomas"
+CC10471,"Young, Tsing"
+CC10472,"Anderson, Ikaika"
+CC10478,"Howden, Michael"
+CC10479,"Fujiyama, Kenneth"
+CC10480,"Dela Cruz, Ronald"
+CC10481,"Weinert, Eric"
+CC10482,"Riley, Randell"
+CC10483,"Brookman, Thomas"
+CC10487,"Madden, Ramon"
+CC10488,"Kaneshiro, Daryl"
+CC10489,"Thronas, George"
+CC10491,"Taylor, Kenneth"
+CC10492,"Fukuyama, Alan"
+CC10494,"Kidani, Michelle"
+CC10496,"Abe, Michael"
+CC10497,"Jeffryes, Jerilyn"
+CC10498,"Kippen, Colin"
+CC10499,"Agor, Ron"
+CC10501,"Bieber, Rolf II"
+CC10502,"Pasadava, Linda"
+CC10503,"Ku, Tercia"
+CC10504,"Choy, Isaac"
+CC10505,"de Jetley, Alberta"
+CC10507,"McMahon, Nancy"
+CC10508,"Bainum, Duke"
+CC10513,"Christensen, Shawn"
+CC10516,"Vierra, Mickey"
+CC10517,"Nishiki, Wayne"
+CC10519,"Vares, Norman"
+CC10520,"Blumer-Buell, John"
+CC10522,"Schatz, Brian"
+CC10524,"Hamamoto, Shawn"
+CC10525,"Chang, Stanley"
+CC10526,"Holmes, Stephen"
+CC10527,"Leong, Keoki"
+CC10529,"Abercrombie, Neil"
+CC10530,"Ho, Wilson"
+CC10534,"Bean, Tracy"
+CC10536,"Ryan, Ellen Pohai"
+CC10537,"Keith-Agaran, Gilbert"
+CC10538,"Carroll, John"
+CC10539,"King, Adrienne"
+CC10540,"Cochran, Elle"
+CC10545,"Rockwell, Phillip"
+CC10548,"Waialeale, George"
+CC10549,"Quimby, James"
+CC10550,"Turbin, Richard"
+CC10551,"Kinney, Nathaniel"
+CC10553,"Pacarro, Franklin Jr."
+CC10554,"Bornhorst, Heidi"
+CC10555,"Matsunaga, Matthew"
+CC10556,"White, John"
+CC10557,"Bean, Tracy"
+CC10558,"McIntosh, Harry"
+CC10559,"Miranda, Marc"
+CC10560,"Lively, Barbara"
+CC10561,"Ichiyama, Linda"
+CC10562,"Chang, David"
+CC10563,"Shiraki, Reed"
+CC10565,"Kawakami, Shaun"
+CC10566,"Montes, Anel"
+CC10567,"Lyons, Michael"
+CC10568,"Martin, Ernest"
+CC10569,"Hart, Christopher"
+CC10570,"Weatherford, James"
+CC10571,"Low, Jeremy"
+CC10572,"Smart, Brittany"
+CC10573,"Mee-Lee, Matthew"
+CC10576,"DeJean, Khistina"
+CC10582,"Pandolfe, Joseph Jr."
+CC10583,"Clute, Eve"
+CC10585,"Puletasi, Palasi Sam"
+CC10586,"Wong, Christopher"
+CC10588,"Toyomura, Ryan"
+CC10589,"Carroll, Robert"
+CC10590,"Nakamura, Nadine"
+CC10591,"Baker, Loren"
+CC10592,"Hamman, David"
+CC10593,"Ching, Darwin"
+CC10594,"Nomura, Leona"
+CC10595,"Bradshaw, Jason"
+CC10597,"Laub, Paul"
+CC10598,"Kalua, Ezekiela"
+CC10599,"Pollard, Thomas"
+CC10601,"Lane, T.J."
+CC10602,"Hart, Ronald"
+CC10603,"Meyers, William"
+CC10604,"Price, Larry"
+CC10606,"Synan, Dwight"
+CC10607,"Kama, Natalie"
+CC10608,"Baron, Christopher"
+CC10609,"Cuadra, Gregory"
+CC10610,"Lavoie, Frank"
+CC10611,"Kopelman, Ori"
+CC10612,"Johanson, Aaron"
+CC10613,"Doyle, Michael"
+CC10614,"Freire, Enock"
+CC10617,"Hopkins, Jeremy"
+CC10618,"Kapu, Jonah"
+CC10619,"Mano, Matthew"
+CC10620,"Singer, Solomon"
+CC10621,"Chun, Cory"
+CC10622,"Henderson, Scott"
+CC10623,"Hoylman, Jeffrey"
+CC10624,"Prentiss, Charles"
+CC10625,"Daligdig III, Theodore"
+CC10626,"Hashem, Mark"
+CC10627,"Tanabe, Van"
+CC10628,"Shiratori, Miles"
+CC10629,"Capelouto, Marissa"
+CC10630,"Amorin, Johanna"
+CC10631,"Morikawa, Daynette"
+CC10632,"Mohr, John"
+CC10636,"Justus, Edgar"
+CC10637,"Hughey, Justin"
+CC10638,"Clapes, Anthony"
+CC10639,"Manner, Paul"
+CC10640,"De Giacomo, Frank"
+CC10641,"Payne, Gary"
+CC10642,"Franklin, Judy"
+CC10643,"Wilson, Leona Rocha"
+CC10644,"Golojuch, Michael"
+CC10645,"Fukumoto, Beth"
+CC10646,"Reyes, Arturo (Art) Pacheco"
+CC10647,"Milbourn, Peter"
+CC10648,"Escorzon, Tammy Ann"
+CC10649,"Kong, Samuel"
+CC10651,"Piltz, Ransom"
+CC10653,"Linville, Marcia"
+CC10654,"Lewis, Joseph"
+CC10656,"Kaapu, Carole"
+CC10657,"Hodges, Marc"
+CC10658,"Lum Ho, Sharon"
+CC10661,"Fenton, Larry"
+CC10663,"Sagaysay, Lawrence"
+CC10664,"Gapero, Elisabeth"
+CC10665,"Siangco, Daniel"
+CC10666,"Sabey, Isaiah"
+CC10667,"Fillhart, Lawrence"
+CC10669,"White, Michael"
+CC10671,"Kirkpatrick, Malcolm"
+CC10673,"Pascua, Benizon"
+CC10674,"Case, Kimberly"
+CC10675,"Hapai, Marlene"
+CC10676,"Shorba, Lisa A.L."
+CC10677,"Villaruz, Danny"
+CC10678,"Bonar, Aaron"
+CC10679,"Apana, Melvin"
+CC10680,"Radke, Maurice"
+CC10681,"Wurst, Barry"
+CC10683,"DeSilva Carveiro, Mizdebz"
+CC10684,"Burns, Marie"
+CC10685,"Young, Sammye Ann"
+CC10687,"Freitas, Valzey"
+CC10688,"Lacuesta, Celeste"
+CC10689,"Katz, Norman"
+CC10690,"Grantham, Leatrice"
+CC10692,"Bashkingy, Raymond"
+CC10693,"Andres-Nance, Noela"
+CC10694,"Ebel, Lawrence"
+CC10695,"Jamila, Andrew"
+CC10696,"Chinen, Jon"
+CC10698,"Pacheco, Maria"
+CC10699,"Perry, Johnnie-Mae"
+CC10700,"Harimoto, Breene"
+CC10701,"Higashi, Carl"
+CC10702,"Shimizu, Garner"
+CC10703,"Young, Pamela"
+CC10704,"Koh, Patrick"
+CC10705,"Makekau, Kealii"
+CC10707,"Swindell, Lyle"
+CC10708,"Schmucker, S. Dean"
+CC10711,"Kalima, Leona"
+CC10712,"Iwamoto, Kim Coco"
+CC10713,"Sharsh, Eleanor"
+CC10714,"Meyers, Jadeen"
+CC10715,"Clarke, Eileen"
+CC10716,"Wasson, Dawn"
+CC10717,"Wolfgramm, Makahaa"
+CC10718,"Rinaldi, Laurie"
+CC10719,"Nishiki, Wayne"
+CC10721,"Lee, Albert"
+CC10722,"Enos, Virginia"
+CC10723,"Cortez-Camero, Tania"
+CC10726,"Hirakami, Steven"
+CC10727,"Sanborn, J William"
+CC10728,"DAlmeida, Eric"
+CC10729,"Sterker, Phillip"
+CC10730,"Fowler, Dennis"
+CC10731,"Seibert, Richard Eric"
+CC10732,"Kaopua, John"
+CC10733,"Pascua, Jason"
+CC10734,"Park, Timothy"
+CC10735,"Davidson, Daniel"
+CC10736,"Takabayashi, Roger"
+CC10737,"Apo, Peter"
+CC10738,"Williams, Harry"
+CC10739,"Mayor, Roberta"
+CC10740,"Wilson, Herman"
+CC10743,"Marshall, Eric"
+CC10746,"Kaneshiro, Keith"
+CC10747,"Wong, William"
+CC10748,"Aki, Charles"
+CC10749,"White, Thomas"
+CC10750,"Burke, Jackie"
+CC10751,"Lembeck, E.J."
+CC10752,"David, Maile"
+CC10753,"Nakasato, Dennis"
+CC10755,"Hagino, Gerald"
+CC10756,"Akuna, Meiling"
+CC10759,"Leau, Rebecca"
+CC10760,"Ryan, Pohai"
+CC10761,"Shafer, Benjamin"
+CC10762,"Yamane, John"
+CC10763,"Aiona, Joseph"
+CC10764,"Nicolas, Fernie"
+CC10765,"Larkey, Jerald"
+CC10766,"Wong, Carl"
+CC10767,"Rath, Jim"
+CC10768,"Yago, Reginald"
+CC10769,"Vieira, Robert"
+CC10770,"Marten, Chayne"
+CC10771,"Curtis, Samuel"
+CC10772,"Christensen, Makani"
+CC10774,"Thomson, Zach"
+CC10775,"Georgi, JoAnne"
+CC10776,"Bailey, Melanie"
+CC10777,"Bryant-Hunter, Kathy"
+CC10779,"Berinobis, Shari Floyd"
+CC10781,"Stender, Oswald"
+CC10782,"Cerizo, Thomas"
+CC10783,"ONeal, David"
+CC10784,"McDermott, Bob"
+CC10786,"Kurshals, Maralyn"
+CC10788,"Martinez, Rosebella"
+CC10789,"Lewis, Chris"
+CC10790,"Arola, James"
+CC10793,"Kahele, Melvin"
+CC10794,"LoPresti, Matthew"
+CC10795,"Roco, John"
+CC10796,"Velleses, Gary"
+CC10797,"Espero, Jason"
+CC10798,"Yuen, Victoria (Cissy)"
+CC10799,"Teruya, Patricia"
+CC10801,"Kahele, Gilbert"
+CC10802,"Solomon, Malama"
+CC10803,"Jordan, Jo"
+CC10804,"Haliniak, Barbara"
+CC10805,"Kollar, Justin"
+CC10806,"Blackburn, Joseph"
+CC10807,"Han, Martin"
+CC10808,"Ohno, Takashi"
+CC10809,"Ing, Mark"
+CC10810,"Guzman, Don"
+CC10811,"DeJean, Khistina Caldwell"
+CC10812,"Ashida, Lincoln"
+CC10813,"Kern, Zendo"
+CC10814,"Santiago, Alexander"
+CC10815,"Roth, Mitchell"
+CC10816,"Bradshaw, Jacob"
+CC10817,"Wille, Margaret"
+CC10818,"Shimaoka, Oliver"
+CC10819,"Ilagan, Greggor"
+CC10822,"Apoliona, Suzanne Haunani"
+CC10824,"Green, Robert"
+CC10825,"McIntosh, Harry"
+CC10826,"Weatherford, James"
+CC10827,"Hanlon, Colin"
+CC10828,"Cayetano, Benjamin"
+CC10829,"Greco, Michael"
+CC10830,"Eoff, Karen"
+CC10831,"Wilhelm, Steve"
+CC10833,"Delacruz, Efrain"
+CC10834,"Sua, Vai"
+CC10840,"Velasco, Nicole"
+CC10841,"Westervelt, Bradley"
+CC10842,"Kanuha, Dru"
+CC10843,"Goodenow, Kenneth"
+CC10844,"Sonson, Alex"
+CC10845,"Gering, Larry"
+CC10846,"Giugni, Heather"
+CC10848,"Poindexter, Valerie"
+CC10850,"Tungpalan, Eloise Yamashita"
+CC10852,"Takata, Kevin"
+CC10853,"Holt, Daniel"
+CC10854,"Leslie, Bucky"
+CC10855,"Perry, Johnnie-Mae"
+CC10856,"Breslin, John ""Mike"""
+CC10857,"McLaughlin, Erin"
+CC10858,"Hong, Lillian"
+CC10859,"Housel, Fred"
+CC10860,"Ruderman, Russell"
+CC10861,"Lowen, Nicole"
+CC10862,"Russell, Simon"
+CC10863,"Matsumoto, Lauren"
+CC10864,"Ahu-Isa, Lei"
+CC10865,"Totten, John"
+CC10866,"Hemmings, Fred"
+CC10867,"Thielen, Laura"
+CC10868,"Crivello, Stacy"
+CC10869,"Lipton, Levani"
+CC10870,"Lajala, Kurt"
+CC10871,"Safarik, Gary"
+CC10872,"Lyons, Jeffrey"
+CC10873,"Ikeda, Donald"
+CC10874,"Ceredon, Liscencio"
+CC10875,"Duey, Rose Marie"
+CC10877,"Sanborn, J. William"
+CC10878,"Araujo, Steven"
+CC10879,"Higa, Creighton"
+CC10880,"Pajimola, Noralyn"
+CC10881,"Kobayashi, Bertrand"
+CC10882,"Fenton, Larry"
+CC10883,"Kaukani, Chad"
+CC10884,"Santos, Donna"
+CC10885,"Manabat, Christopher"
+CC10886,"Young, Darrell"
+CC10888,"McKeague-Gomes, Leslie"
+CC10889,"Kaehuaea, Wendell"
+CC10890,"Hester, Marcus"
+CC10891,"Dolan, Paul"
+CC10892,"Helm, Kanohowailuku"
+CC10893,"Au, Tiffany"
+CC10894,"Thompson, Rachel"
+CC10895,"Puletasi, Palasi"
+CC10896,"Larson, Elisabeth"
+CC10897,"Cermelj, Hope"
+CC10898,"Yamane, Brian"
+CC10899,"Mindo, Romeo"
+CC10900,"Johnson, Richard"
+CC10901,"Gutierrez, Lynne"
+CC10902,"Aipoalani, Hanalei"
+CC10903,"Lunasco, Oliver"
+CC10904,"Oyama, Leolani"
+CC10906,"Ritte, Walter"
+CC10907,"Kagawa Fu, Kanani"
+CC10908,"Fogel, Frederick"
+CC10909,"Smith, Daryl"
+CC10910,"Bateman, David"
+CC10911,"Cullen, Sy"
+CC10912,"Lacuesta, Roger"
+CC10913,"Butler, Glenn"
+CC10914,"Takayama, Gregg"
+CC10918,"Kaahui, Edward"
+CC10919,"Fevella, Kurt"
+CC10920,"Vincent, Henry"
+CC10923,"McDermott, Bob"
+CC10924,"Kim, Harry"
+CC10925,"Stephens, Aaron"
+CC10926,"Peters, Wilson"
+CC10927,"Ebert, Roy"
+CC10928,"Georgi, William"
+CC10929,"Albao, Liberta"
+CC10930,"Bonk, Keiko"
+CC10931,"Herrera, Rojelio"
+CC10932,"Yadao, Leland"
+CC10933,"Beirne, D. Ululani"
+CC10934,"Synan, Dwight"
+CC10935,"Kagawa, Ross"
+CC10936,"LaFrance, Jeff"
+CC10937,"Murphy, Christopher"
+CC10938,"Meyers, William"
+CC10939,"Rattner, Joseph"
+CC10940,"Lee, Calvin"
+CC10941,"Lincoln, Lancelot"
+CC10942,"Capelouto, Dean"
+CC10943,"Pacheco, Jade"
+CC10944,"DAlmeida, Eric"
+CC10945,"Akina, William"
+CC10948,"Reeder, Adam"
+CC10949,"Kapuniai, Ryan"
+CC10950,"Aki, Charles"
+CC10952,"Kay, Alana"
+CC10954,"Ford, Lori"
+CC10955,"Kim, Brian"
+CC10956,"Yagong, Chelsea"
+CC10957,"Trujillo, Troy"
+CC10958,"Pohle, Richard"
+CC10961,"Swain, William"
+CC10963,"Svrcina, Emil"
+CC10964,"Kalama, Ekolu"
+CC10965,"Onishi, Richard"
+CC10966,"Akaka, Kaleihikina"
+CC10967,"Ahuna, Daniel"
+CC10968,"Hayes, James"
+CC10971,"Mulvihill, Bart"
+CC10972,"Alalem, Allen-Dean"
+CC10973,"Walls, Rand"
+CC10974,"Miranda, Edwin"
+CC10975,"Amorin, Johanna"
+CC10976,"Kane, Dain"
+CC10977,"Gomes, Doreen"
+CC10978,"Yoshimura, Jon"
+CC10979,"Miller, Steven"
+CC10980,"Brewer, James"
+CC10981,"Lindsey, Carmen"
+CC10982,"Shubert-Kwock, Chu Lan"
+CC10983,"Mizuno, Joje May"
+CC10984,"Nakasato, Kevin"
+CC10985,"Youngquist, Arvid"
+CC10987,"Kapu, Jonah"
+CC10988,"Rutledge, Aaron"
+CC10989,"Suapaia, Jason"
+CC10990,"Vieira, Robert"
+CC10991,"Amsterdam, C. Kaui Jochanan"
+CC10992,"Lum Lee, Christopher-Travis"
+CC10993,"Woodson, Justin"
+CC10994,"Fung, Lester"
+CC10995,"Tupola, Andria"
+CC10996,"Elefante, Brandon"
+CC10997,"Wong, Arnold"
+CC10998,"Iwasa, Natalie"
+CC10999,"Eli, Stacelynn"
+CC11000,"Awana, Karen"
+CC11002,"Costales, Luella"
+CC11003,"Zibakalam, Emmanuel"
+CC11004,"Lee, Marilyn"
+CC11005,"Amato, Terez"
+CC11006,"Ozawa, Trevor"
+CC11007,"McInerny, Harvey"
+CC11008,"Davis, Jeffrey"
+CC11009,"Higa, Anthony"
+CC11010,"Paltin, Tamara"
+CC11011,"Fowler, Max"
+CC11012,"Peleiholani, Julia"
+CC11013,"Pouha, Feki"
+CC11014,"San Buenaventura, Joy"
+CC11015,"Grace, Janet"
+CC11016,"Hikida, Wayne"
+CC11017,"Hood, Joan"
+CC11018,"Poti, LuAnn"
+CC11019,"Buenconsejo, Kaala"
+CC11020,"Bukoski, Keith"
+CC11021,"Kamaka, Joseph"
+CC11022,"Wong-Kalu, Hinaleimoana"
+CC11023,"Arianoff, Gregory"
+CC11024,"Waters, Tommy"
+CC11025,"Helsham, Robert"
+CC11026,"Arakaki, Tracy"
+CC11027,"Creagan, Richard"
+CC11028,"Abbett, Richard"
+CC11030,"Kalima, Leona"
+CC11031,"Stump, Christopher"
+CC11032,"Brun, Arthur"
+CC11034,"Fonoimoana, Kent"
+CC11035,"Ahu, Elwin"
+CC11036,"Yoder, Steven"
+CC11037,"Banda, Raymond"
+CC11038,"Trask, Mililani"
+CC11039,"Greene, Madeline"
+CC11041,"Hunt, Tiffany"
+CC11042,"Hopkins, Margarita"
+CC11043,"DeSilva Carveiro, Debralynn"
+CC11044,"Apana, James"
+CC11045,"Wendt, Mahealani"
+CC11046,"Nava, Frederick"
+CC11047,"Danner, Michael"
+CC11048,"Jordan, Brian"
+CC11049,"Kukahiko, Eldean"
+CC11050,"Harris, Robert"
+CC11051,"DeSoto-McCollough, Laura"
+CC11052,"Kanekoa, Ernest"
+CC11054,"Hooser, Dylan"
+CC11055,"Law, Timothy"
+CC11056,"Keohokalole, Jarrett"
+CC11057,"Lozano, Roy"
+CC11058,"Kapoi, Cranston"
+CC11059,"Kaahui, Bronson"
+CC11060,"Barca, Dustin"
+CC11061,"Hoomanawanui, Jonathan"
+CC11062,"Agustin, Jaci"
+CC11063,"Hunter, Michael"
+CC11064,"Hara, Dan"
+CC11065,"Gonzales, Ronald"
+CC11066,"Shin, Lorraine"
+CC11067,"Valenzuela, Kelly Ann"
+CC11068,"Naipo, Blayne"
+CC11069,"Burke, Jackie Kahookele"
+CC11070,"Hampton, Roxanne"
+CC11071,"Pueo, Frances"
+CC11072,"Kopelman, Orion"
+CC11073,"Chung, Aaron"
+CC11074,"Naeole, Emily"
+CC11075,"Wilson, Jim"
+CC11076,"Spatola, Joseph"
+CC11077,"Yoon, Wesley"
+CC11078,"Shigemasa, Chace"
+CC11079,"Kaneshiro, Arryl"
+CC11080,"Kahawai, Thomas"
+CC11081,"Bronson-Crelly, Leilani"
+CC11082,"Brown, Norman Jr."
+CC11084,"Grunch, Russell"
+CC11086,"Puletasi, S. Palasi"
+CC11087,"Leslie, Gene"
+CC11088,"Sutton, Warner Kimo"
+CC11089,"Svrcina, Emil"
+CC11090,"Kaehuaea, Wendell"
+CC11091,"Gusman, Christy"
+CC11092,"Jeremiah, Bryan"
+CC11093,"Amsterdam, C. Kaui Jochanan"
+CC11094,"Fogel, Frederick"
+CC11095,"Laranio, Tiana"
+CC11096,"Perry, Darryl"
+CC11097,"Tagavilla, Marcia"
+CC11099,"Ahu-Isa, Lei"
+CC11100,"Golojuch, Michael"
+CC11101,"Cowden, Felicia"
+CC11102,"Kong, Samuel"
+CC11104,"Hufana-Ablan, Baybee"
+CC11105,"Ferguson, Nicole"
+CC11106,"Halvorsen, Susan"
+CC11108,"Paikai, Landen"
+CC11109,"Morse,  Richard"
+CC11110,"Leong, Arnold"
+CC11112,"Georgi, JoAnne"
+CC11113,"Broman, Holly"
+CC11114,"Chock, Sr., Mason"
+CC11115,"Perry, Johnnie-Mae"
+CC11118,"Frenzel, Allen"
+CC11119,"Takayama, Kaimanu"
+CC11120,"Manutai, Larie"
+CC11121,"Roman, Randolph Jr."
+CC11122,"Flores, Vince"
+CC11125,"Chang, Lester"
+CC11126,"Paleka, Daniel"
+CC11127,"Mamuad, Neldon"
+CC11129,"Lam, Ronald"
+CC11130,"Schiller, Alain"
+CC11131,"Marks, Kerri"
+CC11132,"Shiratori, Miles"
+CC11133,"Marlin, Cynthia"
+CC11135,"Pohle, Richard"
+CC11136,"DeCosta, Bill"
+CC11137,"Poulton, Brysen"
+CC11138,"Franks, Victoria"
+CC11139,"Wiggins, Stephen"
+CC11140,"Kim, Dennis"
+CC11141,"Fitzpatrick, John"
+CC11142,"Nikhilananda, Nick"
+CC11143,"Thomas, Gary"
+CC11144,"Ruis, Randy"
+CC11145,"Gali, Shane"
+CC11146,"Gates, Cedric"
+CC11147,"Tokusato, Joli"
+CC11148,"Blumer-Buell, John"
+CC11149,"Bruch, Courtney"
+CC11150,"Clemente, Roger"
+CC11151,"DuBois, Jared"
+CC11152,"Moses, Kyong"
+CC11153,"Bateman, David"
+CC11155,"Almeida, Cherish"
+CC11156,"Brown, Ruth"
+CC11158,"Klutke, Sandra"
+CC11159,"Kahikina, Michael"
+CC11160,"Gregory, Stuart"
+CC11162,"Marten, Chayne"
+CC11163,"Brock, Patric"
+CC11164,"Miranda, Edwin"
+CC11165,"Lethem, Chris"
+CC11166,"Mathieu, Victoria"
+CC11167,"Chong, Isaiah"
+CC11169,"Knox, Robin"
+CC11170,"Weinert, Eric"
+CC11171,"Metcalfe, Jerry"
+CC11173,"Strouble, Carl"
+CC11175,"LaLanne, Jon"
+CC11176,"Quartero, Alona"
+CC11177,"Minichino, Marie"
+CC11178,"Perez-Garreaud, Nicola"
+CC11179,"DeCoite, Lynn"
+CC11180,"Ching, Eric"
+CC11181,"Regan, Keith"
+CC11182,"Moniz, Stacey"
+CC11183,"Kaaihue, Angela"
+CC11184,"Eli, Stacelynn"
+CC11185,"Sugimura, Yuki"
+CC11186,"Campagna, Carl"
+CC11187,"Paaluhi, Marcus"
+CC11188,"Tarnas, David"
+CC11189,"Arin, Lisa"
+CC11190,"Greig-Nakasone, Napua"
+CC11192,"Tegarden, Deidre"
+CC11193,"Lee Loy, Susan"
+CC11194,"Hoffmann, Pete"
+CC11195,"Tsuneyoshi, Heidi"
+CC11196,"Haller, Alexander"
+CC11197,"Kane, Dain"
+CC11198,"Ohara, Eileen"
+CC11199,"Lau, Wally"
+CC11201,"Halversen, William"
+CC11202,"Shea, Patrick"
+CC11203,"Wong, Jonathan"
+CC11204,"McCandless, Shannon"
+CC11206,"Ruggles, Jennifer"
+CC11207,"Garry, Timothy"
+CC11208,"Castillo, Grace"
+CC11209,"Kahele, Kaialii"
+CC11210,"Sequin, Tamiko"
+CC11211,"Domingo, Nestorio"
+CC11212,"Ozols, Harry"
+CC11213,"Phillips, Arnold"
+CC11214,"Tippens, Michelle"
+CC11215,"Kalinowski, Daniel"
+CC11217,"Kossow, Bronsten-Glenn"
+CC11218,"DeLeon, Richard"
+CC11219,"Hokoana-Kelii, Moana"
+CC11221,"Cowser, Janis"
+CC11223,"Coakley, Jeffrey"
+CC11224,"Doctor Sparks, Norma"
+CC11226,"Lawrence, Tiare"
+CC11228,"Bernabe, Matthew"
+CC11229,"Nakoa, Keone"
+CC11230,"Aki, Zurishaddai"
+CC11231,"Kobayashi, Dale"
+CC11232,"Henski, Kathryn"
+CC11233,"Robinson, Kaloa"
+CC11234,"Kim, Harry"
+CC11235,"Furtado, Trinette"
+CC11237,"Bryant, Paul"
+CC11238,"Lee, Marilyn"
+CC11239,"Naniole, Alexander"
+CC11240,"Fevella, Kurt"
+CC11241,"Akina, Alvin"
+CC11242,"Apalla, Juno"
+CC11243,"Rosenstiel, Fern"
+CC11244,"King, Kelly"
+CC11245,"Combs, Sandra"
+CC11246,"Baker, Kurtleigh"
+CC11247,"Gonce, Randy"
+CC11248,"Kaehuaea, Wendell"
+CC11249,"Atay, Alika"
+CC11250,"Quinlan, Sean"
+CC11251,"Luta, Helen"
+CC11252,"Fenton, Larry"
+CC11253,"Wargo, Joseph"
+CC11254,"Richards, Herbert"
+CC11255,"Kimball, Heather"
+CC11256,"Fukushima, Richard"
+CC11257,"Whiting, Raina"
+CC11258,"Steel, Hana"
+CC11260,"Pisciotta, Kealoha"
+CC11261,"Mann, Thomas"
+CC11262,"Logue, James"
+CC11263,"Hong, Lillian"
+CC11264,"Bennett, Michael"
+CC11265,"Iwamoto, Kim Coco"
+CC11266,"Carlisle, Peter"
+CC11268,"Holt, Daniel"
+CC11269,"Sinenci, Shane"
+CC11270,"Burd, Zachary"
+CC11272,"Machado, Colette"
+CC11273,"Pekus, Daniel"
+CC11275,"Mataafa, Toagaifasa"
+CC11276,"Fogel, Frederick"
+CC11277,"Bernard, Michael"
+CC11278,"Kaapu, Carole"
+CC11281,"Bischoff, Stephen"
+CC11282,"Apoliona, Haunani"
+CC11283,"Miller, Dennis"
+CC11284,"Anthony, Marc"
+CC11285,"Citron, Jeffrey"
+CC11286,"Amsterdam, Kaui"
+CC11287,"Au, Alvin"
+CC11288,"Crum, Douglas"
+CC11289,"Kim, Richard"
+CC11290,"Pratt, Bruce"
+CC11291,"Ross, Karlen"
+CC11292,"Hochuli, Ronald"
+CC11293,"Kalima, Leona"
+CC11294,"Powers, Michael"
+CC11295,"Caravalho, Ernest"
+CC11297,"Nagamine, Robert"
+CC11298,"Kagami, Michael"
+CC11299,"Tam, Rodney"
+CC11300,"Kupukaa, Katherine"
+CC11302,"Rawlins-Fernandez, Keani"
+CC11303,"Dayao, Firmo"
+CC11304,"Rebolledo, Gilbert"
+CC11305,"Ahuna, Kanoe"
+CC11306,"Johnson, Gabriel"
+CC11307,"Fidelibus, Christopher"
+CC11308,"Medeiros, Vanessa"
+CC11309,"Young, Byron"
+CC11310,"Svrcina, Emil"
+CC11311,"Hussey, Ikaika"
+CC11312,"Djou, Charles"
+CC11313,"Farrell, David"
+CC11314,"Abbett, Richard"
+CC11316,"Dionne, Valerie"
+CC11317,"Coakley, Kaiwiola"
+CC11318,"Kaufman, Alan"
+CC11319,"Jones, Luana"
+CC11320,"Rodriguez, Cody"
+CC11321,"Balinbin, Ernest"
+CC11322,"Trask, Mililani"
+CC11324,"Molina, Eric"
+CC11325,"Kahui, Bo"
+CC11326,"Hanapi, Alapai"
+CC11327,"Metcalfe, Jerome"
+CC11328,"Manipol-Larson, Grace"
+CC11329,"Tamashiro, Gene"
+CC11331,"Velasco, Marcelino"
+CC11332,"Oi, Thomas"
+CC11336,"Todd, Christopher"
+CC11337,"Matsushita, David"
+CC11338,"Spindt, Milo"
+CC11339,"Matayoshi, Scot"
+CC11340,"Hanabusa, Colleen"
+CC11341,"Kitagawa, Lisa"
+CC11342,"Kitashima, Kelly"
+CC11343,"Ford, Brenda"
+CC11344,"Radke, Maurice"
+CC11345,"Perruso, Amy"
+CC11346,"Evslin, Luke"
+CC11347,"Hussey-Burdick, Natalia"
+CC11349,"English, John-Bull"
+CC11350,"Garrett, Andrew"
+CC11351,"Kamihara, Myron"
+CC11352,"Rodden, Benton"
+CC11353,"Kapela, Jeanne"
+CC11354,"Rozembersky, Stefan"
+CC11355,"Luuwai, Maile"
+CC11356,"Wildberger, Tina"
+CC11357,"Carroll, John"
+CC11358,"Timoteo, Sailau"
+CC11359,"Fevella, Kurt"
+CC11360,"Learmont, Lei"
+CC11361,"Rapozo, Leonard"
+CC11363,"Kiaaina, Esther"
+CC11364,"Armstrong, Dylan"
+CC11365,"Tengan, Michael"
+CC11366,"Carroll, Claire"
+CC11367,"Mukai, Nelson"
+CC11368,"Dos Santos-Tam, Tyler"
+CC11369,"Ganaden, Ernesto"
+CC11371,"Paikai, Landen"
+CC11372,"Detke, Kyle"
+CC11373,"Napeahi, Terri"
+CC11374,"Batangan, Kelson"
+CC11375,"Bukoski, Kika"
+CC11376,"Kerns, Marissa"
+CC11377,"Miller, John"
+CC11378,"Hand, Brendan"
+CC11379,"Starbuck, Hannibal"
+CC11380,"Villegas, Rebecca"
+CC11382,"Lee, Brendon"
+CC11383,"Kekaualua, Debra"
+CC11384,"Schafer, Jacob"
+CC11385,"Stoddard, Zack"
+CC11386,"Nazara, Cynthia"
+CC11387,"Moriwaki, Sharon"
+CC11389,"Drysdale, Kelly"
+CC11391,"Kierkiewicz, Ashley"
+CC11392,"Lee, Alice"
+CC11393,"Nishimura, Wally"
+CC11394,"Robinson-Onderko, Lynn"
+CC11396,"Yago, Clint"
+CC11397,"Robotti, Paul"
+CC11398,"Galeai, Noe"
+CC11399,"Caparida-Schnackenberg, Cora"
+CC11400,"Kaehuaea, Wendell"
+CC11401,"Pregitzer, Micah"
+CC11403,"Yim, Alan"
+CC11404,"Hashimoto, Troy"
+CC11405,"Lee, Marilyn"
+CC11407,"Wagner, Mary"
+CC11408,"La Chica, Mae Patricia"
+CC11409,"Souza, Ronette"
+CC11410,"Okimoto, Val"
+CC11411,"King, Samuel"
+CC11412,"Kaiwi, Debra"
+CC11413,"Halversen, William"
+CC11414,"Kama, Natalie"
+CC11415,"Lipscomb, Steve"
+CC11416,"Hazama, Dean"
+CC11417,"Paris, Anthony"
+CC11418,"Dalire, Kaui"
+CC11419,"Kayes, Andrew"
+CC11420,"Simbre-Medeiros, Shirley"
+CC11422,"Fukumoto, Elton"
+CC11423,"Wirick, Frederic"
+CC11424,"Mann, Thomas"
+CC11425,"LHeureux, Ray"
+CC11429,"Ready, Boyd"
+CC11430,"Garcia, Diamond"
+CC11431,"Feste, Bryan"
+CC11432,"Saito, Roy"
+CC11433,"Shiratori, Miles"
+CC11434,"Bolo, Patrocinio"
+CC11435,"Ahu-Isa, Lei"
+CC11436,"Fukushima, Richard"
+CC11437,"Kopelman, Orion"
+CC11438,"Amsterdam, Kaui"
+CC11439,"Maluafiti, Alicia"
+CC11440,"Henski, Kathryn"
+CC11441,"Roversi, Adam"
+CC11442,"Mariano, Lynn"
+CC11443,"Marumoto, Ricky"
+CC11444,"Kanealii-Kleinfelder, Matthew"
+CC11445,"DeCosta, Bill"
+CC11446,"Kealoha-Lindsey, Mela"
+CC11447,"Mossman, Paul"
+CC11448,"Sadegh, Abraham"
+CC11449,"Mather, Jennifer"
+CC11452,"Crouse, Zandra"
+CC11453,"Myrick, Ollie"
+CC11454,"Brewer, James"
+CC11455,"Ing, Renee"
+CC11456,"Svrcina, Emil"
+CC11457,"Paik-Mander, Esther"
+CC11460,"Smart, Mary"
+CC11461,"Parish, Margaret"
+CC11462,"Riley, Timothy"
+CC11463,"Nikhilananda, Nick"
+CC11464,"Chock, Coby"
+CC11465,"Duzon, Veronica"
+CC11466,"Puuohau, Kali"
+CC11467,"Daligdig, Elaine"
+CC11468,"Vidinha, Harold"
+CC11469,"Daligdig, Theodore"
+CC11470,"James, Choon"
+CC11471,"Burke, Jackie"
+CC11472,"Iona, Stephanie"
+CC11473,"Link, Eric"
+CC11474,"Hawley, Alec"
+CC11475,"Lam, Adriel"
+CC11476,"Kanahele, Daniel"
+CC11477,"DesMarais, Ana-Lucia"
+CC11479,"Zahnd, Laurent"
+CC11481,"Kalima, Leona"
+CC11483,"Murray, Francine"
+CC11484,"Akaka, Kalei"
+CC11485,"Solis, Anthony"
+CC11486,"Fidelibus, Christopher"
+CC11487,"Shishido, Melissah"
+CC11488,"Ahuna, Kanoe"
+CC11489,"Sharsh-Davis, Lei"
+CC11490,"Fogel, Frederick"
+CC11492,"Burlew, Lloyd"
+CC11493,"Kawano, Yumi"
+CC11495,"Belekanich, Thomas"
+CC11496,"Manipol-Larson, Grace"
+CC11497,"Kapu, Keeaumoku"
+CC11501,"Texeira, Alan"
+CC11502,"Brown, Robert J."
+CC11503,"Aki, Jacob"
+CC11506,"Maglinti, Austin"
+CC11507,"Cordero, Radiant"
+CC11508,"Tulba, Augusto"
+CC11509,"Amemiya, Keith"
+CC11510,"Russell, Simon"
+CC11511,"Kau, Megan"
+CC11512,"Gardner, Becky"
+CC11513,"Kim, Tae"
+CC11514,"Pratt-Aquino, Sandra"
+CC11515,"Kam, Vickie"
+CC11516,"Esser, Jacquelyn"
+CC11517,"Urban, Tante"
+CC11518,"Alm, Steve"
+CC11519,"Aiwohi, Kaapunialiionalanikiekie"
+CC11520,"Kogachi, Keith"
+CC11521,"Davenport, Kathleen"
+CC11522,"Fitzgerald, Bob"
+CC11524,"Fanene, Banner"
+CC11525,"Ishibashi, Jay"
+CC11526,"Sayama, Jackson"
+CC11527,"Nadamoto, Dwight"
+CC11528,"Branco, Patrick"
+CC11529,"Kalima, Grant"
+CC11530,"Hanakahi, Kaipo"
+CC11531,"Mandado, Ryan"
+CC11532,"Morrison, Bethany"
+CC11533,"Inaba, Holeka"
+CC11534,"Turbin, Derek"
+CC11535,"James, Choon"
+CC11536,"Naauao-Ota, Chance"
+CC11539,"Mangauil, Joshua"
+CC11540,"Kawaauhau, Larry"
+CC11541,"Marten, Lisa"
+CC11543,"Chong, Doni"
+CC11544,"Dicks, Karl"
+CC11546,"Akao, Alan"
+CC11547,"Chock, Coby"
+CC11548,"Blangiardi, Rick"
+CC11549,"Kiaaina, Esther"
+CC11550,"Garry, Timothy"
+CC11551,"Bonoan, Feena"
+CC11552,"Cabebe, Donovan"
+CC11553,"de Jetley, Alberta"
+CC11554,"Tam, Adrian"
+CC11555,"Yuda, James"
+CC11556,"Watase, Dave"
+CC11557,"Kahue-Cabanting, Ui"
+CC11558,"Ho, Erik"
+CC11559,"Tsuneyoshi, Earl"
+CC11561,"Mano, Matthew"
+CC11562,"Ritte, Walter"
+CC11563,"Ruggles, Michael"
+CC11565,"Marzo, Shelson"
+CC11566,"Hai-Kelly, Grayden"
+CC11567,"Agsalda, Aaron"
+CC11568,"Simon, Keone"
+CC11569,"Waltjen, Kelden"
+CC11570,"Clark, John"
+CC11571,"Rodenhurst, Ikaika"
+CC11572,"Fogel, Frederick"
+CC11573,"Cermelj, Hope"
+CC11574,"Souza, Kanani"
+CC11575,"Nakanelua, Laura"
+CC11576,"Matson, Shannon"
+CC11577,"Hanohano, Naomi"
+CC11578,"McDonald, Kevin"
+CC11579,"Auna, Jared"
+CC11580,"Palacat-Nelsen, Shane"
+CC11581,"Souza, Keoni"
+CC11582,"Kahui, Craig"
+CC11583,"Greenwell, Robert"
+CC11584,"Chapman, Michael"
+CC11585,"Grimmer, Scott"
+CC11586,"Higa, Stacy"
+CC11587,"Ochs, Nicholas"
+CC11588,"Kaiwi, Debra"
+CC11589,"Burrows, Shannon"
+CC11590,"Kahau, Keline"
+CC11591,"Haumea, Desmon"
+CC11592,"Juan, Elroy"
+CC11593,"Shiraishi, Paul"
+CC11594,"Aldeguer, Maysana"
+CC11595,"Kihoi, Lei"
+CC11596,"Halversen, William"
+CC11597,"Simpliciano, Joseph"
+CC11598,"Azevedo, Neil"
+CC11599,"Paris, Anthony"
+CC11600,"Kama-Toth, Kukana"
+CC11601,"Aiona, Philip"
+CC11602,"Monas, Steve"
+CC11604,"Hoohuli, Shaena"
+CC11605,"Kaehuaea, Wendell"
+CC11606,"Cook, Thomas"
+CC11607,"Chrupalyk, Jennifer"
+CC11609,"Keen, Ipo"
+CC11610,"Danner, Michael"
+CC11611,"Decker, Johanna"
+CC11613,"Kawano, Yumi"
+CC11614,"Kim-Marshall, Kristina"
+CC11615,"Maldonado, Celestine"
+CC11616,"Perez, Brittny"
+CC11618,"Lindsey, Benjamin"
+CC11619,"Vanderpool, Robin"
+CC11620,"Justus, Edgar"
+CC11621,"Gyldstrand, Travis"
+CC11622,"Fukushima, Richard"
+CC11623,"Thielen, Gregory"
+CC11625,"Ohara, Eileen"
+CC11626,"Bulosan, Addison"
+CC11627,"Miller, John"
+CC11629,"Kahikina, Michael"
+CC11630,"Ishibashi, Herbert"
+CC11631,"McMackin, Devin"
+CC11632,"Nishimura, Wally"
+CC11633,"Dandurand, Michael"
+CC11634,"Driskill, Thomas"
+CC11635,"Greenberg, Howard"
+CC11636,"Clement, Jane"
+CC11637,"Eyre, Aja"
+CC11638,"Kamekona, Carol"
+CC11639,"Parrish, Michael"
+CC11641,"Boyette, Jennifer"
+CC11642,"Svrcina, Emil"
+CC11643,"Alcos, David"
+CC11644,"Bondera, Colehour"
+CC11645,"Ready, Boyd"
+CC11646,"Chen, Wayne"
+CC11647,"Waialeale Battad, Jade"
+CC11648,"Perreira, Monique"
+CC11649,"Stonebraker, William"
+CC11651,"Nakoa, Leonard"
+CC11652,"Hughes, Susan"
+CC11653,"Keesing, Audrey"
+CC11654,"Hao, Louis"
+CC11655,"Franks, Victoria"
+CC11656,"Kaaihue, Henry"
+CC11657,"Cashman-Aiu, Noelani"
+CC11658,"Bourgoin, Duke"
+CC11659,"Azinga, P.M."
+CC11660,"Cuaresma, Thora-Jean"
+CC11661,"Patel, Sne"
+CC11663,"Smith, Kamealoha"
+CC11664,"Lee, Philmund"
+CC11665,"Burke, Jackie"
+CC11667,"Alapa, Luana"
+CC11668,"Mussell, Micah"
+CC11669,"Medeiros-Garcia, Jaerick"
+CC11670,"Quilingking, Tess"
+CC11671,"Kealoha, Warland"
+CC11672,"Almeida, Kaiulani"
+CC11673,"Yoder, Steven"
+CC11674,"Neves, Paul"
+CC11675,"Shaneyfelt, Ted"
+CC11676,"Verschuur, Cynthia"
+CC11677,"Bridges, Christopher"
+CC11678,"Hill, Robert"
+CC11681,"Kerfoot, Galen"
+CC11682,"Higgins, Vicki"
+CC11683,"Ka-Ipo, Ron"
+CC11684,"Bryant, Paul"
+CC11686,"Hoffeld, Cyd"
+CC11688,"Nelson, Jacquelyn"
+CC11689,"Moore, Jaclyn"
+CC11690,"Shin, Lorraine"
+CC11691,"Rathbun, Amanda"
+CC11696,"Misalucha, Bennette"
+CC11697,"Kitashima, Kelly"
+CC11700,"Morgan, Paul"
+CC11701,"Alcubilla, Sergio"
+CC11702,"Acasio, Laura"
+CC11704,"Kim, Richard"
+CC11705,"Johnson, Dan"
+CC11706,"Fung, Lester"
+CC11707,"Nomura, Chase"
+CC11708,"Rosenlee, Corey"
+CC11711,"Hocker, Jordan"
+CC11712,"Like, Rebecca"
+CC11713,"Cayetano, Vicky"
+CC11714,"Mesta, Dion"
+CC11717,"Goldcamp, Kadeen"
+CC11718,"Tokuda, Jill"
+CC11719,"Odom, Anna"
+CC11723,"Menor-McNamara, Sherry"
+CC11724,"Awa, Brenton"
+CC11725,"Crabbe, Cross"
+CC11726,"Peralta, Samuel"
+CC11727,"Hannemann, Arthur"
+CC11728,"Wehrsig, Timothy"
+CC11729,"DeCorte, Samantha"
+CC11730,"Clark, Linda"
+CC11731,"Gill, Gary"
+CC11732,"Kennealy, Jonathan"
+CC11733,"Kagiwada, Jennifer"
+CC11734,"Wang, Valerie"
+CC11735,"Kaululaau, Wayne"
+CC11737,"Jenkins, Nalani"
+CC11738,"Ross, Ian"
+CC11739,"Mariano, Lynn"
+CC11740,"Goeas, Lori"
+CC11741,"Bissen, Richard"
+CC11742,"Cochran, Elle"
+CC11743,"Olds, Ikaika"
+CC11744,"Takenouchi, Jenna"
+CC11745,"Tupai, Seaula (Jr Tupai)"
+CC11746,"Kusch, Matthias"
+CC11747,"Cordery, Gary"
+CC11748,"Flores, Cara"
+CC11749,"Takeuchi, Nathan"
+CC11750,"Weyer, Matt"
+CC11751,"Evans, Cindy"
+CC11752,"Chun, Cory"
+CC11753,"Galimba, Michelle"
+CC11754,"Tolentino, Aaron"
+CC11755,"Lautaha, Veamoniti"
+CC11756,"Garidan Prieto, Jolyn"
+CC11757,"Goodwin, Travis"
+CC11758,"Tupai, Helen"
+CC11759,"Mack, Lono"
+CC11760,"Hinshaw, Frank"
+CC11761,"Lion, Jonah"
+CC11762,"Sarrafian, Eric"
+CC11763,"Osborn, Holly"
+CC11764,"Knox, Robin"
+CC11765,"Walker, Sheila"
+CC11766,"Adam, Scott"
+CC11767,"Achiu, Racquel"
+CC11768,"Pele, John Tau Tau"
+CC11769,"Woods, Walter"
+CC11770,"Deleon, Dave"
+CC11771,"Rothman, Makuakai"
+CC11772,"Coakley, Jeffrey"
+CC11773,"Penn, Jay Dee"
+CC11774,"Kahau, Keline-Kameyo"
+CC11775,"Feldman, Kathy"
+CC11776,"Mukai, Nelson"
+CC11777,"Tinay, Matthew"
+CC11779,"Lamosao, Rachele"
+CC11780,"Kila, Darius"
+CC11781,"Elento, Wendell"
+CC11782,"Difante, Toni"
+CC11783,"Goulding, Maurice"
+CC11784,"Kelley, Rachel"
+CC11785,"Halversen, William"
+CC11786,"Texeira, Theresa"
+CC11787,"Schwartz, Jack"
+CC11788,"Anderson, Jillian"
+CC11789,"Detwiler, Jamie"
+CC11790,"Lewman, Clyde"
+CC11791,"Nobriga, Buddy James"
+CC11792,"McPeek, Mitch"
+CC11793,"Richey, Shawn"
+CC11794,"Heely, Lee-Ann"
+CC11795,"Decker, Dan"
+CC11796,"Morita, Maurice"
+CC11797,"Raya Jr., Philip"
+CC11798,"McKay, Tamara"
+CC11799,"Naauao-Ota, Chance"
+CC11800,"Paik, William"
+CC11801,"Cruz, Renee"
+CC11802,"Cermelj, Hope"
+CC11804,"Gueso, Janie"
+CC11805,"Holland, Fern"
+CC11806,"Seashell, Joelle"
+CC11807,"Rahman, Inam"
+CC11808,"Bell, Cullan"
+CC11809,"Armstrong, Aram"
+CC11810,"Lee, Jonathan"
+CC11811,"Alameda, Darcy"
+CC11812,"Hussey-Burdick, Natalia"
+CC11813,"Uu-Hodgins, Nohelani"
+CC11814,"Rosecrans, Charlotte"
+CC11815,"Lindner, Jeffrey"
+CC11816,"Miller, John"
+CC11817,"Smith, Daniel"
+CC11818,"Denis, Megeso-William"
+CC11819,"Armstrong, Robert"
+CC11820,"Lee, Michael"
+CC11821,"Peters, Robert"
+CC11822,"Langtad, James"
+CC11823,"Aiu, Micah"
+CC11824,"Souza, Kapono"
+CC11825,"Wilbur, Tiana"
+CC11826,"Toguchi, Traci"
+CC11827,"Aki, Z. Kaapana"
+CC11829,"Nakoa, Kaleo"
+CC11831,"Forsyth, Shaina"
+CC11832,"Jauch, Rosemarie"
+CC11833,"Barannikov, Ilya"
+CC11834,"Owens, Chad"
+CC11835,"Talaeai, Mark"
+CC11836,"Burns, Rob"
+CC11837,"Pierick, Elijah"
+CC11838,"Kaapu, Carole"
+CC11839,"Reyes Oda, Julie"
+CC11840,"Wolke, Chad"
+CC11841,"Wilson, Kevin"
+CC11842,"Pedro, Tina"
+CC11843,"St. Thomas, True"
+CC11844,"Novak, Robert"
+CC11845,"Freitas, Makai"
+CC11846,"Mahiai, Randal"
+CC11847,"Lum Ho, Gregory"
+CC11848,"Paskowitz, Moses"
+CC11849,"Wade, Daniel"
+CC11850,"Last, Michael"
+CC11851,"Kopetseg, Kimberly"
+CC11852,"Kahaloa, Kirstin"
+CC11853,"Allen, Theodene"
+CC11854,"Starr, Summer"
+CC11855,"Goebbert, Tamara"
+CC11856,"Fernandez, Antionette"
+CC11857,"Watanabe, Keoni"
+CC11858,"Hudson, Anna"
+CC11859,"Cantere, Shekinah"
+CC11860,"Doran, Charmaine"
+CC11861,"Halperin, Susan"
+CC11862,"Boone, Nara"
+CC11863,"Brown, Kimberly"
+CC11864,"Poai, Michael"
+CC11865,"Beekman, Patricia"
+CC11866,"Cunningham, Daniel"
+CC11868,"Nakasato, Dennis"
+CC11869,"Sakai, Benjamin"
+CC11870,"Soon, Leilani"
+CC11871,"Lauro, Brian"
+CC11872,"Starr, Michael"
+CC11873,"Perreira, Monique"
+CC11874,"Martinez, Troy"
+CC11875,"Danner, Kilomana"
+CC11876,"Okabe, Wilfred"
+CC11877,"Ley, Brian"
+CC11878,"Khan, Matthew"
+CC11879,"Wilson, Michael"
+CC11880,"Haumea, Desmon"
+CC11881,"Tancheff, Nicholas"
+CC11882,"Godfrey, Lorene"
+CC11883,"Naipo, Blayne"
+CC11884,"Ho, Keikilani"
+CC11885,"Templo, Shirley"
+CC11887,"Armstrong, Kelly"
+CC11888,"Lam, Adriel"
+CC11889,"Secretario, Rachel"
+CC11890,"Kwock, Michelle"
+CC11892,"Poepoe, Mahinamalamalama"
+CC11893,"Funaki, Lupe"
+CC11894,"Nazara, Caleb"
+CC11895,"Tsuneyoshi, Chad"
+CC11896,"Cullen, Jamaica"
+CC11897,"Saito, Roy"
+CC11898,"Caires, Leo"
+CC11899,"Ahu Isa, Lei"
+CC11900,"Ako, Julian"
+CC11901,"Vegas, Esera"
+CC11902,"Boyd, Blake"
+CC11904,"Thurston, Kathleen"
+CC11905,"Aiona, James"
+CC11907,"Ritte, Walter*"
+CC11908,"Rzonca, Cheryl"
+CC11909,"Shimizu, Garner"
+CC11910,"Oquendo, Cherie"
+CC11911,"Lim, Margaret"
+CC11912,"Ahia, Noelani"
+CC11913,"Puletasi, Palasi"
+CC11914,"Tanabe, Van"
+CC11915,"Smart, Mary"
+CC11916,"Hawat, George ""Big Al"""
+CC11917,"Nara, Kanzo"
+CC11918,"Metzger, Lila"
+CC11919,"Azinga, P.M.*"
+CC11920,"Bourgoin, Duke"
+CC11921,"Caiazzo, Jessica"
+CC11922,"Kahue-Cabanting, U'i"
+CC11923,"Bentley, Greg"
+CC11924,"Araki, Josiah"
+CC11925,"Farm, Kendrick"
+CC11926,"Kwan, Kaleo"
+CC11927,"Young, Angela"
+CC11928,"Yoder, Steve"
+CC11929,"Trask, Mililani"
+CC11930,"Thronas-Kahoonei, Kapana"
+CC11931,"Hensley, Dianne"
+CC11932,"Aldeguer, Maysana"
+CC11933,"O'Shea, Dennis"
+CC11934,"Alameda, Kimo"
+CC11935,"Kaleikula, Robert"
+CC11936,"Clemente, Mark"
+CC11937,"Varize, Mark"
+CC11938,"Inouye, Ken"
+CC11939,"Dabbs, Shotaro"
+CC11940,"Ozawa, Alexander"
+CC11941,"Acquintas, Lorien"
+CC11942,"Asuncion, Cory"
+CC11945,"Rodenhurst, Ikaika"
+CC11946,"DeSoto, Desire"
+CC11947,"Miyake, Tyson"
+CC11948,"Mizuno, May"
+CC11949,"Hustace, James"
+CC11951,"Keefe, Jacqueline"
+CC11952,"Ganaban, Philip"
+CC11953,"Kawaauhau, Larry*"
+CC11954,"Savaiinaea, Teri"
+CC11955,"Lim, Margaret"
+CC11956,"Christian, Wallyn"
+CC11957,"Robinson, Kaloa"
+CC11958,"Lankford-Faborito, Lu Ann"
+CC11959,"Kobayashi, Breeani"
+CC11960,"Wong, Kevan"
+CC11961,"Thomas, Bart"
+CC11962,"Grandinetti, Tina"
+CC11963,"Clark, John"
+CC11964,"Valdez, Nancy"
+CC11965,"Soares, Ranson"
+CC11966,"McCurley, Frankie"
+CC11967,"Chang, Kelton"
+CC11968,"Haliniak, Gayla"
+CC11969,"HewLen, Zahz"
+CC11970,"Keawekane, Kiana"
+CC11971,"Baclaan, Isaiah"
+CC11972,"Bautista, Blaine"
+CC11973,"Teruya, Patricia"
+CC11976,"Apo, Peter"
+CC11977,"Choi, John"
+CC11978,"Medeiros, Sheila"
+CC11980,"Shafer, Benjamin"
+CC11981,"Muraoka, Chris"
+CC11982,"Montgomery, Joshua"
+CC11983,"Anderson, Brittany"
+CC11984,"McCain, Patrick"
+CC11985,"Manipol, Grace"
+CC11986,"Hooker, George"
+CC11988,"Dupio, Gaius II"
+CC11989,"Kailiawa-Smith, Ikaika"
+CC11990,"Moore, Wesley"
+CC11991,"Makuaole-Perrin, Chantel"
+CC11993,"Konowicz, Michael"
+CC11994,"Wilkinson, Jennifer"
+CC11995,"Jauch, Michael"
+CC11996,"Nihipali, Ronald"
+CC11997,"Connelly, Timothy"
+CC11998,"Savage, Jeremiah"
+CC11999,"Yadao, Summer"
+CC12003,"Napoleon, Gary"
+CC12005,"Acain, Aileen"
+CC12006,"Betlach, John"
+CC12007,"Ubando, Josiah"
+CC12009,"Solomon, Corinne"
+CC12010,"Penn, Jay"
+CC12011,"Kawano, Yumi"
+CC12014,"Forrest, James"
+CC12017,"Oyama, Ashley"
+CC12018,"Waltjen-Kuilipule, Jandale"
+CC12019,"Aynessazian, Tanya"
+CC12021,"Gabriel, Daniel"
+CC12022,"Prones, John"
+CC12024,"Kauahikaua, David"
+CC12025,"Pokipala, Hopena"
+CC12026,"Yoder, Steve"
+CC12027,"Aguirre, John"
+CC12028,"Apilado, Abraham"
+CC12029,"Cruz, Jocelyn"
+CC12030,"Wilson, Kanoa"
+CC12031,"Seashell, Joelle"
+CC12033,"Armstrong, Kelly"
+CC12034,"Kahele, Kaiali'i"
+CC12035,"Nakanelua, Kelsey"
+CC12036,"Dalhouse, Tim"
+CC12037,"Kalima, Leona"
+CC12040,"James, Choon"
+CC12042,"Madison, Sylvie"
+CC12043,"Lindsey, Laura"
+CC12046,"Lindner, Jeffrey"
+CC12048,"Garcia, Reginald"
+CC12053,"Daily, Asheemo"
+CC12055,"Burns, Caryl"
+CC12062,"MacPherson, Christy"
+CC12063,"Gregory, Tara"
+CC12064,"Everett, Christina"
+CC12065,"Gedeon, Joe"
+CC12066,"Applegate, Paul"
+CC12067,"Fujinaka, Janel"
+CC12068,"Brown, Nani"
+CC12070,"Wataru, James"
+CC12074,"Denis, Megeso-William"
+CC12075,"Weaver, Charla"
+CC12076,"Char, Nathaniel"
+CC12078,"Kealoha, Kekoa"
+CC12079,"Plong, Tom"
+CC12080,"Nakamura, Jordan"
+CC12081,"McDermott, Bob"
+CC12082,"Pahia, Robert"
+CC12083,"Hazlebeck, David"
+CC12085,"Ombac, Edgar"
+CC12086,"Keefe, Jacqueline*"
+CC12087,"Canelas, Justin"
+CC12088,"Doctolero, Loren"
+CC12089,"Person, Troy"
+CC12090,"Pacarro, Kahi"
+CC12091,"Abihai, Reno"
+CC12093,"McCreary, Robin"
+CC12094,"La Costa, P. Denise"
+CC12095,"del Rosario, Renato"
+CC12096,"Olson, Ashley"
+CC12097,"Phomsouvanh, Andrew"
+CC12098,"Ratcliffe, Michael"
+CC12099,"Faatea, Faatea"
+CC12100,"Martin, Umi"
+CC12101,"Cabanilla, Rida*"
+CC12102,"Heim, Arjuna"
+CC12103,"de Gracia, Danny"
+CC12104,"Batangan, Kelson"
+CC12105,"Fukushima, JoNelle"
+CC12107,"Aki, Zed Kaapana"
+CC12108,"Nakamatsu, Tricia"
+CC12109,"Alves, Nadia"
+CC12110,"Nagatani, Anthony"
+CC12111,"Baker, Karl"
+CC12112,"Mukai, Nelson"
+CC12113,"Ozaki, Todd"
+CC12114,"Reed, Kenna"
+CC12115,"Kiakona, Paele"
+CC12116,"Morrow, Jake"
+CC12117,"Kalama, Micah"
+CC12118,"Ahu Isa, Lei"
+CC12119,"Powers, Manu"
+CC12120,"Kanealii-Kleinfelder, Dawn"
+CC12121,"Halversen, William*"
+CC12122,"Kaopua, Suzanne"
+CC12123,"Kaiwi, Wayne"
+CC12125,"Knight, Angela"
+CC12126,"Asuega-Fualaau, Ranell"
+CC12127,"Holt, Cristina"
+CC12128,"Eastman, Bulla"
+CC12129,"Liang, Jason"
+CC12131,"Owens, Mark"
+CC12132,"Kaiminaauao, Keola"
+CC12133,"Haupt, Jeremy"
+CC12134,"Wilson, Herman"
+CC12135,"Correa, Michelle"
+CC12136,"Ohara, Eileen"
+CC12137,"Rodas, Alejandra"
+CC12138,"Botelho, Wendy Sue"
+CC12139,"Smith, Dane"
+CC12140,"Cabiles, Derrick"
+CC12141,"Asing, David"
+CC12142,"Okhman, Yelena"
+CC12143,"Moniz, Marvin"
+CC12144,"Enriquez, Lloyd"
+CC12145,"Schimmelfennig, Chadley"
+CC12146,"Lloyd, Alan"
+CC12147,"Crabbe, Kanekoa"
+CC12148,"Mattos, John"
+CC12150,"Silva, Robert"
+CC12151,"Enriques, Guy"
+CC12156,"Hoffeld, Cyd*"
+CC12157,"Nagamine, Trevor"
+CC12158,"Rapozo, Cheree"
+CC12160,"Henriques, Mark"
+CC12161,"Hunt, Tamlyn"
+CC12162,"Billionaire, Shelby"
+CC12163,"Hartsfield, Daisy"
+CC12164,"Vasquez-Dela Cerna, Lynn*"
+CC12165,"Nihipali, Ronald Kunani*"
+CC12168,"Ababan, Jason"
+CC12169,"Kuoha, Keoni"
+CC12171,"Coots, Mike"
+CC12172,"Masters, Jason"
+CC12174,"Cluett, Misty"
+CC12175,"Petterson, Amy"
+CC12178,"Shigemoto, Taylor"
+CC12180,"Cresencia, Hope"
+CC12186,"Anthony, Daniel*"
+CC12188,"McCormick, Dalene"
+CC12189,"Chung, Jerry"
+CC12191,"Fitzgerald, Jesse"
+CC12192,"Kennealy, Jonathan*"
+CC12194,"Barsatan, Eric"
+CC12195,"Mejia, Margaret"
+CC12197,"Konohia, Randy"
+CC12198,"Croswell, David"
+CC12199,"Youngstrom, Rocklin"
+CC12203,"Muh, Victor"
+CC12204,"Quilingking, Tess*"
+CC12205,"Wong, Hinaleimoana"
+CC12206,"Silva, Anthony"
+CC12208,"Guard, John"
+CC12209,"Kahoohanohano, Kii"
+CC12212,"Yokouchi, Jon"
+CC12217,"Lindsey, Ashley"
+CC12218,"Liggett, Travis"
+CC12219,"Anderson, Ikaika*"
+CC12223,"Akina, Adrian"
+CC12227,"Young, Angela*"
+CC12228,"Haumschild, Steve"
+CC12231,"Kitashima, Kelly*"
+CC12232,"Bass, Danielle"

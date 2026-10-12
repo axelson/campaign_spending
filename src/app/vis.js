@@ -659,11 +659,11 @@ class BubbleChart {
 
     window.force = force;
 
-    return this.update_modal(reg_no, circle_data.category);
+    return this.update_modal(reg_no, circle_data.category, circle_data.office);
   }
 
   // Updates records on modal
-  update_modal(reg_no, category) {
+  update_modal(reg_no, category, office) {
     console.log('updating modal');
     const url = 'https://hicscdata.hawaii.gov/resource/3maa-4fgr.json';
 
@@ -688,16 +688,15 @@ class BubbleChart {
   }).always( () => modal.find('.expenditure-loading').hide())
     .error( () => modal.find('.expenditure-error').show());
 
-    const candidate_info = window.organizational_records.filter(d => d.reg_no === reg_no)[0];
+    // The office is per election, so it comes from the record, not the candidate
     const {
       candidate_name
-    } = candidate_info;
-    const candidate_office = candidate_info.office;
+    } = window.organizational_records.filter(d => d.reg_no === reg_no)[0];
 
     modal.find('.candidate_name').text(candidate_name);
     const cur_year = candidate_utils.get_vis_year();
     modal.find('.current_year').text(cur_year);
-    modal.find('.candidate_office').text(candidate_office);
+    modal.find('.candidate_office').text(office);
     return modal.find('.expenditure_category_title').text(category);
   }
 
@@ -913,13 +912,11 @@ class CandidateUtil {
       return 'Hawaii';
     } else if (['Senate'].includes(record.office)) {
       matches = window.precinct_records.filter(d => d.senate === record.district);
-      if (!matches[0]) {
-        console.log('no matches', record);
-      }
-      return this.get_island_by_precinct(matches[0].precinct);
+      // Some filings leave the district blank
+      return matches[0] ? this.get_island_by_precinct(matches[0].precinct) : 'Other';
     } else if (['House'].includes(record.office)) {
       matches = window.precinct_records.filter(d => d.house === record.district);
-      return this.get_island_by_precinct(matches[0].precinct);
+      return matches[0] ? this.get_island_by_precinct(matches[0].precinct) : 'Other';
     } else {
       return 'Other';
     }
@@ -1002,25 +999,9 @@ $(function() {
       // Only a handful of records have negative amounts so it is safe to ignore them
       if (parseInt(d.amount) < 0) {
         return false;
-      // TODO: Might be better to just check the last year
-      } else if (year === 2024) {
-        return (d.election_period === '2022-2024') || (d.election_period === '2020-2024');
-      } else if (year === 2022) {
-        return (d.election_period === '2020-2022') || (d.election_period === '2018-2022');
-      } else if (year === 2020) {
-        return (d.election_period === '2018-2020') || (d.election_period === '2016-2020');
-      } else if (year === 2018) {
-        return (d.election_period === '2016-2018') || (d.election_period === '2014-2018');
-      } else if (year === 2016) {
-        return (d.election_period === '2014-2016') || (d.election_period === '2012-2016');
-      } else if (year === 2014) {
-        return (d.election_period === '2012-2014') || (d.election_period === '2010-2014');
-      } else if (year === 2012) {
-        return (d.election_period === '2010-2012') || (d.election_period === '2008-2012');
-      } else if (year === 2010) {
-        return (d.election_period === '2008-2010') || (d.election_period === '2006-2010');
-      } else if (year === 2008) {
-        return (d.election_period === '2006-2008') || (d.election_period === '2004-2008');
+      } else if (typeof year === 'number') {
+        // Every election period leading up to that election, e.g. 2018-2022 and 2020-2022 for 2022
+        return parseInt(d.election_period.split('-')[1]) === year;
       } else if (year === 'gov') {
         return (d.election_period === '2012-2014') && (d.office === 'Governor');
       } else if (year === 'senate') {
@@ -1060,8 +1041,12 @@ $(function() {
     const direction = next ? 1 : -1;
     const next_year = cur_year + (2*direction);
 
+    const years = root.election_years;
+    const first_year = years[0];
+    const last_year = years[years.length - 1];
+
     // old disabled color: #bcbbb4, old enabled color: #454542
-    if (next_year === 2008) {
+    if (next_year === first_year) {
       $('.viz_nav.year .left-arrow').attr('src', 'images/year_arrow_disabled.png')
         .removeClass('clickable');
     } else {
@@ -1069,7 +1054,7 @@ $(function() {
         .addClass('clickable');
     }
 
-    if (next_year === 2022) {
+    if (next_year === last_year) {
       $('.viz_nav.year .right-arrow').attr('src', 'images/year_arrow_disabled.png')
         .removeClass('clickable');
     } else {
@@ -1077,9 +1062,7 @@ $(function() {
         .addClass('clickable');
     }
 
-    // This defines the acceptable range of years to navigate to
-    const range = d3.range(2008, 2022.1, 2);
-    if (!Array.from(range).includes(next_year)) {
+    if (!years.includes(next_year)) {
       return;
     }
 
@@ -1103,8 +1086,21 @@ $(function() {
   const render_vis = function(error, expenditure_records, organizational_records, precinct_records) {
     const raw_records = join_data(expenditure_records, organizational_records);
     window.raw_records = raw_records;
+    // The year arrows step through every election from 2008 to the latest one
+    // in the data that has been held (the data also has early spending for
+    // future elections). Start on the latest.
+    const this_year = new Date().getFullYear();
+    const latest_year = d3.max(raw_records, function(d) {
+      const year = parseInt(d.election_period.split('-')[1]);
+      return (year % 2 === 0) && (year <= this_year) ? year : undefined;
+    });
+    root.election_years = d3.range(2008, latest_year + 1, 2);
+    const $year_el = $('.viz_nav.year');
+    $year_el.data('year', latest_year);
+    $year_el.find('.year-text').text(latest_year);
+
     // This is the default data to show
-    const filtered_records = filter_data(raw_records, 2022);
+    const filtered_records = filter_data(raw_records, latest_year);
     //filtered_records = filter_data(raw_records, 'gov')
     //filtered_records = filter_data(raw_records, 'senate')
 

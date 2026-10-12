@@ -7,21 +7,9 @@ This project is a vizualization of Hawaii Campaign Spending data for Candidates.
 [View Online](http://viz.hawaiicampaignspending.com)
 
 Please note that this visualization is based on the official Hawaii Campaign
-Spending data which you can find on data.hawaii.gov:
-https://data.hawaii.gov/Community/Expenditures-Made-By-Hawaii-State-and-County-Candi/3maa-4fgr
-
-But the data is actually pulled from a filtered/rolled-up view:
-https://data.hawaii.gov/Community/Expenditures-Made-By-Hawaii-State-and-County-Candi/gvuk-nbsz/data
-
-![Socrata Filter Settings](src/public/images/socrata_filter_settings.png "Socrata Filter Settings")
-
-Also the Candidate Committee report is used:
-https://hicscdata.hawaii.gov/dataset/Organizational-Reports-For-Hawaii-State-and-County/gkek-wbij
-
-My sorted view of the dataset:
-https://hicscdata.hawaii.gov/dataset/Organizational-Reports-For-Hawaii-State-and-County/8ry8-ip7m/data
-
-![Candidate Committee Socrata Filter Settings](src/public/images/socrata_candidate_committee_report_filter_settings.png "Candidate Committee Socrata Filter Settings")
+Spending data on hicscdata.hawaii.gov:
+https://hicscdata.hawaii.gov/dataset/Expenditures-Made-By-Hawaii-State-and-County-Candi/3maa-4fgr
+(see [Updating Data](#updating-data) for how it's combined with older snapshots).
 
 To better understand the data you should take a look at the [Campaign Finance Data Primer](https://docs.google.com/document/d/1VC0of6-rLtFrLmpBS8xWDLjLvtoPOr9LBfDJLYy_4fw/edit)
 
@@ -38,28 +26,31 @@ Visit the URL Vite prints (http://localhost:5173 by default). The source lives
 in `src/`: pages at the top level, the visualization and styles in `src/app/`,
 and files copied verbatim (data, images, vendored libraries) in `src/public/`.
 
-## Getting a Socrata API key
-
-After creating a filtered/rolled-up view as above
-
-    curl 'https://hicscdata.hawaii.gov/api/api_keys' -i -X POST -H 'Content-Type: application/json'  -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Pragma: no-cache' -H 'Cache-Control: no-cache' --data '{"keyName": "Example key."}' -u "$USERNAME@$PASSWORD"
-
-Then put your api key username and password key in `.env` (based on `.env.sample`)
-
-NOTE: The username is the `keyId` field and the password is the `keySecret` field
-
 ## Updating Data
 
 In this project the data is updated manually rather than automatically fetched (this may change in the future).
 
     npm run update-data
 
-This downloads the Socrata exports into `raw_data/` and writes the reshaped
-data to `src/public/data/`. The durable assets page combines the live dataset
-(reports from 2015 on) with `raw_data/durable_assets_2006-2013.json`, a
-snapshot taken in 2014 that can't be re-downloaded. Reports filed during 2014
-are in neither. Pass `-- --skip-download` to only reshape the files
-already in `raw_data/`. Then commit the changes to the data (if any) and deploy.
+This downloads the public Socrata data into `raw_data/` and writes the
+reshaped data to `src/public/data/`; no API key is needed. Pass
+`-- --skip-download` to only reshape the files already in `raw_data/`. Then
+commit the changes to the data (if any) and deploy.
+
+The state's datasets now only contain reports filed from 2015 on, so older
+data comes from snapshots in `raw_data/` that can't be re-downloaded:
+
+- `expenditures_2021.csv` and `organizational_reports_2021.csv` (August 2021)
+  supply the election periods that started by 2014; everything later comes from
+  the live expenditures dataset, with each election's office and party taken
+  from the candidate's filings for it.
+- `durable_assets_2006-2013.json` (February 2014) is combined with the live
+  durable assets dataset. Reports filed during 2014 are in neither.
+
+The public "Campaign Spending OE Ledger" dataset
+(https://hicscdata.hawaii.gov/resource/bjzn-cicp.json) still has the pre-2015
+expenditure reports and matches the 2021 snapshot, if the snapshot ever needs
+rebuilding.
 
 ## Deploying
 
