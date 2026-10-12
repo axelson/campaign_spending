@@ -16,7 +16,6 @@ class BubbleChart {
     this.get_supercategory = this.get_supercategory.bind(this);
     this.get_candidate_short_name = this.get_candidate_short_name.bind(this);
     this.estimate_circle_diameter = this.estimate_circle_diameter.bind(this);
-    this.move_towards_year = this.move_towards_year.bind(this);
     this.show_details = this.show_details.bind(this);
     this.hide_details = this.hide_details.bind(this);
     this.render_modal = this.render_modal.bind(this);
@@ -82,18 +81,18 @@ class BubbleChart {
       if ((radius < 0) || isNaN(radius)) {
         console.log("Problem with radius for node:" + JSON.stringify(node));
       }
-      return this.nodes.push(node);
+      this.nodes.push(node);
     });
 
     this.nodes.sort((a, b) => b.value - a.value);
-    return window.nodes = this.nodes;
+    window.nodes = this.nodes;
   }
 
   // Stop forces and remove nodes
   kill_forces() {
-    return this.forces.forEach(force => {
+    this.forces.forEach(force => {
       force.stop();
-      return force.nodes([]);
+      force.nodes([]);
     });
   }
 
@@ -102,9 +101,8 @@ class BubbleChart {
     this.create_nodes(records);
     this.create_circles();
 
-    let func = $('.viz_nav.btn.selected').data('name');
-    if (func == null) { func = 'year'; }
-    return this.show_viz_type(func);
+    const func = $('.viz_nav.btn.selected').data('name') ?? 'year';
+    this.show_viz_type(func);
   }
 
 
@@ -117,17 +115,17 @@ class BubbleChart {
       .attr("id", "svg_vis");
     window.viz = this.vis;
 
-    return this.create_circles();
+    this.create_circles();
   }
 
   create_circles() {
     this.circles = this.vis.selectAll("circle")
       .data(this.nodes, d => d.id);
-    return this.do_create_circles(this.circles);
+    this.do_create_circles(this.circles);
   }
 
   do_create_circles(circles) {
-    // used because we need 'this' in the 
+    // used because we need 'this' in the
     // mouse callbacks
     const that = this;
 
@@ -137,38 +135,40 @@ class BubbleChart {
       .attr('class', d => `${this.get_supercategory(d.category)} ${d.reg_no}`)
       .attr("stroke-width", 2)
       .attr("id", d => `bubble_${d.id}`)
-      .on("mouseover", function(d,i) {
-        that.show_details(d,i,this);
-        return that.circles
-          .filter( circle => circle.reg_no !== d.reg_no )
+      .on("mouseover", function(d, i) {
+        that.show_details(d, i, this);
+        that.circles
+          .filter(circle => circle.reg_no !== d.reg_no)
           .transition().duration(1000)
           .style('opacity', 0.3);
-    }).on("mouseout", function(d,i) {
-        that.hide_details(d,i,this);
-        return that.circles
+      })
+      .on("mouseout", function(d, i) {
+        that.hide_details(d, i, this);
+        that.circles
           .transition().duration(1000)
           .style('opacity', 1);
-        }).on("click", function(d,i) {
+      })
+      .on("click", function(d, i) {
         const modal = $('#candidate_modal');
         const element = this;
         if (modal.is(':visible')) {
-          return that.update_modal_center(d,i,element);
+          that.update_modal_center(d, i, element);
         } else {
           $(document).off('opened', '[data-reveal]');
           $(document).on('opened', '[data-reveal]', function() {
             console.log('modal callback');
-            const callback_modal = $(this);
             // I don't understand why foundation doesn't have per-modal callbacks
-            if (callback_modal.attr('id') === modal.attr('id')) {
-              return that.render_modal(d,i,element);
+            if ($(this).attr('id') === modal.attr('id')) {
+              that.render_modal(d, i, element);
             }
           });
           $(element).data('center', true);
-          return modal.foundation('reveal', 'open');
+          modal.foundation('reveal', 'open');
         }
-        }).attr("r", d => d.radius);
+      })
+      .attr("r", d => d.radius);
 
-    return circles.exit().remove();
+    circles.exit().remove();
   }
 
 
@@ -176,9 +176,9 @@ class BubbleChart {
   // Charge is proportional to the diameter of the
   // circle (which is stored in the radius attribute
   // of the circle's associated data.
-  // This is done to allow for accurate collision 
+  // This is done to allow for accurate collision
   // detection with nodes of different sizes.
-  // Charge is negative because we want nodes to 
+  // Charge is negative because we want nodes to
   // repel.
   // Dividing by 8 scales down the charge to be
   // appropriate for the visualization dimensions.
@@ -203,10 +203,10 @@ class BubbleChart {
       .chargeDistance(Infinity)
       .friction(0.9)
       .on("tick", e => {
-        return this.circles.each(this.move_towards_center(e.alpha))
+        this.circles.each(this.move_towards_center(e.alpha))
           .attr("cx", d => d.x)
           .attr("cy", d => d.y);
-    });
+      });
     force.start();
 
     const total_amount = d3.sum(this.nodes, d => d.value);
@@ -218,19 +218,19 @@ class BubbleChart {
     ];
 
     // Remove old titles
-    let titles = this.vis.selectAll('text.titles').remove();
+    this.vis.selectAll('text.titles').remove();
 
-    titles = this.vis.selectAll('text.titles')
+    const titles = this.vis.selectAll('text.titles')
       .data(center_label, d => d.text);
 
     titles.enter().append('text')
-      .text( d => d.text)
+      .text(d => d.text)
       .attr('class', d => `titles year ${d.class}`)
       .attr('x', d => this.center.x + d.dx)
       .attr('y', d => this.center.y + d.dy);
 
     titles.exit().remove();
-    return this.show_legend(radius);
+    this.show_legend(radius);
   }
 
   // Moves all circles towards the @center
@@ -238,7 +238,7 @@ class BubbleChart {
   move_towards_center(alpha) {
     return d => {
       d.x = d.x + ((this.center.x - d.x) * (this.damper + 0.02) * alpha);
-      return d.y = d.y + ((this.center.y - d.y) * (this.damper + 0.02) * alpha);
+      d.y = d.y + ((this.center.y - d.y) * (this.damper + 0.02) * alpha);
     };
   }
 
@@ -247,13 +247,13 @@ class BubbleChart {
     this.show_all_candidates();
     this.hide_legend();
 
-    if(func === 'candidate') {
+    if (func === 'candidate') {
       this.show_by_candidate();
     }
-    if(func === 'party') {
+    if (func === 'party') {
       this.do_split(d => d.party);
     }
-    if(func === 'expenditure') {
+    if (func === 'expenditure') {
       const category_titles = {
         communication: 'Communication & Outreach',
         overhead: 'Overhead',
@@ -263,20 +263,19 @@ class BubbleChart {
         other: 'Other'
       };
 
-      const accessor = d => d.super_category;
-      this.do_split(accessor, {
+      this.do_split(d => d.super_category, {
         charge: d => this.charge(d) * 1.3,
         title_accessor(category) { return category_titles[category]; }
       });
     }
-    if(func === 'island') {
+    if (func === 'island') {
       this.do_split(d => candidate_utils.get_island(d));
     }
-    if(func === 'office') {
+    if (func === 'office') {
       this.do_split(d => d.office);
     }
-    if(func === 'year') {
-      return this.display_group_all();
+    if (func === 'year') {
+      this.display_group_all();
     }
   }
 
@@ -288,69 +287,57 @@ class BubbleChart {
     this.circles
       .transition().duration(1000)
       .style('opacity', 1);
-    return this.candidate_search_input().val('');
+    this.candidate_search_input().val('');
   }
 
-  show_by_candidate(options) {
-    if (options == null) { options = {}; }
-    const accessor = d => d.name;
+  show_by_candidate(options = {}) {
     this.candidate_search_input().slideDown();
-    return this.do_split(accessor, options);
+    this.do_split(d => d.name, options);
   }
 
-  do_split(accessor, options) {
-    if (options == null) { options = {}; }
+  do_split(accessor, options = {}) {
     let location_map = this.move_to_location_map(this.nodes, accessor, options);
     if (options.modify_location_map != null) {
       location_map = options.modify_location_map(location_map);
     }
-    const charge = (options.charge != null) ?
-      options.charge
-    :
-      this.charge;
+    const charge = options.charge ?? this.charge;
 
     this.kill_forces();
     this.forces = [];
     const force_map = location_map.keys().map(key => {
-      const nodes = this.nodes.filter( d => key === accessor(d) );
+      const nodes = this.nodes.filter(d => key === accessor(d));
       const force = d3.layout.force()
         .nodes(nodes)
         .size([this.width, this.height]);
       this.forces.push(force);
       return { force, key, nodes };
-  });
+    });
 
     force_map.forEach(force => {
       const circles = this.vis.selectAll("circle")
-        .filter( d => force.key === accessor(d) );
+        .filter(d => force.key === accessor(d));
       force.force.gravity(0)
         .theta(1.0)
         .charge(charge)
         .chargeDistance(Infinity)
         .friction(0.87)
         .on("tick", e => {
-          return circles.each(this.move_towards_candidates(e.alpha, location_map, accessor))
+          circles.each(this.move_towards_candidates(e.alpha, location_map, accessor))
             .attr('cx', d => d.x)
             .attr('cy', d => d.y);
-      });
-      return force.force.start();
+        });
+      force.force.start();
     });
 
     // Remove old titles
-    let titles = this.vis.selectAll('text.titles').remove();
+    this.vis.selectAll('text.titles').remove();
 
     const title_accessor = (options.title_accessor != null) ?
       d => options.title_accessor(d.key)
     :
       d => d.key;
-    titles = this.vis.selectAll('text.titles')
+    const titles = this.vis.selectAll('text.titles')
       .data(location_map.values(), d => d.key);
-
-    //titles.enter().append('text')
-    //  .text('CENTERS')
-    //  .attr('text-anchor', 'middle')
-    //  .attr('x', (d) -> d.x)
-    //  .attr('y', (d) -> d.y)
 
     const padding = 55;
 
@@ -361,33 +348,16 @@ class BubbleChart {
       .text(title_accessor)
       .attr("text-anchor", "middle")
       .attr('x', d => d.x)
-      .attr('y', d => line_offset(d,0));
+      .attr('y', d => line_offset(d, 0));
 
     titles.enter().append('text')
       .attr('class', 'titles amount')
       .text(d => this.format_money_millions(parseFloat(d.sum)))
       .attr('text-anchor', 'middle')
       .attr('x', d => d.x)
-      .attr('y', d => line_offset(d,1));
+      .attr('y', d => line_offset(d, 1));
 
-    //# Debug info
-    //titles.enter().append('text')
-    //  .attr('class', 'titles amount')
-    //  .text (d) => d.radius
-    //  .attr('text-anchor', 'middle')
-    //  .attr('x', (d) -> d.x)
-    //  .attr('y', (d) -> line_offset(d,2))
-
-    //titles.enter().append('text')
-    //  .attr('class', 'titles candidate_names')
-    //  .text (d) =>
-    //    #d.candidates.slice(0, 3).join(', ')
-    //    d.candidates.length
-    //  .attr('text-anchor', 'middle')
-    //  .attr('x', (d) -> d.x)
-    //  .attr('y', (d) -> d.y + 260)
-
-    return titles.exit().remove();
+    titles.exit().remove();
   }
 
   format_money_millions(amount_in_dollars) {
@@ -405,7 +375,7 @@ class BubbleChart {
     return d => {
       const target = location_map.get(accessor(d));
       d.x = d.x + ((target.x - d.x) * (this.damper + 0.02) * alpha * 1.1);
-      return d.y = d.y + ((target.y - d.y) * (this.damper + 0.02) * alpha * 1.1);
+      d.y = d.y + ((target.y - d.y) * (this.damper + 0.02) * alpha * 1.1);
     };
   }
 
@@ -413,51 +383,33 @@ class BubbleChart {
   // Creates grouping based on the grouping_func parameter and uses that to
   // compute groups and lay them out in a grid-based manner
   // AKA: Here lies black magic
-  move_to_location_map(nodes, grouping_func, options) {
-    let prev_radius;
-    if (options == null) { options = {}; }
-    const min_grouping_width = 300;
-    const groupings_per_row = Math.floor(this.width / min_grouping_width) - 1;
-    const min_grouping_height = 450;
-    const get_width = i => {
-      return ((i % groupings_per_row) + 1) * min_grouping_width;
-    };
-    const get_height = i => {
-      const num_row = Math.floor(i / groupings_per_row) + 1;
-      return (num_row * min_grouping_height) - 100;
-    };
+  move_to_location_map(nodes, grouping_func, options = {}) {
     const groups = d3.nest()
-      .key( grouping_func )
-      .rollup( leaves => {
-        return {
-          sum: d3.sum(leaves, d => parseFloat(d.value)),
-          candidates: d3.set(leaves.map(this.get_candidate_short_name)).values(),
-          radius: this.estimate_circle_diameter(leaves)/2
-        };
-      })
+      .key(grouping_func)
+      .rollup(leaves => ({
+        sum: d3.sum(leaves, d => parseFloat(d.value)),
+        candidates: d3.set(leaves.map(this.get_candidate_short_name)).values(),
+        radius: this.estimate_circle_diameter(leaves)/2
+      }))
       .map(nodes, d3.map);
 
-    const max_num_rows = 5;
     const padding = 30;
     const label_padding = 90;
-    let col_num = (prev_radius = 0);
+    let col_num = 0;
+    let prev_radius = 0;
     let num_in_row = 1;
     const max_num_in_row = 6;
     // Push first row up
     let prev_y = -60;
 
-    const sort = (options.sort != null) ?
-      options.sort
-    :
-      (a, b) => d3.descending(
-        parseFloat(groups.get(a).sum),
-        parseFloat(groups.get(b).sum)
-      );
+    const sort = options.sort ?? ((a, b) => d3.descending(
+      parseFloat(groups.get(a).sum),
+      parseFloat(groups.get(b).sum)
+    ));
 
     groups.keys().sort(sort).forEach((key, index) => {
-      let y;
       const entry = groups.get(key);
-      entry['key'] = key;
+      entry.key = key;
 
       if (col_num >= num_in_row) { col_num = 0; }
       if (col_num === 0) {
@@ -481,19 +433,16 @@ class BubbleChart {
 
       // Only calculate y for first column in row
       if (col_num === 0) {
-        y = prev_y + prev_radius + entry.radius + (padding*2) + label_padding;
-        prev_y = y;
+        prev_y = prev_y + prev_radius + entry.radius + (padding*2) + label_padding;
         prev_radius = entry.radius;
       }
 
-      y = prev_y;
-
-      entry['x'] = x;
-      entry['y'] = y;
-      entry['radius'] = prev_radius;  //prev_radius is our radius for this row
+      entry.x = x;
+      entry.y = prev_y;
+      entry.radius = prev_radius;  //prev_radius is our radius for this row
       groups.set(key, entry);
 
-      return col_num += 1;
+      col_num += 1;
     });
     return groups;
   }
@@ -510,10 +459,7 @@ class BubbleChart {
       return 'staff';
     } else if (['Bank Charges & Adjustments', 'Filing Fee', 'Taxes'].includes(category)) {
       return 'fees';
-    } else if (['Other'].includes(category)) {
-      return 'other';
     } else {
-      // console.log('category', category)
       return 'other';
     }
   }
@@ -526,43 +472,22 @@ class BubbleChart {
   estimate_circle_diameter(nodes) {
     const area = d3.sum(nodes, d => Math.PI * Math.pow(d.radius, 2));
     const diameter = 2 * Math.sqrt(area/Math.PI);
-    const estimated_diameter = ((Math.log(nodes.length)/140) + 1) * diameter;
-    return estimated_diameter;
-  }
-
-  // move all circles to their associated @year_centers 
-  move_towards_year(alpha) {
-    return d => {
-      const target = this.year_centers[d.election_period];
-      d.x = d.x + ((target.x - d.x) * (this.damper + 0.02) * alpha * 1.1);
-      return d.y = d.y + ((target.y - d.y) * (this.damper + 0.02) * alpha * 1.1);
-    };
+    return ((Math.log(nodes.length)/140) + 1) * diameter;
   }
 
   show_details(data, i, element) {
     d3.select(element).attr("stroke", "black");
-    //console.log("charge is #{this.charge(data)} radius is: " + data.radius)
     let content = "<div class=\"inner_tooltip\">";
     content += `<span class=\"candidate\">${data.name}</span><br/>`;
     content += `<span class=\"office\">${data.election_year}, ${data.office}</span><br/>`;
-    content +=`<span class=\"amount\"> ${data.category} $${addCommas(data.value)}</span><br/>`;
-    //content +="<span class=\"amount\"> charge #{this.charge(data)} </span><br/>"
-    //content +="<span class=\"name\">Amount:</span><span class=\"value\"> $#{addCommas(data.value)}</span><br/>"
-    //content +="<span class=\"name\">Category:</span><span class=\"value\"> #{data.category}</span><br/>"
-    //content +="<span class=\"name\">Super Category:</span><span class=\"value\"> #{data.super_category}</span><br/>"
-    //content +="<span class=\"name\">Office:</span><span class=\"value\"> #{data.office}</span><br/>"
-    //content +="<span class=\"name\">Party:</span><span class=\"value\"> #{data.party}</span><br/>"
-    //content +="<span class=\"name\">Election Period:</span><span class=\"value\"> #{data.election_period}</span>"
-    content +="</div>";
-    return this.tooltip.showTooltip(content,d3.event);
+    content += `<span class=\"amount\"> ${data.category} $${addCommas(data.value)}</span><br/>`;
+    content += "</div>";
+    this.tooltip.showTooltip(content, d3.event);
   }
-    //d3.select(element)
-    //  .move_to_front()
-
 
   hide_details(data, i, element) {
     d3.select(element).attr("stroke", '');
-    return this.tooltip.hideTooltip();
+    this.tooltip.hideTooltip();
   }
 
 
@@ -576,25 +501,19 @@ class BubbleChart {
     $('#candidate_vis').find('svg').remove();
     $('#candidate_modal').find('#expenditure-record-table-container').empty();
 
-    const {
-      reg_no
-    } = circle_data;
-    const records = window.records.filter( d => d.reg_no === reg_no);
+    const { reg_no } = circle_data;
     const nodes = window.viz.selectAll('circle')
-      .filter( d => d.reg_no === reg_no )
-      .sort( (a, b) => d3.descending(a.radius, b.radius))
+      .filter(d => d.reg_no === reg_no)
+      .sort((a, b) => d3.descending(a.radius, b.radius))
       .data();
 
-    const center_node = nodes.filter( d => circle_data.category === d.category)[0];
-    const non_center_nodes = nodes.filter( d => circle_data.category !== d.category);
+    const center_node = nodes.filter(d => circle_data.category === d.category)[0];
+    const non_center_nodes = nodes.filter(d => circle_data.category !== d.category);
     const largest_radius = d3.max(non_center_nodes, d => d.radius);
     console.log(`largest radius is ${largest_radius}, similar to 61?`);
-    const link_padding = largest_radius > 40 ?
-      90
-    :
-      55;
+    const link_padding = largest_radius > 40 ? 90 : 55;
 
-    const links = non_center_nodes.map( node => ({
+    const links = non_center_nodes.map(node => ({
       source: center_node,
       target: node
     }));
@@ -613,7 +532,7 @@ class BubbleChart {
     this.do_create_circles(circles);
 
     // Fade circles except center circle
-    circles.filter( node => node.category !== circle_data.category)
+    circles.filter(node => node.category !== circle_data.category)
       .transition().duration(1000)
       .style('opacity', 0.5);
 
@@ -629,13 +548,13 @@ class BubbleChart {
       return d => {
         if (d.id === center_node.id) {
           d.x = d.x + ((center_loc.x - d.x) * (this.damper + 0.02) * alpha);
-          return d.y = d.y + ((center_loc.y - d.y) * (this.damper + 0.02) * alpha);
+          d.y = d.y + ((center_loc.y - d.y) * (this.damper + 0.02) * alpha);
         }
       };
     };
 
     const tick = e => {
-      return circles.each(move_center_towards_center(e.alpha))
+      circles.each(move_center_towards_center(e.alpha))
         .attr("cx", d => d.x)
         .attr("cy", d => d.y);
     };
@@ -648,18 +567,14 @@ class BubbleChart {
       .friction(0.7)
       .theta(0.5)
       .gravity(0.4)
-      .charge( d => {
-        const charge = -300 + (-200 * Math.log(d.radius));
-        this.charge(d) * 50;
-        return charge;
-      })
+      .charge(d => -300 + (-200 * Math.log(d.radius)))
       .linkDistance(link_distance)
       .on('tick', tick)
       .start();
 
     window.force = force;
 
-    return this.update_modal(reg_no, circle_data.category, circle_data.office);
+    this.update_modal(reg_no, circle_data.category, circle_data.office);
   }
 
   // Updates records on modal
@@ -678,31 +593,29 @@ class BubbleChart {
     modal.find('.expenditure-loading').show();
     $.get(`${url}?${url_params}`, function(data) {
       const columns = [
-        {name: 'date', display_name: 'Date', func(d) { return d.substring(0,10); } },
+        {name: 'date', display_name: 'Date', func(d) { return d.substring(0, 10); } },
         {name: 'expenditure_category', display_name: 'Expenditure Category'},
         {name: 'vendor_name', display_name: 'Vendor Name'},
         {name: 'purpose_of_expenditure', display_name: 'Purpose of Expenditure'},
         {name: 'amount', display_name: 'Amount', func(d) { return money(d); }}
       ];
-      return tabulate('#candidate_modal #expenditure-record-table-container', 'expenditure-record-table', data, columns);
-  }).always( () => modal.find('.expenditure-loading').hide())
-    .error( () => modal.find('.expenditure-error').show());
+      tabulate('#candidate_modal #expenditure-record-table-container', 'expenditure-record-table', data, columns);
+    })
+      .always(() => modal.find('.expenditure-loading').hide())
+      .error(() => modal.find('.expenditure-error').show());
 
     // The office is per election, so it comes from the record, not the candidate
-    const {
-      candidate_name
-    } = window.organizational_records.filter(d => d.reg_no === reg_no)[0];
+    const { candidate_name } = window.organizational_records.filter(d => d.reg_no === reg_no)[0];
 
     modal.find('.candidate_name').text(candidate_name);
-    const cur_year = candidate_utils.get_vis_year();
-    modal.find('.current_year').text(cur_year);
+    modal.find('.current_year').text(year);
     modal.find('.candidate_office').text(office);
-    return modal.find('.expenditure_category_title').text(category);
+    modal.find('.expenditure_category_title').text(category);
   }
 
   // Update the center node of the modal
   update_modal_center(circle_data, i, element) {
-    return this.render_modal(circle_data, i, element);
+    this.render_modal(circle_data, i, element);
   }
 
   size_legend_init() {
@@ -714,18 +627,16 @@ class BubbleChart {
       { label: '$ 500,000',     r: 500 * 1000 },
       { label: '$ 1 million',   r: 1000000 }
     ];
-    $.each(legend_sizes, (i,d) => {
-      return d.r = this.radius_scale(d.r);
-    });
+    legend_sizes.forEach(d => { d.r = this.radius_scale(d.r); });
 
     const largest_legend_offset = 40;
     const largest_radius = d3.max(legend_sizes, d => d.r);
     const radius_range = d3.extent(legend_sizes, d => d.r);
     const y = d3.scale.ordinal()
-        .domain( legend_sizes.map(d => d.r) )
-        .range( [-radius_range[0], -(radius_range[1] + largest_legend_offset + radius_range[0]) / 2, -(radius_range[1] + largest_legend_offset)] );
+      .domain(legend_sizes.map(d => d.r))
+      .range([-radius_range[0], -(radius_range[1] + largest_legend_offset + radius_range[0]) / 2, -(radius_range[1] + largest_legend_offset)]);
     // Constrain to whole numbers
-    y.range(y.range().map( d => Math.round(d)));
+    y.range(y.range().map(d => Math.round(d)));
 
     const width = $("#size-legend-container").width();
     const size_legend = d3.select("#size-legend-container")
@@ -733,42 +644,41 @@ class BubbleChart {
         .attr("width", width)
         .attr("height", height)
         .append('g')
-          .attr("transform", d => `translate(${(width / 2) - (width / 6)},${(height / 2) + largest_radius})`);
+          .attr("transform", `translate(${(width / 2) - (width / 6)},${(height / 2) + largest_radius})`);
 
     const circles = size_legend.selectAll("circle")
-      .data( legend_sizes );
+      .data(legend_sizes);
 
     circles.enter()
       .append('circle')
-        .attr('r', d => d.r )
+        .attr('r', d => d.r)
         .attr('cx', 0)
         .attr('cy', d => -d.r);
 
     const label_buffer = 40;
     const label_text_buffer = 10;
-    const line_y_pos = d => - d.r - (d.r * Math.sin(d.y_ang));
-    const line_x_pos = function(d) { let val;
-    return val = Math.sqrt(Math.pow(d.r, 2) - Math.pow(y(d.r) + d.r, 2)); };
+    const line_x_pos = d => Math.sqrt(Math.pow(d.r, 2) - Math.pow(y(d.r) + d.r, 2));
     circles.enter()
       .append('polyline')
         .attr('points', d => `${line_x_pos(d)}, ${y(d.r)}, ${largest_radius+label_buffer}, ${y(d.r)}`);
 
-    return circles.enter()
+    circles.enter()
       .append('text')
         .attr('class', 'size_label')
-        .attr('x', largest_radius + label_buffer + label_text_buffer )
+        .attr('x', largest_radius + label_buffer + label_text_buffer)
         .attr('y', d => y(d.r))
-        .text( d => d.label);
+        .text(d => d.label);
   }
 
   show_legend(radius) {
-    return d3.select('#vis-full-key')
+    d3.select('#vis-full-key')
       .transition().duration(1500)
       .style('opacity', 1)
       .style('top', ((radius * 2) + 80 + 85) + 'px');
   }
+
   hide_legend() {
-    return d3.select('#vis-full-key')
+    d3.select('#vis-full-key')
       .transition().duration(1500)
       .style('opacity', 0)
       .style('top', '2000px');
@@ -779,29 +689,28 @@ class BubbleChart {
     if (window.location.hash.length > 0) {
       const reg_no = window.location.hash.substr(1);
       $('#viz_nav_container .viz_nav[data-name="candidate"]').click();
-      const candidate = window.organizational_records.filter( d => d.reg_no === reg_no)[0];
+      const candidate = window.organizational_records.filter(d => d.reg_no === reg_no)[0];
       if (candidate != null) {
-        return this.highlightSingleCandidate(candidate.candidate_name);
+        this.highlightSingleCandidate(candidate.candidate_name);
       } else {
-        return console.warn(`Unable to find candidate_name from reg_no ${reg_no}`);
+        console.warn(`Unable to find candidate_name from reg_no ${reg_no}`);
       }
     }
   }
 
   highlightSingleCandidate(candidate_name_to_find) {
-    return this.show_by_candidate({modify_location_map: location_map => {
+    this.show_by_candidate({modify_location_map: location_map => {
       location_map.keys().forEach(candidate_name => {
         if (candidate_name !== candidate_name_to_find) {
           // Move off screen
-          return location_map.get(candidate_name).x = -200;
+          location_map.get(candidate_name).x = -200;
         } else {
           location_map.get(candidate_name).x = this.width/2;
-          return location_map.get(candidate_name).y = 200;
+          location_map.get(candidate_name).y = 200;
         }
       });
       return location_map;
-    }
-    });
+    }});
   }
 
   initialize_candidate_autocomplete() {
@@ -814,16 +723,16 @@ class BubbleChart {
 
     const reset_candidate_search = () => {
       this.show_all_candidates();
-      return this.show_by_candidate();
+      this.show_by_candidate();
     };
 
     $input.bind('input', function() {
       if ($(this).val().length <= 0) {
-        return reset_candidate_search();
+        reset_candidate_search();
       }
     });
 
-    return $input.autocomplete({
+    $input.autocomplete({
       lookup: candidate_lookup,
       lookupLimit: 6,
       lookupFilter(suggestion, originalQuery, queryLowerCase) {
@@ -836,7 +745,7 @@ class BubbleChart {
       },
       autoSelectFirst: true,
       onSelect: suggestion => {
-        return this.highlightSingleCandidate(suggestion.value);
+        this.highlightSingleCandidate(suggestion.value);
       },
       appendTo: $container,
       showNoSuggestionNotice: true,
@@ -845,21 +754,21 @@ class BubbleChart {
         let formatted = suggestion.value;
         currentValue.match(/[^ ]+/g).forEach(function(value) {
           const pattern = '(' + $.Autocomplete.utils.escapeRegExChars(value) + ')';
-          return formatted = formatted.replace(new RegExp(pattern, 'gi'), '<strong>$1<\/strong>');
+          formatted = formatted.replace(new RegExp(pattern, 'gi'), '<strong>$1<\/strong>');
         });
         return formatted;
       },
       onSearchComplete: (query, suggestions) => {
         const candidates_to_show = suggestions.map(d => d.data);
         if (suggestions.length <= 0) {
-          return reset_candidate_search();
-        } else if ((suggestions.length <= 6) && (suggestions.length > 0)) {
+          reset_candidate_search();
+        } else if (suggestions.length <= 6) {
           // Show selected candidates
-          this.circles.filter( circle => Array.from(candidates_to_show).includes(circle.reg_no))
+          this.circles.filter(circle => candidates_to_show.includes(circle.reg_no))
             .transition().duration(1000)
             .style('opacity', 1);
           // Hide other candidates
-          return this.circles.filter( circle => !Array.from(candidates_to_show).includes(circle.reg_no))
+          this.circles.filter(circle => !candidates_to_show.includes(circle.reg_no))
             .transition().duration(1000)
             .style('opacity', 0.3);
         }
@@ -868,26 +777,18 @@ class BubbleChart {
   }
 }
 
-  // End class BubbleChart
-
-const root = window;
-
 // Helper class for things that don't rely on BubbleChart data
 class CandidateUtil {
+  MAUI = 'Maui, Lanai, Molokai';
+  KAUAI = 'Kauai, Niihau';
+
   constructor() {
     this.get_vis_year = this.get_vis_year.bind(this);
     this.get_island = this.get_island.bind(this);
   }
 
-  static initClass() {
-    this.prototype.MAUI = 'Maui, Lanai, Molokai';
-    this.prototype.KAUAI = 'Kauai, Niihau';
-  }
-
   get_vis_year() {
-    let cur_year;
-    const $year_el = $('.viz_nav.year');
-    return cur_year = $year_el.data('year');
+    return $('.viz_nav.year').data('year');
   }
 
   get_island(record) {
@@ -902,19 +803,19 @@ class CandidateUtil {
     let matches;
     if (['Governor', 'Mayor', 'Lt. Governor', 'Prosecuting Attorney', 'OHA', 'BOE'].includes(record.office)) {
       return 'All';
-    } else if (['Honolulu Council'].includes(record.office)) {
+    } else if (record.office === 'Honolulu Council') {
       return 'Oahu';
-    } else if (['Maui Council'].includes(record.office)) {
+    } else if (record.office === 'Maui Council') {
       return this.MAUI;
-    } else if (['Kauai Council'].includes(record.office)) {
+    } else if (record.office === 'Kauai Council') {
       return this.KAUAI;
-    } else if (['Hawaii Council'].includes(record.office)) {
+    } else if (record.office === 'Hawaii Council') {
       return 'Hawaii';
-    } else if (['Senate'].includes(record.office)) {
+    } else if (record.office === 'Senate') {
       matches = window.precinct_records.filter(d => d.senate === record.district);
       // Some filings leave the district blank
       return matches[0] ? this.get_island_by_precinct(matches[0].precinct) : 'Other';
-    } else if (['House'].includes(record.office)) {
+    } else if (record.office === 'House') {
       matches = window.precinct_records.filter(d => d.house === record.district);
       return matches[0] ? this.get_island_by_precinct(matches[0].precinct) : 'Other';
     } else {
@@ -923,12 +824,8 @@ class CandidateUtil {
   }
 
   get_island_by_precinct(precinct) {
-
-    let island;
-    const as_number = parseInt(precinct.substring(0,2) + precinct.substring(3,5));
-    // console.log("as number #{as_number} precinct #{precinct}")
-    // console.log("as num", as_number)
-    return island = as_number <= 707 ?
+    const as_number = parseInt(precinct.substring(0, 2) + precinct.substring(3, 5));
+    return as_number <= 707 ?
       'Hawaii'
     : as_number <= 1303 ?
       this.MAUI
@@ -946,22 +843,18 @@ class CandidateUtil {
       'Error';
   }
 }
-CandidateUtil.initClass();
 
-root.candidate_utils = new CandidateUtil;
+window.candidate_utils = new CandidateUtil();
 
 const campaignInit = function() {
   $('.legend tr').on('mouseenter', function() {
     const category = $(this).data('category');
-    const circles = d3.selectAll('circle');
-    return circles.filter( circle => circle.super_category !== category)
+    d3.selectAll('circle').filter(circle => circle.super_category !== category)
       .transition().duration(1000)
       .style('opacity', 0.3);
   });
-  return $('.legend tr[data-category]').on('mouseleave', function() {
-    const category = $(this).data('category');
-    const circles = d3.selectAll('circle');
-    return circles.transition().duration(1000)
+  $('.legend tr[data-category]').on('mouseleave', function() {
+    d3.selectAll('circle').transition().duration(1000)
       .style('opacity', 1);
   });
 };
@@ -972,21 +865,17 @@ $(function() {
 
   campaignInit();
 
-  // Join records on reg_no
+  // Join records on reg_no. Both lists are sorted by reg_no and every
+  // expenditure's reg_no has an organizational record.
   const join_data = function(expend_recs, org_recs) {
     const full_records = [];
-    let i=0; let j=0;
-    while (true) {
-      var expend_rec = expend_recs[i];
-      var org_rec = org_recs[j];
-      if ((expend_rec == null) || (org_rec == null)) {
-          break;
-        }
-
-      if (expend_rec.reg_no === org_rec.reg_no) {
-        full_records.push($.extend({}, expend_rec, org_rec));
+    let i = 0;
+    let j = 0;
+    while (i < expend_recs.length && j < org_recs.length) {
+      if (expend_recs[i].reg_no === org_recs[j].reg_no) {
+        full_records.push($.extend({}, expend_recs[i], org_recs[j]));
         i++;
-      } else if (expend_rec.reg_no !== org_rec.reg_no) {
+      } else {
         j++;
       }
     }
@@ -995,7 +884,7 @@ $(function() {
 
   // Filter data down to what we want
   const filter_data = function(records, year) {
-    const filtered_csv = records.filter( function(d) {
+    const filtered = records.filter(function(d) {
       // Only a handful of records have negative amounts so it is safe to ignore them
       if (parseInt(d.amount) < 0) {
         return false;
@@ -1009,39 +898,15 @@ $(function() {
       } else {
         return false;
       }
-      //else if year == 'gov2'
-      // d.election_period == '2014-2016' && d.office == 'Senate'
-      //d.election_period == '2010-2012' && d.office == 'Governor'
-      //d.election_period == '2010-2012' && d.office == 'Senate'
     });
-    const sorted = filtered_csv.sort( (a, b) => d3.descending(parseFloat(a.amount), parseFloat(b.amount)));
-    //sorted = sorted.slice(0, 800)
-    const reduced = _.reduce(filtered_csv, function(acc, d) {
-      let curr = acc[d.candidate_name];
-      if (curr == null) { curr = []; }
-      curr.push(d);
-      curr = _.sortBy(curr, d => // Why the 5 here?
-      parseFloat(d.amount.slice(5)))
-          .reverse();
-      acc[d.candidate_name] = _.first(curr, 1);
-      return acc;
-    }
-    , {});
-    //filtered_csv = _.reduce(_.values(reduced), (acc, d) ->
-    //  return acc.concat(d)
-    //, [])
-    filtered_csv;
-    return sorted;
+    return filtered.sort((a, b) => d3.descending(parseFloat(a.amount), parseFloat(b.amount)));
   };
 
-  root.update_year = function(next) {
-    const records = window.raw_records;
-
+  window.update_year = function(next) {
     const cur_year = candidate_utils.get_vis_year();
-    const direction = next ? 1 : -1;
-    const next_year = cur_year + (2*direction);
+    const next_year = cur_year + (next ? 2 : -2);
 
-    const years = root.election_years;
+    const years = window.election_years;
     const first_year = years[0];
     const last_year = years[years.length - 1];
 
@@ -1069,18 +934,15 @@ $(function() {
     // update year element
     const $year_el = $('.viz_nav.year');
     $year_el.animate({color: 'white'}, {complete() {
-      // Not black, dark grey
       $year_el.find('.year-text').text(next_year);
       $year_el.data('year', next_year);
-      return $year_el.animate({color: '#454542'});
-    }
-    });
+      // Not black, dark grey
+      $year_el.animate({color: '#454542'});
+    }});
 
-    const filtered_records = filter_data(records, next_year);
-    window.debug_now = true;
-
+    const filtered_records = filter_data(window.raw_records, next_year);
     window.records = filtered_records;
-    return chart.update_data(filtered_records);
+    chart.update_data(filtered_records);
   };
 
   const render_vis = function(error, expenditure_records, organizational_records, precinct_records) {
@@ -1094,15 +956,13 @@ $(function() {
       const year = parseInt(d.election_period.split('-')[1]);
       return (year % 2 === 0) && (year <= this_year) ? year : undefined;
     });
-    root.election_years = d3.range(2008, latest_year + 1, 2);
+    window.election_years = d3.range(2008, latest_year + 1, 2);
     const $year_el = $('.viz_nav.year');
     $year_el.data('year', latest_year);
     $year_el.find('.year-text').text(latest_year);
 
     // This is the default data to show
     const filtered_records = filter_data(raw_records, latest_year);
-    //filtered_records = filter_data(raw_records, 'gov')
-    //filtered_records = filter_data(raw_records, 'senate')
 
     window.precinct_records = precinct_records;
 
@@ -1111,11 +971,9 @@ $(function() {
     chart = new BubbleChart(filtered_records);
     chart.display_group_all();
     chart.size_legend_init();
-    return chart.handle_anchor_link();
+    chart.handle_anchor_link();
   };
-  root.get_chart = () => {
-    return chart;
-  };
+  window.get_chart = () => chart;
 
   $('#viz_nav_container .viz_nav').on('click', function(e) {
     e.preventDefault();
@@ -1130,23 +988,23 @@ $(function() {
       $viz_nav.siblings('.btn').removeClass('selected');
       $viz_nav.addClass('selected');
 
-      return window.get_chart().show_viz_type(func);
+      window.get_chart().show_viz_type(func);
     } else {
       $viz_nav.removeClass('selected');
-      return window.get_chart().show_viz_type('year');
+      window.get_chart().show_viz_type('year');
     }
   });
 
   $('.viz_nav .right-arrow').on('click', function(e) {
     e.stopPropagation();
     if ($(this).hasClass('clickable')) {
-      return window.update_year(true);
+      window.update_year(true);
     }
   });
   $('.viz_nav .left-arrow').on('click', function(e) {
     e.stopPropagation();
     if ($(this).hasClass('clickable')) {
-      return window.update_year(false);
+      window.update_year(false);
     }
   });
 
@@ -1155,10 +1013,10 @@ $(function() {
     // Position the hidden legend
     const pos = $(this).offset();
     pos.top = 50;
-    return $('#mini-legend-body').slideToggle().offset(pos);
+    $('#mini-legend-body').slideToggle().offset(pos);
   });
 
-  return queue()
+  queue()
     .defer(d3.csv, "data/campaign_spending_summary.csv")
     .defer(d3.csv, "data/organizational_report.csv")
     .defer(d3.csv, "data/precinct.csv")
