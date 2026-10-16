@@ -58,7 +58,9 @@ Run the deploy script, which builds the site into `docs/` and stages it:
 
     ./deploy.sh
 
-Then commit the changes. The site is served from the `docs/` folder of the master branch of the common cause repo: https://github.com/CommonCauseHawaii/campaign_spending
+Then commit the changes and push `main`. GitHub Pages serves the `docs/` folder
+of the `main` branch of https://github.com/axelson/campaign_spending at
+https://viz.hawaiicampaignspending.com (`docs/CNAME` holds the custom domain).
 
 ## Checking a change against the deployed build
 
